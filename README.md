@@ -1,0 +1,14 @@
+# cannoli-user 6.0 NS6575 8338 amz-p,release-keys
+- manufacturer: amazon
+- platform: mt8519
+- codename: cannoli
+- flavor: cannoli-user
+- release: 7.1.2
+- id: NS6575
+- incremental: 0013323244164
+- tags: amz-p,release-keys
+- fingerprint: Amazon/cannoli/cannoli:6.0/NS6575/8338N:user/amz-p,release-keys
+- is_ab: true
+- brand: Amazon
+- branch: cannoli-user-6.0-NS6575-8338-amz-p,release-keys
+- repo: amazon_cannoli_dump
