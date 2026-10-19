@@ -1,0 +1,11 @@
+{
+    "description": "CSI basic config. No GCA necessary.",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "CSI Data Stream",
+            "type": "csi.CSIData"
+        }
+    ]
+}

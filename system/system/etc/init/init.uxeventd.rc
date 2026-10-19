@@ -1,0 +1,4 @@
+service uxeventd /system/bin/uxeventd
+    class main
+    user uxevent
+    group aipc inet dbus ace_group system ace_kvstore ace_maplite keystore wakelock davs

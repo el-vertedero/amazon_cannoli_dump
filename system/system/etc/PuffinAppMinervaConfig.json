@@ -1,0 +1,2502 @@
+{
+    "comments": "Puffin Minerva Config",
+    "configs": [
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName": "VoiceRequest#ABS",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "31nx/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName": "VoiceRequest#DDL",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "kdjs/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName": "VoiceRequest#WW2B",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "n939/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName": "VoiceRequest#WW2Chime",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "btfu/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName": "VoiceRequest#WWUU",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "pko4/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName": "VoiceRequest#ONEMIC",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "7hqe/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#ABS",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "31nx/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#DDL",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "kdjs/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#VISUAL",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "l2pp/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "InteractionRequest#VISUAL",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "l2pp/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#WW2B",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "n939/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#WW2Chime",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "btfu/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#WWUU",
+            "GroupId": "f4x5h74j",
+            "SchemaId": "pko4/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "VoiceRequest#Vsk",
+            "GroupId": "4x0sokaz",
+            "SchemaId": "v8qi/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Speech",
+            "MethodName": "HoldToBar",
+            "GroupId": "yqer4cn5",
+            "SchemaId": "jcbg/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "davsHandler",
+            "GroupId": "woz9utjr",
+            "SchemaId": "fhqk/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "assetmgrdWatchdog",
+            "GroupId": "woz9utjr",
+            "SchemaId": "u1my/2/03330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "curlWrapper",
+            "GroupId": "fq0ahuav",
+            "SchemaId": "8g2h/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "davsRequester",
+            "GroupId": "0acjel0t",
+            "SchemaId": "zc30/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "davsPoll",
+            "GroupId": "5n5fm8bm",
+            "SchemaId": "no5j/2/02330403",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "davsDownload",
+            "GroupId": "5n5fm8bm",
+            "SchemaId": "lzot/2/03330403",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "DavsClient",
+            "GroupId": "0acjel0t",
+            "SchemaId": "tojs/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "MapLiteAuthDelegateAmd",
+            "GroupId": "fq0ahuav",
+            "SchemaId": "sz2e/2/02330660",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "requester",
+            "GroupId": "pom0cjmo",
+            "SchemaId": "7pxy/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "requesterFactory",
+            "GroupId": "aql5oop0",
+            "SchemaId": "8fo9/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "requesterMetadata",
+            "GroupId": "4u4ee66d",
+            "SchemaId": "egmi/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "StorageManager",
+            "GroupId": "y7vzww0x",
+            "SchemaId": "ms03/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "ALSManager",
+            "GroupId": "cowvv6sh",
+            "SchemaId": "eci1/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "APLTDisplayManager",
+            "GroupId": "5ns9sfpi",
+            "SchemaId": "1myq/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "BrightnessManager",
+            "GroupId": "ssqi6t6n",
+            "SchemaId": "ztca/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "DisplaydFacade",
+            "GroupId": "xanryjtg",
+            "SchemaId": "c8z1/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "displayIPCHandle",
+            "GroupId": "xanryjtg",
+            "SchemaId": "c8z1/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "displayManager",
+            "GroupId": "xanryjtg",
+            "SchemaId": "c8z1/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "SessionDisplayHelper",
+            "GroupId": "xanryjtg",
+            "SchemaId": "c8z1/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "displayd",
+            "MethodName": "SettingsDisplayOrchestrator",
+            "GroupId": "xanryjtg",
+            "SchemaId": "c8z1/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "METRICS_S3_FORWARDING",
+            "MethodName": "49eb6c45-b08f-454e-9a6e-dc5b054dd806/1/00330000",
+            "GroupId": "763qi4nb",
+            "SchemaId": "bwrb/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "ledcontroller",
+            "MethodName": "AutoBrightnessManager",
+            "GroupId": "6k27ze8m",
+            "SchemaId": "m5s6/2/02330410",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "ledcontroller",
+            "MethodName": "LED",
+            "GroupId": "6k27ze8m",
+            "SchemaId": "unc6/2/02330410",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinAdapters",
+            "MethodName": "near_miss_callback",
+            "GroupId": "lf9ro1y6",
+            "SchemaId": "8i26/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL",
+            "GroupId": "eiyqgirv",
+            "SchemaId": "z7nl/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACSDK_GENERIC_COUNTER",
+            "GroupId": "y1r4ze4k",
+            "SchemaId": "4hyx/2/033304d0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACSDK_GENERIC_TIMER",
+            "GroupId": "y1r4ze4k",
+            "SchemaId": "4hyx/2/033304d0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ADAPTIVEVOLUME",
+            "GroupId": "gr24j0qu",
+            "SchemaId": "q4v8/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AEDManager",
+            "GroupId": "u57xedvr",
+            "SchemaId": "92uw/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AIP",
+            "GroupId": "ditypab4",
+            "SchemaId": "d1rg/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AipcGetExternalPropertyFailed",
+            "GroupId": "2anv8zy8",
+            "SchemaId": "rl1w/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "aipcSubscribeFailed",
+            "GroupId": "hfvdawle",
+            "SchemaId": "c8k2/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "aipcWrapper",
+            "GroupId": "2bxydo4n",
+            "SchemaId": "uel0/2/03330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AIP_SET_END_OF_SPEECH_OFFSET",
+            "GroupId": "qlynadla",
+            "SchemaId": "9hvi/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ALERT",
+            "GroupId": "n1fmwar6",
+            "SchemaId": "ah8x/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AlertsEndpointHandler",
+            "GroupId": "8b24qfhw",
+            "SchemaId": "jas4/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "AlertsExtension",
+            "MethodName": "AlertsExtensionService",
+            "GroupId": "j812ecbz",
+            "SchemaId": "0h3b/2/03330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "AlertsExtension",
+            "MethodName": "AlertsWidgetExtensionService",
+            "GroupId": "j812ecbz",
+            "SchemaId": "0h3b/2/03330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ALERT_RENDERER",
+            "GroupId": "xbt53r3a",
+            "SchemaId": "k0zu/2/02330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AlexaConnectionManager",
+            "GroupId": "294ksbly",
+            "SchemaId": "k4w3/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AlexaEndpointManager",
+            "GroupId": "jx1mljl2",
+            "SchemaId": "o1xw/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AlexaWebAPI",
+            "GroupId": "m11g1plf",
+            "SchemaId": "t2lt/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "Animations",
+            "GroupId": "7frme722",
+            "SchemaId": "9eti/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "APL",
+            "GroupId": "7oahzff5",
+            "SchemaId": "dzrz/2/03330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "APL.Cache",
+            "GroupId": "x070c2xa",
+            "SchemaId": "08g5/2/05330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "audioFrontEnd",
+            "GroupId": "ay7jyxks",
+            "SchemaId": "l9qj/2/04330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "OneMicSE",
+            "GroupId": "ay7jyxks",
+            "SchemaId": "v7gy/2/03330670",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AudioMetadataDecoder",
+            "GroupId": "ib2cxao1",
+            "SchemaId": "ufri/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AudioOutputObserver",
+            "GroupId": "wx9qs82f",
+            "SchemaId": "n4f7/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#AudioPlaybackTime",
+            "GroupId": "ayi3japr",
+            "SchemaId": "e4fb/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#directiveReceiveToPlaying",
+            "GroupId": "qyk5b8mz",
+            "SchemaId": "9em7/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#directiveReceiveToPlaying_VSP",
+            "GroupId": "vnl1f1vh",
+            "SchemaId": "8a0e/2/03330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#Group1",
+            "GroupId": "upau62qh",
+            "SchemaId": "058q/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#Group2",
+            "GroupId": "benjj70h",
+            "SchemaId": "es9p/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#MessageSentFailed",
+            "GroupId": "y781bkqa",
+            "SchemaId": "q5i4/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAYBACK_FORCE_PLAYBACK_SPEED_VSP",
+            "GroupId": "kk7x0lns",
+            "SchemaId": "jdbe/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAYBACK_SEEKED",
+            "GroupId": "mjci9lnf",
+            "SchemaId": "cgad/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAYBACK_STARTED",
+            "GroupId": "8nuunh03",
+            "SchemaId": "nqfc/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAYBACK_STARTED_VSP",
+            "GroupId": "kk7x0lns",
+            "SchemaId": "yrzx/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAYBACK_STOPPED",
+            "GroupId": "bzzlk1cc",
+            "SchemaId": "942w/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAYBACK_STOPPED_VSP",
+            "GroupId": "n9dj6ty2",
+            "SchemaId": "dgup/2/03330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PLAY_DIRECTIVE_RECEIVED",
+            "GroupId": "kmgv43sa",
+            "SchemaId": "0qns/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#PREPARE_PLAY_DIRECTIVE_RECEIVED",
+            "GroupId": "lkdt4nxe",
+            "SchemaId": "fue5/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#STOP_DIRECTIVE_RECEIVED",
+            "GroupId": "yhm2ugrc",
+            "SchemaId": "n8lp/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#TrackTimeOnQueue",
+            "GroupId": "uisb7xe0",
+            "SchemaId": "m4yr/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AUDIO_PLAYER#UNSUPPORTED_INTERRUPTED_BEHAVIOR_PLAY_DIRECTIVE",
+            "GroupId": "udd97twt",
+            "SchemaId": "2rk1/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AuthDelegate",
+            "GroupId": "xte9mb9c",
+            "SchemaId": "m4a8/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AutoWifiUpdateManager",
+            "GroupId": "t77eilbh",
+            "SchemaId": "8aq6/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "BlockingModeController",
+            "GroupId": "wzqdp2e4",
+            "SchemaId": "md8p/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "BluetoothMetrics",
+            "GroupId": "49nad3qp",
+            "SchemaId": "sy0m/2/023304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "buttons",
+            "GroupId": "veycnk4j",
+            "SchemaId": "mb9u/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "CMB",
+            "GroupId": "u7r7rney",
+            "SchemaId": "8ijx/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "CAF_DIRECTIVE_REGISTRAR",
+            "GroupId": "2l7ya5x6",
+            "SchemaId": "u28f/2/033304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "CONTEXT_MANAGER",
+            "GroupId": "zq0k7l3n",
+            "SchemaId": "939p/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "CPUMonitor",
+            "GroupId": "qv38ldch",
+            "SchemaId": "5lga/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "CUSTOM",
+            "GroupId": "xyf5tuf9",
+            "SchemaId": "08ys/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "CVServiceObserver",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "31bd/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DIRECTIVE_SEQUENCER",
+            "GroupId": "a6nrkwvj",
+            "SchemaId": "7sjk/2/01330661",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DOWNCHANNEL_HANDLER",
+            "GroupId": "67f72imr",
+            "SchemaId": "51r2/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DUXSA",
+            "GroupId": "xwld17d3",
+            "SchemaId": "hzpt/2/03330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DynamicMediaPlayerFactory",
+            "GroupId": "s7u4k7e5",
+            "SchemaId": "wg6g/2/01330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "EarconsAudioProvider",
+            "GroupId": "gs3t3z51",
+            "SchemaId": "wyr8/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ExternalCapabilityAgentAPI",
+            "GroupId": "xgvgn1sj",
+            "SchemaId": "icch/2/05330600",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "factoryReset",
+            "GroupId": "u43fuil8",
+            "SchemaId": "4i0g/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "FractionalRollout",
+            "GroupId": "nq3ipb27",
+            "SchemaId": "kan4/2/013306c1",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "GetMuteStateFailed",
+            "GroupId": "mqsrgc9a",
+            "SchemaId": "2uws/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "HeadlessSetupManager",
+            "GroupId": "w2d470z2",
+            "SchemaId": "35fm/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "HTTP2TRANSPORT",
+            "GroupId": "ulin5dmd",
+            "SchemaId": "jwv9/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "I18nConfigInventory",
+            "GroupId": "zckbdr2m",
+            "SchemaId": "0btb/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "InternetConnectionMonitor",
+            "GroupId": "8hxilh9m",
+            "SchemaId": "nhdy/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "InventoryDriver",
+            "GroupId": "l7d3nx92",
+            "SchemaId": "1rtx/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeplerSpeechMiddleware",
+            "GroupId": "x3elh20y",
+            "SchemaId": "ivkv/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeplerSpeechMiddlewareCustomerServing",
+            "GroupId": "i8jrada8",
+            "SchemaId": "39q6/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeplerSpeechMiddlewareHighTraffic",
+            "GroupId": "wwd7mu4m",
+            "SchemaId": "1tq3/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeywordDetector",
+            "GroupId": "1a250vqg",
+            "SchemaId": "nnkn/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeywordObserver",
+            "GroupId": "1c4pql4u",
+            "SchemaId": "g6r0/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "lasp_lipc_connect_retried",
+            "GroupId": "no0s4zlv",
+            "SchemaId": "frl8/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "LimitedLPMWeblabController",
+            "GroupId": "ol91i0oy",
+            "SchemaId": "phuw/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "lipcGetExternalpropertyFailed",
+            "GroupId": "d4wzxusu",
+            "SchemaId": "9zm9/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "lipcGetStringFailed",
+            "GroupId": "rrlfu73g",
+            "SchemaId": "m6nk/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "LocalCommandDataUploader",
+            "GroupId": "jt1yoh7m",
+            "SchemaId": "9z59/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "LocalCommandObserver",
+            "GroupId": "k60jbeax",
+            "SchemaId": "hih2/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "LocalCommandWithWakewordConfigurer",
+            "GroupId": "1jh4auny",
+            "SchemaId": "8zac/2/02330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MediaPlayerUplCalculator",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "klkv/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ABRFormatChange",
+            "GroupId": "r41k6nkk",
+            "SchemaId": "bh6r/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ABRPlaybackTimeBitrate",
+            "GroupId": "ixca4e23",
+            "SchemaId": "umr1/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ABRPlaybackTimeQuality",
+            "GroupId": "mf9r2sii",
+            "SchemaId": "arjw/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#downloadPlaylistFinish",
+            "GroupId": "xortyomh",
+            "SchemaId": "6tff/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#downloadPlaylistStart",
+            "GroupId": "6gl63omj",
+            "SchemaId": "h35f/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_ClearLeadDRMTrack",
+            "GroupId": "8vdr041h",
+            "SchemaId": "6pq1/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_ClearLeadDRMTrackDuration",
+            "GroupId": "veolta0h",
+            "SchemaId": "g0gs/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_DecryptionLatencyFirst2.5s",
+            "GroupId": "sm0lpr7h",
+            "SchemaId": "b1ls/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_FetchPlayClearLeadDRMTrackDuration",
+            "GroupId": "98fwvjfn",
+            "SchemaId": "0649/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_GroupLicense_NumberOfLicensesUsedForTrack",
+            "GroupId": "2zc9xvab",
+            "SchemaId": "unbp/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_GroupLicense_WidevineDRMTrack",
+            "GroupId": "oqd6nibz",
+            "SchemaId": "ammx/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_GroupLicense_WidevineSessionCacheHit",
+            "GroupId": "5xs20wvg",
+            "SchemaId": "aobb/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_NumberOfLicensesUsedForTrack",
+            "GroupId": "n4afcjzb",
+            "SchemaId": "1ou0/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_WidevineDRMTrack",
+            "GroupId": "6mmtkhqj",
+            "SchemaId": "9a6n/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRM_WidevineSessionCacheHit",
+            "GroupId": "x8l2099a",
+            "SchemaId": "xouv/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMFetchPlay",
+            "GroupId": "uz0f8psh",
+            "SchemaId": "fedn/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMFragment",
+            "GroupId": "1nceo2yo",
+            "SchemaId": "29di/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMGenericError",
+            "GroupId": "qdz38oar",
+            "SchemaId": "t9w7/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMGroupLicense",
+            "GroupId": "sak9z1vj",
+            "SchemaId": "cks5/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMGroupLicenseError",
+            "GroupId": "2m7d22m3",
+            "SchemaId": "f3f0/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMLicense",
+            "GroupId": "kft0k8io",
+            "SchemaId": "6l60/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMLicenseError",
+            "GroupId": "8a3qxiaz",
+            "SchemaId": "tyng/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMProvisioning",
+            "GroupId": "2n3drrnr",
+            "SchemaId": "n4lz/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#DRMSuccess",
+            "GroupId": "mz7p9eag",
+            "SchemaId": "ra43/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ENCABitsSample",
+            "GroupId": "2wginkb9",
+            "SchemaId": "tdaj/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#PlaybackDurationTargetActualDifference",
+            "GroupId": "kd3j1pcp",
+            "SchemaId": "5grk/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#PlaybackStartReadDataDurationAggregated",
+            "GroupId": "ceih5eij",
+            "SchemaId": "2537/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#PlayerPrimedWhenPlayCalled",
+            "GroupId": "55wunldg",
+            "SchemaId": "hz0h/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#PlaylistParser.manifestSize",
+            "GroupId": "bctay6ea",
+            "SchemaId": "yrr5/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeCENC",
+            "GroupId": "2mvussj9",
+            "SchemaId": "eskh/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeDownloader",
+            "GroupId": "pemrxnef",
+            "SchemaId": "ajt3/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeDownloaderError",
+            "GroupId": "iv2ampsl",
+            "SchemaId": "3auf/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeFetcher",
+            "GroupId": "6vxbq3mh",
+            "SchemaId": "ej0c/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeFetcherBufferHigh",
+            "GroupId": "oevkr6em",
+            "SchemaId": "m2mm/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeFetcherBufferLow",
+            "GroupId": "eruhdb2t",
+            "SchemaId": "82a4/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeGenericError",
+            "GroupId": "9306vt1j",
+            "SchemaId": "uk5y/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaePlaylistParser",
+            "GroupId": "3rakxnws",
+            "SchemaId": "s31b/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaePlaylistParserError",
+            "GroupId": "b1aedv1i",
+            "SchemaId": "h86b/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#ReggaeUnderrun",
+            "GroupId": "mvaf7uw2",
+            "SchemaId": "8mfy/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MEDIA_PLAYER#TrackPlayedCount",
+            "GroupId": "ls37sk2b",
+            "SchemaId": "s6pm/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MemoryMonitor",
+            "GroupId": "i9vpaxfb",
+            "SchemaId": "kerr/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MESSAGE_INTERPRETER",
+            "GroupId": "wrs3k4ch",
+            "SchemaId": "8zby/2/02330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MixerRecordWrapper",
+            "GroupId": "splaszd3",
+            "SchemaId": "030z/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MLISClient",
+            "GroupId": "s4xrb22r",
+            "SchemaId": "v42u/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "uspdSettingsHeartbeat",
+            "GroupId": "os10k4fn",
+            "SchemaId": "gvuh/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MRMHandleDirectiveFail",
+            "GroupId": "149iddly",
+            "SchemaId": "nh3v/2/01330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "MRMMediaPlayer",
+            "GroupId": "44nuaeny",
+            "SchemaId": "mh47/2/01330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "NaturalTurnTakingHandler",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "dn2u/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "near_miss_callback",
+            "GroupId": "lf9ro1y6",
+            "SchemaId": "8i26/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "NOTIFICATION",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "sgwx/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "NotificationDatastoreClient",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "sgwx/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "onI18NConfigChanged",
+            "GroupId": "9abtjtcq",
+            "SchemaId": "n036/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PostConnect",
+            "MetricNameAsKey": true,
+            "GroupId": "ds80m7i3",
+            "SchemaId": "giz6/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PostConnectVerifyGatewaySender",
+            "GroupId": "vynfruqb",
+            "SchemaId": "51iv/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "POSTCONNECT_SYNCHRONIZE_STATE_SENDER",
+            "GroupId": "r7jk0k7a",
+            "SchemaId": "7rey/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PowerResource",
+            "GroupId": "l2l8gca5",
+            "SchemaId": "rqcf/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PowerResourceGuard",
+            "GroupId": "b5bd1g0x",
+            "SchemaId": "wazr/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PryonAcousticEventDetector",
+            "GroupId": "gl12245v",
+            "SchemaId": "e8nn/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PryonKeyWordDetector",
+            "GroupId": "pkvn9k1e",
+            "SchemaId": "toch/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PryonManager",
+            "GroupId": "93hz391z",
+            "SchemaId": "nvxp/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PRYON_MANAGER",
+            "GroupId": "iset06mh",
+            "SchemaId": "13j3/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PuffinChannelVolumeManager",
+            "GroupId": "1pr8u7fl",
+            "SchemaId": "w6pa/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "REGISTRATION_MANAGER",
+            "GroupId": "g3tifbio",
+            "SchemaId": "b74h/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "RemoteTransferHandler",
+            "GroupId": "kc11t32i",
+            "SchemaId": "m5pl/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ScheduledExecutor",
+            "GroupId": "nww3rc9b",
+            "SchemaId": "3ar1/2/01330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SETTINGS",
+            "GroupId": "448878m3",
+            "SchemaId": "gih8/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "settingsChange",
+            "GroupId": "8iqguu3m",
+            "SchemaId": "gxiv/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DownloadedWakeWordCapabilities",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "ccza/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "setup",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "7kbe/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SetupManager",
+            "GroupId": "jzakh524",
+            "SchemaId": "5hgz/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "setupMode",
+            "GroupId": "5lrd8vsh",
+            "SchemaId": "peyc/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SoftwareUpdateController",
+            "GroupId": "f2kwkfc5",
+            "SchemaId": "mkxd/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEadjustVolume",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEadjustVolumeSource_LOCAL_API",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEAKER_MANAGER",
+            "GroupId": "1i31xdpw",
+            "SchemaId": "4n1k/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEECH_SYNTHESIZER",
+            "GroupId": "dh9b15vn",
+            "SchemaId": "syg0/2/02330670",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetMute",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetMuteSource_LOCAL_API",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetSpeakerVolumeFailed",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetVolume",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetVolumeFailedZeroSpeakers",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetVolumeSource_DIRECTIVE",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEsetVolumeSource_LOCAL_API",
+            "GroupId": "dc3fu1do",
+            "SchemaId": "xicj/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyController",
+            "GroupId": "sev2j4ik",
+            "SchemaId": "timj/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyAliasUpdate",
+            "GroupId": "wa5swfmw",
+            "SchemaId": "ih4x/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyBecomeActive",
+            "GroupId": "j8cp02f2",
+            "SchemaId": "fxmz/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyCallbackError",
+            "GroupId": "4r0f8ou8",
+            "SchemaId": "w225/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyConnect",
+            "GroupId": "f19fdgs1",
+            "SchemaId": "cqgt/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyFlac",
+            "GroupId": "gerqhduk",
+            "SchemaId": "4fpf/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyInitFailure",
+            "GroupId": "ys5fdtw0",
+            "SchemaId": "gyr0/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyLogin",
+            "GroupId": "2il8stpi",
+            "SchemaId": "l9vm/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyLogout",
+            "GroupId": "17bsy3mf",
+            "SchemaId": "2a7s/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyMediaPlaybackTime",
+            "GroupId": "iql9d174",
+            "SchemaId": "6q3s/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#PLAYBACK_STARTED",
+            "GroupId": "ocjkcceo",
+            "SchemaId": "just/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#PLAYBACK_STOPPED",
+            "GroupId": "jjcy1qjf",
+            "SchemaId": "7ytz/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyPlayCount",
+            "GroupId": "k36yzvlb",
+            "SchemaId": "o7cg/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyPlayFailNoContext",
+            "GroupId": "q0ecnuna",
+            "SchemaId": "d4pa/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyPlayUriCount",
+            "GroupId": "wwkc4jxa",
+            "SchemaId": "m89p/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyRedelivery",
+            "GroupId": "6q1ws1wu",
+            "SchemaId": "gc45/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyTrackDeliveredToTrackChangedDurationInMs",
+            "GroupId": "332zwmh9",
+            "SchemaId": "snxs/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyTrackPlayedCount",
+            "GroupId": "vpr2taur",
+            "SchemaId": "4xul/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyUPL",
+            "GroupId": "mhev3r1k",
+            "SchemaId": "8dgj/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyVolumeFailure",
+            "GroupId": "kkbd6foe",
+            "SchemaId": "dadw/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyVuiPlayDuration",
+            "GroupId": "xxwuiix9",
+            "SchemaId": "nmt0/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyVuiPlayUriDuration",
+            "GroupId": "fqsh3t6c",
+            "SchemaId": "9yc6/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyESDKAdapter#SpotifyVuiStopDuration",
+            "GroupId": "6c83x8n9",
+            "SchemaId": "z81h/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SpotifyLowPowerMode",
+            "GroupId": "hz6bndtq",
+            "SchemaId": "61f6/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SQLiteUserPerceivedFatalsStorage",
+            "GroupId": "i884398g",
+            "SchemaId": "zkcv/2/04330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "State",
+            "GroupId": "zqvub3zi",
+            "SchemaId": "ptkn/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SystemMonitor",
+            "GroupId": "w710w37r",
+            "SchemaId": "kyiu/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DataPartitionUsed",
+            "GroupId": "w710w37r",
+            "SchemaId": "f9c9/2/03330670",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "TapDetection",
+            "GroupId": "3v23uzlv",
+            "SchemaId": "5o56/2/01330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "TapDetectionV1",
+            "GroupId": "dig6am0z",
+            "SchemaId": "z4kq/2/01330460",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "TapRouterAlerts",
+            "GroupId": "n1fmwar6",
+            "SchemaId": "6k75/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "TapRouterComms",
+            "GroupId": "crsa9v1z",
+            "SchemaId": "5ysf/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "tts",
+            "GroupId": "soj4ct2o",
+            "SchemaId": "ahlv/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "tapGestureAction",
+            "GroupId": "95f1kp16",
+            "SchemaId": "680e/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "tapMediaHeartbeat",
+            "GroupId": "95f1kp16",
+            "SchemaId": "6f6i/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "tappedPausedMediaNOTResumed",
+            "GroupId": "95f1kp16",
+            "SchemaId": "ccqd/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "tappedPausedMediaResumed",
+            "GroupId": "95f1kp16",
+            "SchemaId": "ueys/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "tapSettingsHeartbeat",
+            "GroupId": "95f1kp16",
+            "SchemaId": "i007/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "UserPerceivedFatalsMessageRequestObserver",
+            "GroupId": "i6te83je",
+            "SchemaId": "q1gi/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "UserPerceivedFatalsInteractionIdOwnerImpl",
+            "GroupId": "i6te83je",
+            "SchemaId": "kct9/2/03330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "UserPerceivedFatalsConfigurableEventFilter",
+            "GroupId": "i6te83je",
+            "SchemaId": "kct9/2/03330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "UserPerceivedFatalsConfigDownloader",
+            "GroupId": "i6te83je",
+            "SchemaId": "8myo/2/033304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "UPFEvents",
+            "GroupId": "v8gqt1h0",
+            "SchemaId": "hdkl/2/02330660",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "uspdRealTime",
+            "GroupId": "os10k4fn",
+            "SchemaId": "aoj7/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "UXEventArbitrator",
+            "GroupId": "pqao57it",
+            "SchemaId": "m608/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "wakeword_load",
+            "GroupId": "x9ebsq66",
+            "SchemaId": "n01e/2/01330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "WakeWordDeprecated",
+            "GroupId": "9abtjtcq",
+            "SchemaId": "6oss/2/043304c0",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "AudioPlaybackRecordWrapper",
+            "GroupId": "q3w5u6z3",
+            "SchemaId": "5an9/2/03330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "puffinmrmd",
+            "MethodName": "IPCFailure",
+            "GroupId": "149iddly",
+            "SchemaId": "e1ft/2/01330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinUtil",
+            "MethodName": "aipcWrapper",
+            "GroupId": "2bxydo4n",
+            "SchemaId": "uel0/2/03330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "AnimationFactory",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "miti/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "AnimationStateMachine",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "ue69/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "AnimationUPL",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "kbxx/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "SpeechUI_CDN_Lottie_Delivery",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "f82r/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "FrameDrop",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "6re5/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "IPCHandle",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "c0y7/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "KeplerGraphicsDisplayManager",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "qx53/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "SpeechEffectManager",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "f5xa/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "Personality",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "6ih4/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "SpeechUIApplication",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "is2o/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "SpeechUi",
+            "MethodName": "FPS",
+            "GroupId": "f9gz8imy",
+            "SchemaId": "zbvq/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "TimeoutMgr",
+            "MethodName": "LCM_EVENT",
+            "GroupId": "usfgtm2v",
+            "SchemaId": "gpl4/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "TimeoutMgr",
+            "MethodName": "Nightmode_EVENT",
+            "GroupId": "usqly3ww",
+            "SchemaId": "r4pj/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "TimeoutMgr",
+            "MethodName": "Speech_Event",
+            "GroupId": "nuf0655i",
+            "SchemaId": "n7lo/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "TimeoutMgr",
+            "MethodName": "PowerManager_Event",
+            "GroupId": "qqibsygu",
+            "SchemaId": "9vhr/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "TimeoutMgr",
+            "MethodName": "TimeoutManager_Event",
+            "GroupId": "uqgbxboi",
+            "SchemaId": "0b3f/2/03330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "TimeoutMgr",
+            "MethodName": "VegaTimeoutManager",
+            "GroupId": "c3meu0o3",
+            "SchemaId": "bx6k/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#RouterActor",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "guwo/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#CloudOffload",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "vxxb/2/013304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#RouterActorStats",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "8cyv/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#EngineActor",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "pdoq/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#VoiceExperienceGuardActor",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "e66p/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#ExtendedInteractionGuardActor",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "5zfe/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#EventDestinationPicker",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "jrvm/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#RemoteEngineAdapter",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "uokh/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#DirectiveLatency",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "crqj/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#AICFDiscovery",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "0pci/2/01330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "AlexaHybridEngine",
+            "MethodName": "HybridRouter#CloudDirectiveCache",
+            "GroupId": "wqeinoi1",
+            "SchemaId": "ef9q/2/013304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "VegaWakeWordManager",
+            "MethodName": "WakeWordManager",
+            "GroupId": "odezbdl2",
+            "SchemaId": "mndj/2/02330400",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeplerAudioFocusError",
+            "GroupId": "ybu2n295",
+            "SchemaId": "xclp/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeplerAudioFocusErrorWithMetadata",
+            "GroupId": "ybu2n295",
+            "SchemaId": "ueid/2/01330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "KeplerAudioFocusProfiling",
+            "GroupId": "ybu2n295",
+            "SchemaId": "z0tl/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DOWNCHANNEL_HANDLER_LIFETIME",
+            "GroupId": "pdu0pex6",
+            "SchemaId": "8hdj/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DOWNCHANNEL_HANDLER_MULTIPART",
+            "GroupId": "pdu0pex6",
+            "SchemaId": "8hdj/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PostConnectDiscoveryEventSender",
+            "GroupId": "pzpsxnkj",
+            "SchemaId": "xh7b/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PostConnectDiscoveryEventSender_AddOrUpdateReport",
+            "GroupId": "pzpsxnkj",
+            "SchemaId": "xh7b/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PostConnectDiscoveryEventSender_DeleteReport",
+            "GroupId": "pzpsxnkj",
+            "SchemaId": "4kze/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "PostConnectDiscoveryEventSender_EventProcessed",
+            "GroupId": "pzpsxnkj",
+            "SchemaId": "doq9/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MISC_Downchannel",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "q0fb/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MULTIPART",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "q0fb/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MESSAGE_REQUEST_QUEUE",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "fcee/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MISC",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "exem/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MISC_COUNTER",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "an6q/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MISC_TIMER",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "an6q/2/03330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MISC_MIMERESPSINK",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "cvan/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACL_MISC_MIMERESPSINK_TIMER",
+            "GroupId": "ds80m7i3",
+            "SchemaId": "cvan/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ADSL",
+            "GroupId": "av1or6tz",
+            "SchemaId": "i7ac/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ACSDK_BLUETOOTH",
+            "GroupId": "rxc0xrs1",
+            "SchemaId": "tm2v/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DIRECTIVE_PROCESSOR_UNACKNOWLEDGED_BLOCKING_DIRECTIVE_TIMEOUT_AUDIO",
+            "GroupId": "au5onf1r",
+            "SchemaId": "eg7n/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DIRECTIVE_PROCESSOR_UNACKNOWLEDGED_BLOCKING_DIRECTIVE_TIMEOUT_VISUAL",
+            "GroupId": "au5onf1r",
+            "SchemaId": "eg7n/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ENDPOINT_REGISTRATION",
+            "GroupId": "k06czc9e",
+            "SchemaId": "ymb4/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "InkGatewayNativeClient",
+            "GroupId": "behmp1u5",
+            "SchemaId": "c3i6/2/02330400",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEECHSYNTHESIZER_NON_UPL",
+            "GroupId": "xempr7cq",
+            "SchemaId": "hjlz/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "SPEECHSYNTHESIZER_SPEECH_STARTED",
+            "GroupId": "xempr7cq",
+            "SchemaId": "ldxs/2/04330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "ActivityController",
+            "GroupId": "6fuk9yhj",
+            "SchemaId": "29aq/2/06330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "assetmgrd",
+            "MethodName": "assetmgrdLifecycle",
+            "GroupId": "6fuk9yhj",
+            "SchemaId": "06r1/2/03330460",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"PuffinApp",
+            "MethodName":"ContinuousEncoding",
+            "GroupId":"mi7mlssx",
+            "SchemaId":"zie3/2/04330471",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"Speech",
+            "MethodName":"AttentionLatency#Listen",
+            "GroupId":"f4x5h74j",
+            "SchemaId":"h1mv/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "Headless_speech",
+            "MethodName":"AttentionLatency#Listen",
+            "GroupId":"f4x5h74j",
+            "SchemaId":"h1mv/2/02330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"Headless_speech",
+            "MethodName":"RecognizeLatency",
+            "GroupId":"f4x5h74j",
+            "SchemaId":"dxe9/2/05330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"Speech",
+            "MethodName":"RecognizeLatency",
+            "GroupId":"f4x5h74j",
+            "SchemaId":"dxe9/2/05330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"PuffinApp",
+            "MethodName":"DIRECTIVE_GROUP",
+            "GroupId":"au5onf1r",
+            "SchemaId":"2mnb/2/02330670",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"PuffinApp",
+            "MethodName":"VISUAL_FOCUS_MANAGER",
+            "GroupId":"033lxmyc",
+            "SchemaId":"vh3c/2/033304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"PuffinApp",
+            "MethodName":"AUDIO_ACTIVENESS",
+            "GroupId":"033lxmyc",
+            "SchemaId":"9dj2/2/033304c0",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "full_duplex_upload",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "7kbe/2/02330470",
+            "Active": true
+        },
+        {
+            "ServiceName": "uxeventd",
+            "MethodName": "UxSingleAnimationEvent",
+            "GroupId": "gvopt4za",
+            "SchemaId": "ykjn/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "uxeventd",
+            "MethodName": "uxeventd",
+            "GroupId": "jsr7wty1",
+            "SchemaId": "nb1q/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "UXEventD",
+            "MethodName": "uxeventd",
+            "GroupId": "jsr7wty1",
+            "SchemaId": "nb1q/2/02330410",
+            "Active": true
+        },
+        {
+            "ServiceName": "uxeventd",
+            "MethodName": "setup",
+            "GroupId": "89wvnu75",
+            "SchemaId": "7k6y/2/02330410",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "UXEventD",
+            "MethodName": "setup",
+            "GroupId": "89wvnu75",
+            "SchemaId": "7k6y/2/02330410",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "uxeventd",
+            "MethodName": "aipcWrapper",
+            "GroupId": "89wvnu75",
+            "SchemaId": "rugd/2/02330410",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"PuffinApp",
+            "MethodName":"NSMResourceTracking",
+            "GroupId":"rd3nm3hh",
+            "SchemaId":"2066/2/04330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName":"PuffinApp",
+            "MethodName":"AVSConnectionTCPMetrics",
+            "GroupId":"rd3nm3hh",
+            "SchemaId":"ccwa/2/05330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "TSBBatchSerializer",
+            "GroupId": "rd3nm3hh",
+            "SchemaId": "53ij/2/05330470",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "RemoteWakeWord",
+            "GroupId": "usijn4xh",
+            "SchemaId": "szhj/2/03330670",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "RemoteWakeWordDetection",
+            "GroupId": "usijn4xh",
+            "SchemaId": "d8bx/2/03330670",
+            "MetricNameAsKey": true,
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DQM",
+            "GroupId": "9kiq71h1",
+            "SchemaId": "73u7/2/03330670",
+            "Active": true
+        },
+        {
+            "ServiceName": "PuffinApp",
+            "MethodName": "DDR",
+            "GroupId": "gga4kx2h",
+            "SchemaId": "fu23/2/03330460",
+            "Active": true
+        }
+    ]
+}

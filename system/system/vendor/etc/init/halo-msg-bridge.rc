@@ -1,0 +1,10 @@
+#Messaging bridge service
+service halo-msg-bridge /vendor/bin/core-messaging-bridge
+   user system
+   group root system inet net_admin shell aipc ace_group odot log ace_maplite dbus keystore ace_kvstore
+   disabled
+
+#Start messaging bridge
+on property:init.svc.halo-hub-core=running && property:init.svc.ace_messaging=running
+   start halo-msg-bridge
+

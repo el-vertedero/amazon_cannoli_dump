@@ -1,0 +1,17 @@
+{
+    "applicationProtocols": [
+        {
+            "type": "BLE_MESH",
+            "maxVersion": "1.0",
+            "commissioneeTypes": {
+                "displayCategories": [
+                    "FAN",
+                    "LIGHT",
+                    "OTHER",
+                    "REMOTE",
+                    "SMARTPLUG"
+                ]
+            }
+        }
+    ]
+}

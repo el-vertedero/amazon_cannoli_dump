@@ -1,0 +1,31 @@
+{
+    "endpoint": {
+        "socketDirectory": "/data/alexahybrid/lsf-sockets",
+        "socketPermission": "ALL"
+    },
+    "platformServices": {
+        "endpoint": {
+            "details": {
+                "socketAddress": "/data/alexahybrid/ps-sockets",
+                "socketPermission": "ALL"
+            },
+            "type": "socket"
+        }
+    },
+    "skillCollectionId": "com.amazon.alexahybrid.RemoteSkills",
+    "skills": [
+        {
+            "configuration": {
+                "Skill.SmartHomeSkillId.ApplianceDriverRegistryDatabaseFile": "/system/etc/smartHomeSkill/driverRegistry.db",
+                "Skill.SmartHomeSkillId.ArtifactManager.IngestionEP": "/data/alexahybrid/ec-sockets/ingestionEP.sock",
+                "Skill.SmartHomeSkillId.CACertFile": "/etc/ahe/ca-certificates.crt",
+                "Skill.SmartHomeSkillId.CHRDatabaseFile": "/data/alexahybrid/files/smartHomeSkill/customerHomeRegistry.db",
+                "Skill.SmartHomeSkillId.CHRSyncDatabaseFile": "/data/alexahybrid/files/smartHomeSkill/customerHomeRegistrySync.db",
+                "Skill.SmartHomeSkillId.DirectoryPath": "/data/alexahybrid/files/smartHomeSkill",
+                "Skill.SmartHomeSkillId.MetricsLoggerType": "ACE_METRICS"
+            },
+            "libraryHashes": [],
+            "libraryPath": "/system/lib/ah_shs/libSmartHomeSkill_ace.so"
+        }
+    ]
+}

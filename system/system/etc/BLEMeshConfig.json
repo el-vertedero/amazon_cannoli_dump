@@ -1,0 +1,4 @@
+{
+    "syncNodeListMinPeriodInSecs": 10800,
+    "syncNodeListMaxPeriodInSecs": 14400
+}

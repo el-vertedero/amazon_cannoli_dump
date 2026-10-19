@@ -1,0 +1,93 @@
+{
+    "description": "Tap GCA pipeline",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "Tap GenericCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.Input.GestureRecognizer.Tap",
+                        "version": "1.0",
+                        "configurations": {
+                            "supportedGestures": ["SINGLE_TAP"],
+                            "supportedActions": [
+                                "SNOOZE_ALARM",
+                                "DISMISS_ALERT",
+                                "END_COMMUNICATION",
+                                "PAUSE_RESUME_MEDIA"
+                            ]
+                          }
+                    },
+                    "directives": [
+                        {
+                            "name": "SetGestureConfiguration"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Tap SetGestureConfiguration Directive Accessor",
+            "type": "core.json.accessor",
+            "args": {
+                "accessKey": "directive.payload.gestureConfiguration"
+            },
+            "inputs": [
+                "GenericCA|Directives|Alexa.Input.GestureRecognizer.Tap|SetGestureConfiguration|IPCIn"
+            ]
+        },
+        {
+            "name": "Tap GestureConfiguration Setting Stream",
+            "type": "core.setting",
+            "args": {
+                "settingName": "Alexa.Input.GestureRecognizer.Tap::gestureConfiguration"
+            },
+            "inputs": [
+                "Tap SetGestureConfiguration Directive Accessor"
+            ]
+        },
+        {
+            "name": "Tap User Settings Stream 1",
+            "type": "core.setting",
+            "args": {
+                "settingName": "Alexa.Input.GestureRecognizer.Tap::userChangedList"
+            }
+        },
+        {
+            "name": "Tap User Settings Editor",
+            "type": "Tap.UserSettingChangedCAMPStream",
+            "inputs": [
+                "GenericCA|Directives|Alexa.Input.GestureRecognizer.Tap|SetGestureConfiguration|IPCIn",
+                "Tap User Settings Stream 1"
+            ]
+        },
+        {
+            "name": "Tap User Settings Stream 2",
+            "type": "core.setting",
+            "args": {
+                "settingName": "Alexa.Input.GestureRecognizer.Tap::userChangedList"
+            },
+            "inputs": [
+                "Tap User Settings Editor"
+            ]
+        },
+        {
+            "name": "GestureConfigurationReport event builder",
+            "type": "Tap.GCReportCAMPStream",
+            "inputs": [
+                "Tap GestureConfiguration Setting Stream"
+            ]
+        }
+    ],
+    "exec": [
+        {
+            "command": "connect",
+            "input": "GestureConfigurationReport event builder",
+            "consumer": "GenericCA|Events|Alexa.Input.GestureRecognizer.Tap|IPCOut"
+        }
+    ]
+}

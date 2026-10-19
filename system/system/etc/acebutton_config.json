@@ -1,0 +1,64 @@
+{
+    "devices" : [
+        {
+            "deviceName" : "Button_GPIO",
+            "buttonInterfaceType" : "GPIO",
+            "inputDevice" : "/dev/input/event2",
+            "autorepeat": [300, 150],
+            "buttonMapping" : [
+                {
+                    "buttonName" : "volumeUp",
+                    "inputEventType" : "EV_KEY",
+                    "keyCode" : 115,
+                    "states" : {
+                        "repeat": 2,
+                        "down" : 1,
+                        "up" : 0
+                    }
+                },
+                {
+                    "buttonName" : "volumeDown",
+                    "inputEventType" : "EV_KEY",
+                    "keyCode" : 114,
+                    "states" : {
+                        "repeat": 2,
+                        "down" : 1,
+                        "up" : 0
+                    }
+                },
+                {
+                    "buttonName" : "uber",
+                    "inputEventType" : "EV_KEY",
+                    "keyCode" : 138,
+                    "states" : {
+                        "repeat": 2,
+                        "down" : 1,
+                        "up" : 0
+                    }
+                }
+            ]
+                },
+        {
+            "deviceName" : "Mute_Button_Privacy",
+            "buttonInterfaceType" : "GPIO",
+            "inputDevice" : "/dev/input/event1",
+            "buttonMapping" : [
+                {
+                    "buttonName" : "mute",
+                    "inputEventType" : "EV_KEY",
+                    "keyCode" : 113,
+                    "states" : {
+                        "down" : 1,
+                        "up" : 0
+                    }
+                }
+            ]
+        }
+    ],
+    "timing" : [
+        {
+            "oobeHold" : 5000,
+            "factoryResetHold": 21000
+        }
+    ]
+}

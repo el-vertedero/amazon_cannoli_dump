@@ -1,0 +1,54 @@
+{
+	"processes": [
+		{
+			"name": "PuffinApp",
+			"soft_memory_limit": 100000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "puffinmrmd",
+			"soft_memory_limit": 35000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "AlexaHybridExec",
+			"soft_memory_limit": 75000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "SmartHomed",
+			"soft_memory_limit": 35000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "SkillContainer",
+			"soft_memory_limit": 20000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "acenna_service",
+			"soft_memory_limit": 45000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "ace_messaging_s",
+			"soft_memory_limit": 20000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "uxeventd",
+			"soft_memory_limit": 20000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "dbus-daemon",
+			"soft_memory_limit": 16000,
+			"hard_memory_limit": 256000
+		},
+		{
+			"name": "wifisvc",
+			"soft_memory_limit": 25000,
+			"hard_memory_limit": 256000
+		}
+	]
+}

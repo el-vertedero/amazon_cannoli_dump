@@ -1,0 +1,14 @@
+# Load kernel modules for ADF DSP HAL
+on post-fs-data
+    mkdir /data/adf_dsp_log          0775 audio audio
+
+on boot
+    insmod /vendor/lib/modules/acs_audio_client.ko
+    insmod /vendor/lib/modules/voice_dsp_card.ko
+    start dsp_lifecycle
+
+service dsp_lifecycle /system/bin/dsp_lifecycle
+    class main
+    user audio
+    group audio dbus
+

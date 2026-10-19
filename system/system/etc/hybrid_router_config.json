@@ -1,0 +1,7 @@
+{
+    "Alexa.HybridRouter.AlexaHybridEngineEndpoint": {
+        "type": "tcp",
+        "host": "localhost",
+        "port": "7802"
+    }
+}

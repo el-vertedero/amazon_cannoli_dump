@@ -1,0 +1,13 @@
+{
+  "transformation": {
+    "type": "java",
+    "javaClass": "com.amazon.alexa.capabilities.primitives.transformers.ModeTransformer"
+  },
+  "deviceCapabilities": {
+    "capabilities": [
+      {
+        "namespace": "Alexa.ModeController"
+      }
+    ]
+  }
+}

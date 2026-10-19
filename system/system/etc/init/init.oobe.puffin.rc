@@ -1,0 +1,109 @@
+# Headless CSM OOBE related changes Begin
+on post-fs-data
+    mkdir /data/oobed/ 0755 oobe oobe
+    chown oobe /data/oobed/
+    chown oobe /data/oobed/oobe-web-setup.cert
+
+on property:com.amazon.puffin.OOBE_SETUP=1
+    start oobe_setup
+
+on property:com.amazon.puffin.OOBED_START=on_boot
+    start oobed_on_boot
+
+on property:com.amazon.puffin.OOBED_START=on_button_press
+    start oobed_on_press
+
+on property:com.amazon.puffin.OOBED_START=on_network_disconnect
+    start oobed_on_no_nw
+
+on property:sys.boot_completed=1
+    start def_firewall
+
+on property:lab126.populate.iptables=1
+    start en_p2p_firewall
+
+on property:lab126.populate.iptables=0
+     start dis_p2p_firewall
+
+on property:lab126.p2p.setup.nat=1
+     start en_p2p_nat
+
+on property:lab126.p2p.setup.nat=0
+     start dis_p2p_nat
+
+on property:lab126.oobe.start.tcptunnel=1
+     start en_port_frwd
+
+on property:lab126.oobe.start.tcptunnel=0
+     start dis_port_frwd
+
+service en_port_frwd /system/bin/firewall.sh start port_forwarding
+    user root
+    group dhcp
+    disabled
+    oneshot
+
+service dis_port_frwd /system/bin/firewall.sh stop port_forwarding
+    user root
+    group dhcp
+    disabled
+    oneshot
+
+service def_firewall /system/bin/firewall.sh start default
+     user root
+     group dhcp
+     disabled
+     oneshot
+
+service en_p2p_firewall /system/bin/firewall.sh start p2p
+     user root
+     group dhcp
+     disabled
+     oneshot
+
+service dis_p2p_firewall /system/bin/firewall.sh stop p2p
+     user root
+     group dhcp
+     disabled
+     oneshot
+
+service en_p2p_nat /system/bin/firewall.sh start nat
+     user root
+     group dhcp
+     disabled
+     oneshot
+
+service dis_p2p_nat /system/bin/firewall.sh stop nat
+     user root
+     group dhcp
+     disabled
+     oneshot
+
+service oobe_setup /system/bin/oobe_setup.sh
+     user root
+     group system shell bluetooth
+     disabled
+     oneshot
+
+service oobed_on_boot /system/bin/oobed -r 1
+    user oobe
+    group aipc oobe dbus system inet ace_kvstore keystore ace_group drmrpc ace_maplite davs
+    disabled
+    oneshot
+
+service oobed_on_press /system/bin/oobed -r 2
+    user oobe
+    group aipc oobe dbus system inet ace_kvstore keystore ace_group drmrpc ace_maplite davs
+    disabled
+    oneshot
+
+service oobed_on_no_nw /system/bin/oobed -r 3
+    user oobe
+    group aipc oobe dbus system inet ace_kvstore keystore ace_group drmrpc ace_maplite davs
+    disabled
+    oneshot
+
+# Headless CSM OOBE related changes End
+
+
+

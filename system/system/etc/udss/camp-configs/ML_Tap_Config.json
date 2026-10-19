@@ -1,0 +1,51 @@
+{
+	"description": "Expanded Tap pipeline",
+	"version": "1.0",
+	"CAMPSchemaVersion": "1.0",
+	"streams": [
+		{
+			"name": "IPCIn for Router Sub",
+			"type": "core.ipc.input",
+			"args": {
+				"publisher": "com.amazon.puffin",
+				"eventName": "TapSubscribe",
+				"payloadParamType": "int"
+			}
+		},
+		{
+			"name": "IPCIn for Router Unsub",
+			"type": "core.ipc.input",
+			"args": {
+				"publisher": "com.amazon.puffin",
+				"eventName": "TapUnsubscribe",
+				"payloadParamType": "int"
+			}
+		},
+		{
+			"name": "Tap Priority Stream",
+			"type": "Tap.TapPriorityCAMPStream",
+			"inputs": [
+				"IPCIn for Router Sub",
+				"IPCIn for Router Unsub"
+			]
+		},
+		{
+			"name": "Tap ML Event Stream",
+			"type": "Tap.TapMLEventLegacyCAMPStream",
+			"inputs": [
+				"Tap Priority Stream"
+			]
+		},
+		{
+			"name": "IPCOut for Tap Detection",
+			"type": "core.ipc.output",
+			"args": {
+				"eventName": "TapDetected",
+				"payloadParamType": "int"
+			},
+			"inputs": [
+				"Tap ML Event Stream"
+			]
+		}
+	]
+}

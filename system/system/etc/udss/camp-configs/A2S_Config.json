@@ -1,0 +1,59 @@
+{
+    "description": "A2S Tap pipeline responsible for handling the business logic on device",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "EnqueueObserverIPCInStream",
+            "type": "core.ipc.input",
+            "args": {
+                "publisher": "com.amazon.puffin",
+                "eventName": "TapSubscribe",
+                "payloadParamType": "int"
+            }
+        },
+        {
+            "name": "DequeueObserverIPCInStream",
+            "type": "core.ipc.input",
+            "args": {
+                "publisher": "com.amazon.puffin",
+                "eventName": "TapUnsubscribe",
+                "payloadParamType": "int"
+            }
+        },
+        {
+            "name": "A2SPriorityCAMPStream",
+            "type": "A2S.A2SPriorityCAMPStream",
+            "inputs": [
+                "EnqueueObserverIPCInStream",
+                "DequeueObserverIPCInStream"
+            ]
+        },
+        {
+            "name": "A2SDataProcessor",
+            "type": "A2S.A2SDataProcessor",
+            "inputs": [
+                "A2SPriorityCAMPStream"
+            ]
+        },
+        {
+            "name": "A2SDataPostProcessor",
+            "type": "A2S.A2SDataPostProcessor",
+            "inputs": [
+                "A2SDataProcessor"
+            ]
+        },
+        {
+            "name": "A2SPublishingStream",
+            "type": "core.ipc.output",
+            "args": {
+                "eventName": "TapDetected",
+                "cacheName": "TapDetected",
+                "payloadParamType": "int"
+            },
+            "inputs": [
+                "A2SDataProcessor"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [
+      {
+        "namespace": "Alexa.ColorController",
+        "version": "3",
+        "directiveName": "SetColor",
+        "operationName": "setColor"
+      }
+    ],
+    "properties": [
+      {
+        "deviceStateName": "color",
+        "applicationPropertyName": "color",
+        "version": "3",
+        "namespace": "Alexa.ColorController"
+      }
+    ],
+    "events": []
+  }
+}

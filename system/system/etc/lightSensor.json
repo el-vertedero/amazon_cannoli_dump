@@ -1,0 +1,33 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [],
+    "properties": [
+      {
+        "deviceStateName": "illuminance",
+        "applicationPropertyName": "illuminance",
+        "version": "3",
+        "namespace": "Alexa.LightSensor"
+      },
+      {
+        "deviceStateName": "illuminance",
+        "applicationPropertyName": "illuminance",
+        "version": "3.1",
+        "namespace": "Alexa.LightSensor"
+      },
+      {
+        "deviceStateName": "illuminance",
+        "applicationPropertyName": "illuminance",
+        "version": "1.0",
+        "namespace": "Alexa.LightSensor"
+      },
+      {
+        "deviceStateName": "illuminance",
+        "applicationPropertyName": "illuminance",
+        "version": "1.1",
+        "namespace": "Alexa.LightSensor"
+      }
+    ],
+    "events": []
+  }
+}

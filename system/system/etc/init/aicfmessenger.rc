@@ -1,0 +1,2 @@
+on post-fs
+    setprop aicfmessenger_enable 1

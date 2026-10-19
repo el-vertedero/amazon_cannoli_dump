@@ -1,0 +1,22 @@
+#!/system/bin/sh
+
+LOGFILE=/data/vendor/halo/var/log/hub-event.log
+
+touch $LOGFILE 2>/dev/null || LOGFILE=/dev/null
+
+[ -f /etc/default/hub-event ] && . /etc/default/hub-event
+
+mkdir -p /data/vendor/halo/run/hub-event
+
+export HUBSYS=`realpath $0`
+export HUBSYS_CLASS=$1
+export HUBSYS_EVENT=$2
+export HUBSYS_ACTION=$3
+
+export HUBSYS_PREV_EVENT=$(cat /data/vendor/halo/run/hub-event/$HUBSYS_CLASS.last 2>/dev/null)
+
+rp=/etc/hub-event/$HUBSYS_CLASS
+
+[ -d $rp ] && run-parts $rp -a "$HUBSYS_EVENT" -a "$HUBSYS_ACTION" >> $LOGFILE 2>&1
+
+echo $HUBSYS_EVENT > /data/vendor/halo/run/hub-event/$HUBSYS_CLASS.last

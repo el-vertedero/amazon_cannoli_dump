@@ -1,0 +1,11 @@
+on boot
+    mkdir /data/aicf 0700 aicf aicf
+
+# Start AicfD
+on post-fs-data
+    start aicfd
+
+
+service aicfd /system/bin/AicfD
+    user aicf
+    group aipc dbus ace_kvstore ace_group ace_maplite inet

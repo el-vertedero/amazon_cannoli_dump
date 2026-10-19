@@ -1,0 +1,5 @@
+service perfrecoveryd /system/bin/perfrecoveryd
+    user system
+    group system readproc aipc
+    writepid /dev/cpuctl/bg_non_interactive/cgroup.procs
+    class main

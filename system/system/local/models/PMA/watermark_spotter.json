@@ -1,0 +1,6 @@
+{
+    "config_type" : "watermark_spotter_config",
+    "config_version" : 1,
+    "lock_period_msec" : 50.0,
+    "snr_score_threshold" : 100
+}

@@ -1,0 +1,160 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.2",
+        "directiveName": "SetTargetTemperature",
+        "operationName": "setTargetTemperature"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.2",
+        "directiveName": "SetThermostatMode",
+        "operationName": "setThermostatMode"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.2",
+        "directiveName": "ResumeSchedule",
+        "operationName": "resumeSchedule"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.2",
+        "directiveName": "AdjustTargetTemperature",
+        "operationName": "adjustTargetTemperature"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.1",
+        "directiveName": "SetTargetTemperature",
+        "operationName": "setTargetTemperature"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.1",
+        "directiveName": "SetThermostatMode",
+        "operationName": "setThermostatMode"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.1",
+        "directiveName": "ResumeSchedule",
+        "operationName": "resumeSchedule"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3.1",
+        "directiveName": "AdjustTargetTemperature",
+        "operationName": "adjustTargetTemperature"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3",
+        "directiveName": "SetTargetTemperature",
+        "operationName": "setTargetTemperature"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3",
+        "directiveName": "SetThermostatMode",
+        "operationName": "setThermostatMode"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3",
+        "directiveName": "ResumeSchedule",
+        "operationName": "resumeSchedule"
+      },
+      {
+        "namespace": "Alexa.ThermostatController",
+        "version": "3",
+        "directiveName": "AdjustTargetTemperature",
+        "operationName": "adjustTargetTemperature"
+      }
+    ],
+    "properties": [
+      {
+        "deviceStateName": "targetSetpoint",
+        "applicationPropertyName": "targetSetpoint",
+        "version": "3",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "lowerSetpoint",
+        "applicationPropertyName": "lowerSetpoint",
+        "version": "3",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "upperSetpoint",
+        "applicationPropertyName": "upperSetpoint",
+        "version": "3",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "thermostatMode",
+        "applicationPropertyName": "thermostatMode",
+        "version": "3",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "targetSetpoint",
+        "applicationPropertyName": "targetSetpoint",
+        "version": "3.1",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "lowerSetpoint",
+        "applicationPropertyName": "lowerSetpoint",
+        "version": "3.1",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "upperSetpoint",
+        "applicationPropertyName": "upperSetpoint",
+        "version": "3.1",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "thermostatMode",
+        "applicationPropertyName": "thermostatMode",
+        "version": "3.1",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "targetSetpoint",
+        "applicationPropertyName": "targetSetpoint",
+        "version": "3.2",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "lowerSetpoint",
+        "applicationPropertyName": "lowerSetpoint",
+        "version": "3.2",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "upperSetpoint",
+        "applicationPropertyName": "upperSetpoint",
+        "version": "3.2",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "thermostatMode",
+        "applicationPropertyName": "thermostatMode",
+        "version": "3.2",
+        "namespace": "Alexa.ThermostatController"
+      },
+      {
+        "deviceStateName": "adaptiveRecoveryStatus",
+        "applicationPropertyName": "adaptiveRecoveryStatus",
+        "version": "3.2",
+        "namespace": "Alexa.ThermostatController"
+      }
+    ],
+    "events": []
+  }
+}

@@ -1,0 +1,311 @@
+{
+    "version": 1.0,
+    "eventGroups": [
+        {
+            "groupName": "DAC_EVENT_GROUP_WAKEWORD",
+            "groupId": 1,
+            "events": [
+                {
+                    "eventName": "DAC_EVENT_WAKEWORD_PAUSE",
+                    "eventId": 1
+                },
+                {
+                    "eventName": "DAC_EVENT_WAKEWORD_RESUME",
+                    "eventId": 2
+                }
+            ]
+        },
+        {
+            "groupName": "DAC_EVENT_GROUP_AED",
+            "groupId": 2,
+            "events": [
+                {
+                    "eventName": "DAC_EVENT_AED_PAUSE",
+                    "eventId": 4
+                },
+                {
+                    "eventName": "DAC_EVENT_AED_RESUME",
+                    "eventId": 8
+                }
+            ]
+        },
+        {
+            "groupName": "DAC_EVENT_GROUP_MEMORY_CRITICAL",
+            "groupId": 3,
+            "events": [
+                {
+                    "eventName": "DAC_EVENT_ODIE_STOP_SERVICE",
+                    "eventId": 16
+                }
+            ]
+        },
+        {
+            "groupName": "DAC_EVENT_GROUP_STOP_SERVICE",
+            "groupId": 4,
+            "events": [
+                {
+                    "eventName": "DAC_EVENT_GADGETSD_STOP_SERVICE",
+                    "eventId": 32
+                },
+                {
+                    "eventName": "DAC_EVENT_ASSETMGRD_STOP_SERVICE",
+                    "eventId": 64
+                }
+            ]
+        }
+    ],
+    "components": [
+        {
+            "identifier": "AHELiteSpeed",
+            "processName": "AlexaHybridExecutionControllerLitespeed",
+            "memoryRequirement": 22000,
+            "startProperty": "com.amazon.ahe.run true",
+            "stopProperty": "com.amazon.ahe.run false",
+            "autostart": false,
+            "tasks": [
+                {
+                    "identifier": "AHE_RECOGNIZE_AUDIO_PROCESSING",
+                    "priorityType": "DAC_TASK_CRITICAL",
+                    "priorityValue": 99,
+                    "minimumGuaranteedRuntime": 5000,
+                    "preempt": false
+                },
+                {
+                    "identifier": "START_PROCESS",
+                    "priorityType": "DAC_TASK_NORMAL",
+                    "priorityValue": 90,
+                    "minimumGuaranteedRuntime": 180000,
+                    "preempt": true
+                }
+            ]
+        },
+        {
+            "identifier": "AHEBlueBottle",
+            "processName": "AlexaHybridExecutionControllerBlueBottle",
+            "tasks": [
+                {
+                    "identifier": "AHE_RECOGNIZE_AUDIO_PROCESSING",
+                    "priorityType": "DAC_TASK_CRITICAL",
+                    "priorityValue": 99,
+                    "minimumGuaranteedRuntime": 5000,
+                    "preempt": false
+                }
+            ]
+        },
+        {
+            "identifier": "GadgetsD",
+            "processName": "gadgetsd",
+            "memoryRequirement": 4000,
+            "startProperty": "com.amazon.gadgetsd.run 1",
+            "stopProperty": "com.amazon.gadgetsd.run 0",
+            "autostart": false,
+            "tasks": [
+                {
+                    "identifier": "START_PROCESS",
+                    "priorityType": "DAC_TASK_CRITICAL",
+                    "priorityValue": 99,
+                    "minimumGuaranteedRuntime": -1,
+                    "preempt": false
+                }
+            ]
+        },
+        {
+            "identifier": "AssetmgrD",
+            "processName": "assetmgrd",
+            "memoryRequirement": 5000,
+            "startProperty": "com.amazon.assetmgrd.run 1",
+            "stopProperty": "com.amazon.assetmgrd.run 0",
+            "autostart": false,
+            "tasks": [
+                {
+                    "identifier": "START_PROCESS",
+                    "priorityType": "DAC_TASK_CRITICAL",
+                    "priorityValue": 99,
+                    "minimumGuaranteedRuntime": -1,
+                    "preempt": false
+                }
+            ]
+        },
+        {
+            "identifier": "CredentialManager",
+            "processName": "AceCredentialManagerService",
+            "memoryRequirement": 2000,
+            "startProperty": "com.amazon.credmgr.run 1",
+            "stopProperty": "com.amazon.credmgr.run 0",
+            "autostart": false,
+            "tasks": [
+                {
+                    "identifier": "START_PROCESS",
+                    "priorityType": "DAC_TASK_CRITICAL",
+                    "priorityValue": 99,
+                    "minimumGuaranteedRuntime": -1,
+                    "preempt": false
+                }
+            ]
+        }
+    ],
+    "rules": [
+        {
+            "name": "AHELiteSpeedWakewordControl",
+            "identifier": {
+                "componentId": "AHELiteSpeed",
+                "taskId": "AHE_RECOGNIZE_AUDIO_PROCESSING"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_STARTED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_WAKEWORD",
+                            "eventName": "DAC_EVENT_WAKEWORD_PAUSE"
+                        }
+                    ]
+                },
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_WAKEWORD",
+                            "eventName": "DAC_EVENT_WAKEWORD_RESUME"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AHELiteSpeedAEDControl",
+            "identifier": {
+                "componentId": "AHELiteSpeed",
+                "taskId": "AHE_RECOGNIZE_AUDIO_PROCESSING"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_STARTED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_AED",
+                            "eventName": "DAC_EVENT_AED_PAUSE"
+                        }
+                    ]
+                },
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_AED",
+                            "eventName": "DAC_EVENT_AED_RESUME"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AHEBlueBottleWakewordControl",
+            "identifier": {
+                "componentId": "AHEBlueBottle",
+                "taskId": "AHE_RECOGNIZE_AUDIO_PROCESSING"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_STARTED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_WAKEWORD",
+                            "eventName": "DAC_EVENT_WAKEWORD_PAUSE"
+                        }
+                    ]
+                },
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_WAKEWORD",
+                            "eventName": "DAC_EVENT_WAKEWORD_RESUME"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AHEBlueBottleAEDControl",
+            "identifier": {
+                "componentId": "AHEBlueBottle",
+                "taskId": "AHE_RECOGNIZE_AUDIO_PROCESSING"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_STARTED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_AED",
+                            "eventName": "DAC_EVENT_AED_PAUSE"
+                        }
+                    ]
+                },
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_AED",
+                            "eventName": "DAC_EVENT_AED_RESUME"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ODIEPeakOffloading",
+            "identifier": {
+                "componentId": "AHELiteSpeed",
+                "taskId": "START_PROCESS"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_MEMORY_CRITICAL",
+                            "eventName": "DAC_EVENT_ODIE_STOP_SERVICE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "GadgetsDOffloading",
+            "identifier": {
+                "componentId": "GadgetsD",
+                "taskId": "START_PROCESS"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_STOP_SERVICE",
+                            "eventName": "DAC_EVENT_GADGETSD_STOP_SERVICE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AssetmgrDOffloading",
+            "identifier": {
+                "componentId": "AssetmgrD",
+                "taskId": "START_PROCESS"
+            },
+            "actions": [
+                {
+                    "message": "DAC_TASK_COMPLETED",
+                    "events": [
+                        {
+                            "eventGroup": "DAC_EVENT_GROUP_STOP_SERVICE",
+                            "eventName": "DAC_EVENT_ASSETMGRD_STOP_SERVICE"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

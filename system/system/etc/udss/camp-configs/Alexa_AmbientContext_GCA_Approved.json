@@ -1,0 +1,21 @@
+{
+    "description": "See https://wiki.labcollab.net/confluence/display/HOME/Context+Ingestion+and+Retrieval+API+Review",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "AmbientContext_approved",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.AmbientContext",
+                        "version": "1.0"
+                    },
+                    "eventProxy": true
+                }
+            }
+        }
+    ]
+}

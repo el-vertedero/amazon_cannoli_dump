@@ -1,0 +1,52 @@
+{
+    "object_type_name" : "watermark-config",
+    "object_type_version" : 1,
+
+    "frame_len_msec" : 10.0,
+    "extractions_per_frame" : 1,
+
+    "signal_score_len_msec" : 50.0,
+    "noise_score_len_msec" : 250.0,
+    "gap_len_msec" : 50.0,
+
+    "pre_wakeword_match_distance_msec" : 100.0,
+    "post_wakeword_match_distance_msec" : 100.0,
+    "wakeword_match_history_msec" : 900.0,
+
+    "enabled_keys" : [
+        {
+            "enable_type" : "active",
+            "intentional_leak_rate" : 0.005,
+            "snr_threshold": 5.08,
+            "barely_suppressed_snr_threshold": 6.0,
+            "key_hash" : "31daa0390e909cfa49d37b2cd437a18b",
+            "keyword_name": "ALEXA",
+            "client_properties_overrides" : [
+                {
+                    "client_property" : "AlarmState",
+                    "condition_function" : {
+                        "operand" : 0,
+                        "name" : "notequals"
+                    },
+                    "enable_type" : "shadow"
+                },
+                {
+                    "client_property" : "AudioPlayerState",
+                    "condition_function" : {
+                        "operand" : 0,
+                        "name" : "notequals"
+                    },
+                    "enable_type" : "shadow"
+                },
+                {
+                    "client_property" : "audio_playback",
+                    "condition_function" : {
+                        "operand" : 0,
+                        "name" : "notequals"
+                    },
+                    "enable_type" : "shadow"
+                }
+            ]
+        }
+    ]
+}

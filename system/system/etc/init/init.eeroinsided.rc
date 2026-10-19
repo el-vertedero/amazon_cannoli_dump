@@ -1,0 +1,45 @@
+# Start eeroinsided
+on property:init.svc.oobe_setup=stopped
+    start eeroinsided
+    mkdir /data/eeroinside 0755 eero eero
+    mkdir /mnt/eero 0755 eero eero
+    mount tmpfs tmpfs /mnt/eero mode=0755,uid=5133,gid=5133,size=4K,context=u:object_r:eeroinsided_tmpfs:s0
+    write /mnt/eero/sta_stats.log ""
+    chmod 0644 /mnt/eero/sta_stats.log
+    chown eero eero /mnt/eero/sta_stats.log
+    write /data/misc/wifi/hostapd.deny ""
+    chmod 0644 /data/misc/wifi/hostapd.deny
+    chown eero eero /data/misc/wifi/hostapd.deny
+    write /data/misc/wifi/mesh_error.log ""
+    chmod 0644 /data/misc/wifi/mesh_error.log
+    chown eero eero /data/misc/wifi/mesh_error.log
+    write /data/eeroinside/analytics.log ""
+    chmod 0644 /data/eeroinside/analytics.log
+    chown eero eero /data/eeroinside/analytics.log
+    mkdir /mnt/hostapd 0755 wifi wifi
+    mount tmpfs tmpfs /mnt/hostapd mode=0755,uid=1010,gid=1010,size=4K,context=u:object_r:hostapd_volatile:s0
+    write /mnt/hostapd/hostapd.pid ""
+    chmod 0644 /mnt/hostapd/hostapd.pid
+    chown wifi wifi /mnt/hostapd/hostapd.pid
+
+# eeroinsided service start
+service eeroinsided /system/bin/eeroinsided
+    user  root
+    group wifi inet aipc system dbus dhcp shell ace_group net_admin net_raw readproc
+
+service mesh_supplicant /system/bin/wpa_supplicant \
+    -imesh0 -c/data/misc/wifi/mesh_supplicant.conf \
+    -O/data/misc/wifi/sockets -g@android:wpa_wlan0
+    class main
+    socket wpa_wlan0 dgram 660 wifi wifi
+    disabled
+    oneshot
+
+service mesh_hostapd /system/bin/hostapd \
+    /data/misc/wifi/hostapd.conf
+    class main
+    disabled
+    oneshot
+
+on property:eeroinsided.mesh.status=connected
+    restorecon_recursive /sys/kernel/debug/ieee80211

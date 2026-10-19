@@ -1,0 +1,9 @@
+on post-fs-data
+    mkdir /data/provisionerd 0700 provisionerd provisionerd
+    mkdir /data/provisionerd/configs 0700 provisionerd provisionerd
+    mkdir /data/provisionerd/configs/tests 0700 provisionerd provisionerd
+
+service provisionerd /system/bin/provisionerd
+    class late_start
+    user provisionerd
+    group aipc inet dbus ace_group system ace_maplite ace_kvstore bluetooth

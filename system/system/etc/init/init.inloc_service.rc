@@ -1,0 +1,29 @@
+#
+# Copyright 2021-2025 Amazon.com, Inc. or its affiliates. All rights reserved.
+#
+# AMAZON PROPRIETARY/CONFIDENTIAL
+#
+# You may not use this file except in compliance with the terms and conditions
+# set forth in the accompanying LICENSE.TXT file.
+#
+# THESE MATERIALS ARE PROVIDED ON AN "AS IS" BASIS. AMAZON SPECIFICALLY
+# DISCLAIMS, WITH RESPECT TO THESE MATERIALS, ALL WARRANTIES, EXPRESS,
+# IMPLIED, OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+#
+
+on post-fs-data
+    mkdir /data/misc/inloc 776 inloc inloc
+    chmod 776 /data/misc/inloc/inloc_pdb.json
+    chmod 776 /data/misc/inloc/inloc_pdb.json.tmp
+    chmod 776 /data/misc/inloc/inloc_cdb.json
+    chmod 776 /data/misc/inloc/inloc_cdb.json.tmp
+    chmod 776 /data/misc/inloc/inloc_alexa_presence_db.json
+    chmod 776 /data/misc/inloc/inloc_alexa_presence_db.json.tmp
+    start inloc_service
+
+service inloc_service /system/bin/indoor_localization_service
+	class main
+	user inloc
+	group inloc inet aipc bluetooth dbus ace_group ace_maplite ace_kvstore
+	disabled

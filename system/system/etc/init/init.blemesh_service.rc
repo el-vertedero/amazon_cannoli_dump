@@ -1,0 +1,39 @@
+#
+# Copyright 2021-2024 Amazon.com, Inc. or its affiliates. All rights reserved.
+#
+# AMAZON PROPRIETARY/CONFIDENTIAL
+#
+# You may not use this file except in compliance with the terms and conditions
+# set forth in the accompanying LICENSE.TXT file.
+#
+# THESE MATERIALS ARE PROVIDED ON AN "AS IS" BASIS. AMAZON SPECIFICALLY
+# DISCLAIMS, WITH RESPECT TO THESE MATERIALS, ALL WARRANTIES, EXPRESS,
+# IMPLIED, OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+#
+
+on post-fs-data
+    mkdir /data/misc/blemesh
+    chown blemesh blemesh /data/misc/blemesh
+    chmod 0777 /data/misc/blemesh
+    chown blemesh blemesh /data/misc/blemesh/mesh_cdb.json
+    chown blemesh blemesh /data/misc/blemesh/mesh_cdb_backup.json
+    chown blemesh blemesh /data/misc/blemesh/mesh_cdb.json.tmp
+    chown blemesh blemesh /data/misc/blemesh/mesh_cdb_backup.json.tmp
+    chown blemesh blemesh /data/misc/blemesh/mesh_pdb.json
+    chown blemesh blemesh /data/misc/blemesh/mesh_pdb.json.tmp
+    chmod 0776 /data/misc/blemesh/mesh_cdb.json
+    chmod 0776 /data/misc/blemesh/mesh_cdb_backup.json
+    chmod 0776 /data/misc/blemesh/mesh_cdb.json.tmp
+    chmod 0776 /data/misc/blemesh/mesh_cdb_backup.json.tmp
+    chmod 0776 /data/misc/blemesh/mesh_pdb.json
+    chmod 0776 /data/misc/blemesh/mesh_pdb.json.tmp
+
+on property:kvs_init_completed=1
+    start blemesh_service
+
+service blemesh_service /system/bin/ace_blemesh_service
+    class main
+    user blemesh
+    group blemesh aipc bluetooth dbus ace_kvstore ace_group
+    disabled

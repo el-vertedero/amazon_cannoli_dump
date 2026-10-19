@@ -1,0 +1,8 @@
+{
+    "supportedDeviceTypes" : [
+        {
+            "deviceType": "0x0075",
+            "displayCategories": ["DISHWASHER"]
+        }
+    ]
+}

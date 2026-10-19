@@ -1,0 +1,54 @@
+{
+    "compatible": "pwrsvc",
+    "version": 1,
+
+    "global": {
+        "autosleep_forbidden": false,
+        "grace_period_ms": 500,
+        "check_treatment_value": false
+    },
+
+    "perflock": {
+        "cpu" : {
+            "normal": [
+                {
+                    "default": true,
+                    "sysfs": true,
+                    "node": "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor",
+                    "value": "schedutil"
+                }
+            ],
+            "performance": [
+                {
+                    "sysfs": true,
+                    "node": "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor",
+                    "value": "performance"
+                }
+            ]
+        },
+        "network" : {
+            "powersave": [
+                {
+                    "default": true,
+                    "sysfs": false,
+                    "node": "ace_wifi_power_save_on",
+                    "value": "1"
+                }
+            ],
+            "normal": [
+                {
+                    "sysfs": false,
+                    "node": "ace_wifi_power_save_off",
+                    "value": ""
+                }
+            ],
+            "performance": [
+                {
+                    "sysfs": false,
+                    "node": "ace_wifi_power_save_off",
+                    "value": ""
+                }
+            ]
+		}
+	}
+}

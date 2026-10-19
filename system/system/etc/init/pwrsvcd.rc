@@ -1,0 +1,34 @@
+#
+# Copyright (c) 2020 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+service pwrsvcd /system/bin/pwrsvcd
+    class main
+    user pwrsvcd
+    group aipc dbus wakelock system
+
+service lpm_on /system/bin/pwrsvc_autosleep.sh on
+    user system
+    group aipc
+    oneshot
+    disabled
+
+ service lpm_off /system/bin/pwrsvc_autosleep.sh off
+    user system
+    group aipc
+    oneshot
+    disabled
+
+on property:com.amazon.puffin.LPM_ELIGIBLE=1 && property:persist.pwrsvc.LPM_ENABLED=1
+    start lpm_on
+
+on property:persist.pwrsvc.LPM_ENABLED=0
+    start lpm_off
+
+on property:com.amazon.puffin.LPM_ELIGIBLE=0
+    start lpm_off
+
+on post-fs-data
+    mkdir /data/pwrsvcd 0740 pwrsvcd pwrsvcd

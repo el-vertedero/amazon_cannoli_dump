@@ -1,0 +1,4 @@
+service shs /system/bin/start_shs.sh
+    class main
+    user ahe_shs
+    group ahe aipc dbus inet ace_kvstore ace_group ace_maplite davs

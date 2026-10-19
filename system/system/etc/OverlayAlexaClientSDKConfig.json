@@ -1,0 +1,30 @@
+{
+    "bluetooth": {
+        "adapterPrefix": "Echo Dot"
+    },
+    "mrm": {
+        "capabilities": {
+            "WholeHomeAudio": {
+                "configurations": {
+                    "assignableChannels": ["ALL", "FRONT_LEFT", "FRONT_RIGHT"],
+                    "clusterTypes": ["CLASSIC_CLUSTER", "BONDED_CLUSTER", "HOME_THEATER_CLUSTER"],
+                    "streamTypes": ["BUFFERED", "REAL_TIME"],
+                    "connectivity": {
+                        "softAP": {
+                            "roles": ["CLIENT"]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "externalMediaPlayer": {
+        "players": {
+            "Spotify:ESDK": {
+                "displayName": "Echo Dot",
+                "modelName": "Echo_Dot",
+                "productId": 2000000006
+            }
+        }
+    }
+}

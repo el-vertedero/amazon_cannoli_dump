@@ -1,0 +1,25 @@
+#
+# Copyright (c) Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on property:sys.boot_completed=1
+    mkdir /data/udss
+    mkdir /data/udss/camp-configs-working-dir
+    mkdir /data/udss/setting
+    chown system system /data/udss
+    chown system system /data/udss/camp-configs-working-dir
+    chown system system /data/udss/setting
+    chmod 0777 /data/udss
+    chmod 0777 /data/udss/camp-configs-working-dir
+    chmod 0777 /data/udss/setting
+    chmod g+rw /data/avs/resources/deviceSettingsDatabase.db
+
+    start UdssCampSvc
+
+service UdssCampSvc /system/bin/UdssCampD
+    class main
+    user system
+    group aipc dbus wakelock system puffin ace_kvstore ace_group davs
+    disabled

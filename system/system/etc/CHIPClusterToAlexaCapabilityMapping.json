@@ -1,0 +1,97 @@
+{
+    "clusterTransformerList" : [
+        {
+            "clusterId": "0x0059",
+            "capability": "ModeControllerCapability",
+            "type": "PRIMITIVE_CONTROLLER",
+            "value": {
+                "instanceId": "dishwasher.mode",
+                "friendlyName": "Mode",
+                "proactivelyReported": true,
+                "isRetrievable": true,
+                "isControllable": true,
+                "genericModeControllerConfig": {
+                    "type": "MODE_BASE",
+                    "attributeToSubscribe": {
+                        "attributeId": "0x0001",
+                        "argumentType": "Number_uint8"
+                    },
+                    "attributeToProvideModes": {
+                        "attributeId": "0x0000",
+                        "argumentType": "List",
+                        "subArgumentType": "String"
+                    }
+                }
+            },
+            "requiresInitialization":true
+        },
+        {
+            "clusterId": "0x0060",
+            "capability": "ModeControllerCapability",
+            "type": "PRIMITIVE_CONTROLLER",
+            "value": {
+                "instanceId": "operationalState.currentPhase",
+                "friendlyName": "Current Phase",
+                "proactivelyReported": true,
+                "isRetrievable": true,
+                "isControllable": false,
+                "genericModeControllerConfig": {
+                    "type": "NUMBER",
+                    "attributeToSubscribe": {
+                        "attributeId": "0x0001",
+                        "argumentType": "Number_uint8"
+                    },
+                    "attributeToProvideModes": {
+                        "attributeId": "0x0000",
+                        "argumentType": "List",
+                        "subArgumentType": "String"
+                    }
+                }
+            },
+            "requiresInitialization":true
+        },
+        {
+            "clusterId": "0x0060",
+            "capability": "ModeControllerCapability",
+            "type": "PRIMITIVE_CONTROLLER",
+            "value": {
+                "instanceId": "operationalState.operationalState",
+                "friendlyName": "Operational State",
+                "proactivelyReported": true,
+                "isRetrievable": true,
+                "isControllable": true,
+                "genericModeControllerConfig": {
+                    "type": "OPERATIONAL_STATE",
+                    "attributeToSubscribe": {
+                        "attributeId": "0x0004",
+                        "argumentType": "Number_uint8"
+                    },
+                    "attributeToProvideModes": {
+                        "attributeId": "0x0003",
+                        "argumentType": "List",
+                        "subArgumentType": "String"
+                    },
+                    "modeToFriendlyNameList": [
+                        {
+                            "modeEnum": "0",
+                            "friendlyName": "STOPPED"
+                        },
+                        {
+                            "modeEnum": "1",
+                            "friendlyName": "RUNNING"
+                        },
+                        {
+                            "modeEnum": "2",
+                            "friendlyName": "PAUSED"
+                        },
+                        {
+                            "modeEnum": "3",
+                            "friendlyName": "ERROR"
+                        }
+                    ]
+                }
+            },
+            "requiresInitialization":true
+        }
+    ]
+}

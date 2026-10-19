@@ -1,0 +1,15 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [],
+    "properties": [
+      {
+        "deviceStateName": "detectionState",
+        "applicationPropertyName": "detectionState",
+        "version": "3",
+        "namespace": "Alexa.ContactSensor"
+      }
+    ],
+    "events": []
+  }
+}

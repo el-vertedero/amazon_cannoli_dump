@@ -1,0 +1,25 @@
+{
+    "description": "See https://wiki.labcollab.net/confluence/display/HOME/Context+Ingestion+and+Retrieval+Design",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "AmbientContext_GCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.Context",
+                        "version": "1.0"
+                    },
+                    "directives": [
+                        {
+                            "name": "Retrieve"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

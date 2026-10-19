@@ -1,0 +1,15 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [],
+    "properties": [
+      {
+        "deviceStateName": "relativeHumidity",
+        "applicationPropertyName": "relativeHumidity",
+        "version": "3",
+        "namespace": "Alexa.HumiditySensor"
+      }
+    ],
+    "events": []
+  }
+}

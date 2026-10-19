@@ -1,0 +1,15 @@
+# Luma init.rc configuration
+
+on post-fs-data
+     mkdir /data/misc/lumaoda
+     chown wifi wifi /data/misc/lumaoda
+     chmod 0777 /data/misc/lumaoda
+
+# luma_svc needs to start as root to get NET_RAW capability
+# it changes to nonroot after start and keep the capability
+# needed
+service luma_svc /system/bin/luma_svc
+    class late_start
+    user root
+    group system wifi dbus aipc inet net_admin ace_group
+

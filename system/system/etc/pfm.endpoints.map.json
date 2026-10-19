@@ -1,0 +1,137 @@
+{
+  "info": {
+    "name": "PFM to Endpoints Map",
+    "version": "1.0"
+  },
+  "endpoints_list": {
+    "DAVS": {
+      "NA": "https://api.amazonalexa.com",
+      "EU": "https://api.eu.amazonalexa.com",
+      "FE": "https://api.fe.amazonalexa.com"
+    },
+    "MLIS": {
+      "NA": "https://mlis.amazon.com",
+      "EU": "https://mlis.amazon.eu",
+      "FE": "https://mlis.amazon.fe"
+      }
+    },
+  "pfm_list": {
+    "ATVPDKIKX0DER":  "US_PFM",
+    "A1F83G8C2ARO7P": "UK_PFM",
+    "A1PA6795UKMFR9": "DE_PFM",
+    "A21TJRUUN4KGV": "IN_PROD_PFM",
+    "A2XZLSVIQ0F4JT": "IN_DEVO_PFM",
+    "A2EUQ1WTGCTBG2": "CA_PFM",
+    "A13V1IB3VIYZZH": "FR_PFM",
+    "A1RKKUPIHCS9HS": "ES_PFM",
+    "APJ6JRA9NG5V4": "IT_PFM",
+    "A1VC38T7YXB528": "JP_PFM",
+    "AAHKV2X7AFYLW": "CN_PFM",
+    "A2Q3Y263D00KWC": "BR_PROD_PFM",
+    "AZXD3QD5B39HD": "BR_DEVO_PFM",
+    "A1AM78C64UM0Y8": "MX_PROD_PFM",
+    "A3P3J5A7D2ZVXI": "MX_DEVO_PFM",
+    "A39IBJ37TRP1C6": "AU_PROD_PFM",
+    "A1RNPCQ4K8U27I": "AU_DEVO_PFM",
+    "AD2EMQ3L3PG8S": "RU_PROD_PFM",
+    "A38NPJYVS5YHNH": "RU_DEVO_PFM",
+    "A1805IZSGTT6HS": "NL_PROD_PFM",
+    "A1M3WC0SJ3A38T": "NL_DEVO_PFM",
+    "A3BUE4CVFSERTV": "ID_PROD_PFM",
+    "A3AXUV5MEX8R86": "ID_DEVO_PFM"
+  },
+  "pfm_to_endpoints_map": {
+    "US_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "UK_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "DE_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "ES_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "FR_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "IN_PROD_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "IN_DEVO_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "IT_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "CA_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "CN_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "BR_PROD_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "BR_DEVO_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "MX_PROD_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "MX_DEVO_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "JP_PFM": {
+      "DAVS": "FE",
+      "MLIS": "FE"
+    },
+    "AU_PROD_PFM": {
+      "DAVS": "FE",
+      "MLIS": "FE"
+    },
+    "AU_DEVO_PFM": {
+      "DAVS": "FE",
+      "MLIS": "FE"
+    },
+    "RU_PROD_PFM": {
+      "DAVS": "EU",
+      "MLIS": ""
+    },
+    "RU_DEVO_PFM": {
+      "DAVS": "EU",
+      "MLIS": ""
+    },
+    "NL_PROD_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "NL_DEVO_PFM": {
+      "DAVS": "EU",
+      "MLIS": "EU"
+    },
+    "ID_PROD_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    },
+    "ID_DEVO_PFM": {
+      "DAVS": "NA",
+      "MLIS": "NA"
+    }
+  }
+}

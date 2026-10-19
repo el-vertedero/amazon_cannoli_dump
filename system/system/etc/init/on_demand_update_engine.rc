@@ -1,0 +1,9 @@
+// fosmod_on_demand_update_engine newfile
+
+service update_engine /system/bin/update_engine --logtostderr --logtofile --foreground
+    class late_start
+    user root
+    group root system wakelock dbus inet cache
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+

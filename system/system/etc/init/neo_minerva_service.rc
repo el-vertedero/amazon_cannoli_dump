@@ -1,0 +1,6 @@
+on post-fs-data
+    mkdir /data/minerva 0751 ace_metricd ace_metricd
+    mkdir /data/minerva/metrics 0751 ace_metricd ace_metricd
+    mkdir /data/minerva/metrics/app_data 0700 ace_metricd ace_metricd
+    chown ace_metricd ace_metricd /data/minerva
+    chown ace_metricd ace_metricd /data/minerva/metrics

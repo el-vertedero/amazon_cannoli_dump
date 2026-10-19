@@ -1,0 +1,865 @@
+{
+    "comments": "crumpet UX config",
+    "events":[
+        {
+            "name": "listening",
+            "animation": {"caName": "ca-active-start", "raName": "ca-active-start", "transparent": false, "groupId": 0}
+        },
+        {
+            "name": "thinking",
+            "animation": {"name": "active-thinking", "transparent": true, "groupId": 0}
+        },
+        {
+            "name": "talking",
+            "animation": {"name": "active-talking", "transparent": true, "groupId": 0}
+        },
+        {
+            "name": "speech-end",
+            "animation": {"caName": "ca-active-end", "raName": "ca-active-end", "transparent": false, "groupId": 0}
+        },
+        {
+            "name": "quiet-ota-reboot",
+            "animation": {"name": "OTA_alert", "transparent": false, "groupId": 0}
+        },
+        {
+            "name": "error-noalexapostlaunchmsg",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+            "earcon": [
+                {"name": "ui_error_generic_1.mp3", "tts": false},
+                {"name": "system_prompt_error_offline_not_connected_to_service_else.mp3", "tts": true}
+            ]
+        },
+        {
+          "name": "error-noprofilepostlaunchmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_no_profile_else.mp3", "tts": true}
+          ]
+        },
+        {
+            "name": "error-donotsendvoicerecordingmsg",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+            "earcon": [
+              {"name": "ui_error_generic_1.mp3", "tts": false},
+              {"name": "system_prompt_error_do_not_send_voice_recording.mp3", "tts": true}
+            ]
+        },
+        {
+          "name": "error-nowifipostlaunchmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_info_about_connecting_else.mp3", "tts": true}
+          ]
+        },
+        {
+          "name": "error-regprelaunchmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_not_registered.mp3", "tts": true}
+          ]
+        },
+        {
+          "name": "error-noalexaprelaunchmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_not_connected_to_service.mp3", "tts": true}
+          ]
+        },
+        {
+          "name": "error-noprofilepreregistration",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_no_profile.mp3", "tts": true}
+          ]
+        },
+        {
+          "name": "error-nowifiprelaunchmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_info_about_connecting.mp3", "tts": true}
+          ]
+        },
+        {
+          "name": "error-captiveportalmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_captive_portal.mp3", "tts": true}
+          ]
+        },
+        {
+          "name": "error-regpostlaunchmsg",
+          "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+          "earcon": [
+            {"name": "ui_error_generic_1.mp3", "tts": false},
+            {"name": "system_prompt_error_offline_not_registered_else.mp3", "tts": true}
+          ]
+        },
+        {
+            "name": "error-noalexablockuio",
+            "earcon": [{"name": "system_prompt_ota_forced_button_press.mp3", "tts": true}]
+        },
+        {
+            "name": "ntt-on",
+            "animation": {"name": "ntt-listening", "transparent": false, "groupId": 25}
+        },
+        {
+            "name": "volume-step-01",
+            "animation": {"name": "volume_step-01", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-02",
+            "animation": {"name": "volume_step-02", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-03",
+            "animation": {"name": "volume_step-03", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-04",
+            "animation": {"name": "volume_step-04", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-05",
+            "animation": {"name": "volume_step-05", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-06",
+            "animation": {"name": "volume_step-06", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-07",
+            "animation": {"name": "volume_step-07", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-08",
+            "animation": {"name": "volume_step-08", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-09",
+            "animation": {"name": "volume_step-09", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-10",
+            "animation": {"name": "volume_step-10", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-11",
+            "animation": {"name": "volume_step-11", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-12",
+            "animation": {"name": "volume_step-12", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-13",
+            "animation": {"name": "volume_step-13", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-14",
+            "animation": {"name": "volume_step-14", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-15",
+            "animation": {"name": "volume_step-15", "transparent": true, "groupId": 1},
+            "earcon":[{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-16",
+            "animation": {"name": "volume_step-16", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-17",
+            "animation": {"name": "volume_step-17", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-18",
+            "animation": {"name": "volume_step-18", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-19",
+            "animation": {"name": "volume_step-19", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-20",
+            "animation": {"name": "volume_step-20", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-21",
+            "animation": {"name": "volume_step-21", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-22",
+            "animation": {"name": "volume_step-22", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-23",
+            "animation": {"name": "volume_step-23", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-24",
+            "animation": {"name": "volume_step-24", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-25",
+            "animation": {"name": "volume_step-25", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-26",
+            "animation": {"name": "volume_step-26", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-27",
+            "animation": {"name": "volume_step-27", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-28",
+            "animation": {"name": "volume_step-28", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-29",
+            "animation": {"name": "volume_step-29", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-step-30",
+            "animation": {"name": "volume_step-30", "transparent": true, "groupId": 1},
+            "earcon": [{"name": "state_volume_adjust_tone.mp3", "tts": false}],
+            "immediate": true,
+            "preemptive": true
+        },
+        {
+            "name": "volume-muted",
+            "animation": {"name": "volume-muted", "transparent": true, "groupId": 1},
+            "preemptive": true
+        },
+        {
+            "name": "mics-off-start",
+            "animation": {"name": "mics-off_start", "transparent": true, "groupId": 2},
+            "preemptive": true
+        },
+        {
+            "name": "mics-off-end",
+            "animation": {"name": "mics-off_end", "transparent": true, "groupId": 2},
+            "preemptive": true
+        },
+        {
+            "name": "mics-off-on",
+            "animation": {"name": "mics-off_on", "transparent": true, "groupId": 2},
+            "preemptive": true
+        },
+        {
+            "name": "ready-alarm",
+            "animation": {"name": "ready-alarm", "transparent": true, "groupId": 3}
+        },
+        {
+            "name": "ready-alarm-short",
+            "animation": {"name": "ready-alarm-short", "transparent": true, "groupId": 3},
+            "preemptive": true
+        },
+        {
+            "name": "ready-timer",
+            "animation": {"name": "ready-timer", "transparent": true, "groupId": 4}
+        },
+        {
+            "name": "ready-timer-short",
+            "animation": {"name": "ready-timer-short", "transparent": true, "groupId": 4},
+            "preemptive": true
+        },
+        {
+            "name": "factory-reset",
+            "animation": {"name": "factory-reset", "transparent": false, "groupId": 5},
+            "earcon": [{"name": "system_shallow_factory_reset.mp3", "tts": true}],
+            "immediate": true
+        },
+        {
+            "name": "advanced-factory-reset",
+            "animation": {"name": "factory-reset", "transparent": false, "groupId": 5},
+            "earcon": [
+                {"name": "system_deep_factory_reset.mp3", "tts": true},
+                {"name": "system_shallow_factory_reset.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "oobe-setup-mode-on",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_oobe_setup_mode_on.mp3", "tts": true}]
+        },
+        {
+            "name": "state-setup-mode-on",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "state_setup_mode_on.mp3", "tts": false}],
+            "immediate": true
+        },
+        {
+            "name": "oobe-setup-mode-off",
+            "earcon": [{"name": "system_prompt_oobe_setup_mode_off.mp3", "tts": true}]
+        },
+        {
+            "name": "state-setup-mode-off",
+            "earcon": [{"name": "state_setup_mode_off.mp3", "tts": false}],
+            "immediate": true
+        },
+        {
+            "name": "state-boot-up-oobe",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "state_boot_up_regular.mp3", "tts": false}]
+        },
+        {
+            "name": "state-oobe-uber-short-press",
+            "earcon": [{"name": "system_prompt_oobe_setup_short_press.mp3", "tts": true}]
+        },
+        {
+            "name": "ui-error-generic-1",
+            "earcon": [{"name": "ui_error_generic_1.mp3", "tts": false}]
+        },
+        {
+            "name": "oobe-ugs-prov-connected",
+            "earcon": [{"name": "state_setup_discovery_beacon.mp3", "tts": false}]
+        },
+        {
+            "name": "oobe-connected-to-device",
+            "earcon": [{"name": "system_prompt_oobe_connected_to_device_ap.mp3", "tts": true}]
+        },
+        {
+            "name": "oobe-error-animation",
+            "animation": {"name": "anim_OOBE_start_error", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "oobe-error-looping",
+            "animation": {"name": "anim_start_error_looping", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "setup-mode-cancel",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "oobe-setup-hello-tts",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5},
+            "earcon": [
+                {"name": "system_state_oobe_setup_hello_tts.mp3", "tts": true},
+                {"name": "system_state_oobe_setup_after_hello_tts.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "device-is-ready",
+            "animation": {"name": "active-talking", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_your_doppler_is_ready.mp3", "tts": true}],
+            "auto-stop": true
+        },
+        {
+            "name": "setup-success",
+            "animation": {"name": "active-talking", "transparent": false, "groupId" : 5},
+            "earcon": [
+                {"name": "state_setup_success.mp3", "tts": false},
+                {"name": "system_prompt_ffs_success.mp3", "tts": true}
+            ],
+            "auto-stop": true
+        },
+        {
+            "name": "setup-kee-success",
+            "animation": {"name": "active-talking", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "oobe_zts_freetime.mp3", "tts": true}],
+            "auto-stop": true
+        },
+        {
+            "name": "hotspot-trying-to-connect",
+            "earcon": [{"name": "system_prompt_hotspot_connection_buffering.mp3", "tts": true}]
+        },
+        {
+            "name": "hotspot-turn-on",
+            "earcon": [{"name": "system_prompt_hotspot_connection_reminder.mp3", "tts": true}]
+        },
+        {
+            "name": "hotspot-connected",
+            "earcon": [{"name": "system_prompt_hotspot_connected.mp3", "tts": true}]
+        },
+        {
+            "name": "hotspot-timed-out",
+            "earcon": [{"name": "system_prompt_hotspot_timed_out.mp3", "tts": true}]
+        },
+        {
+            "name": "hotspot-password-error",
+            "earcon": [{"name": "system_prompt_hotspot_password_error.mp3", "tts": true}]
+        },
+        {
+            "name": "hotspot-connection-error",
+            "earcon": [{"name": "system_prompt_hotspot_connection_error.mp3", "tts": true}]
+        },
+        {
+            "name": "oobe-wifi-not-setup",
+            "earcon": [{"name": "system_prompt_error_offline_no_profile.mp3", "tts": true}]
+        },
+        {
+            "name": "oobe-active-end",
+            "animation": {"name": "active-end", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "authenticated-setup-mode",
+            "animation": {"name": "authenticated_setup_mode", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "ffs-started",
+            "earcon": [
+                {"name": "system_prompt_ffs_started.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "ffs-started-short-press",
+            "earcon": [
+                {"name": "system_prompt_ffs_started.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "ffs-failed",
+            "earcon": [{"name": "system_prompt_ffs_failed.mp3", "tts": true}]
+        },
+        {
+            "name": "error-dayzerootatimeout",
+            "animation": {"name": "anim_OOBE_start_error", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_boot_error_wifi_other.mp3", "tts": true}]
+        },
+        {
+            "name": "error-dayzerootafail",
+            "animation": {"name": "anim_OOBE_start_error", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_ota_critical_error.mp3", "tts": true}]
+        },
+        {
+            "name": "error-vuiotatimeout",
+            "earcon": [{"name": "system_prompt_boot_error_wifi_other.mp3", "tts": true}]
+        },
+        {
+            "name": "error-vuiotafailed",
+            "earcon": [{"name": "system_prompt_ota_critical_error.mp3", "tts": true}]
+        },
+        {
+            "name": "error-dayzerootapause",
+            "animation": {"name": "anim_start_error_looping", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_boot_error_wifi_cannot_connect.mp3", "tts": true}]
+        },
+        {
+            "name": "error-vuiotapause",
+            "earcon": [{"name": "system_prompt_boot_error_wifi_cannot_connect.mp3", "tts": true}]
+        },
+        {
+            "name": "anim_start_error_short",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId" : 6},
+            "earcon": [{"name": "ui_error_generic_1.mp3", "tts": false}]
+        },
+        {
+            "name": "ota-update-normal",
+            "earcon": [{"name": "system_prompt_ota_error_02.mp3", "tts": true}]
+        },
+        {
+            "name": "ota-update-on-phone",
+            "earcon": [{"name": "system_prompt_ota_error_03.mp3", "tts": true}]
+        },
+        {
+            "name": "ota-check",
+            "animation": {"name": "active-thinking", "transparent": true}
+        },
+        {
+            "name": "system_prompt_ota_day0_reboot",
+            "earcon": [{"name": "system_prompt_ota_day0_reboot.mp3", "tts": true}]
+        },
+        {
+            "name": "system_prompt_ota_start",
+            "earcon": [{"name": "system_prompt_ota_start.mp3", "tts": true}]
+        },
+        {
+            "name": "system_prompt_ota_critical_error",
+            "earcon": [{"name": "system_prompt_ota_critical_error.mp3", "tts": true}]
+        },
+        {
+            "name": "system_prompt_assets_initialization_start",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_ota_start.mp3", "tts": true}]
+        },
+        {
+            "name": "system_prompt_assets_initialization_start_silent",
+            "animation": {"name": "setup-mode", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "system_prompt_assets_initialization_complete",
+            "animation": {"name": "active-talking", "transparent": false, "groupId" : 5},
+            "earcon": [
+                {"name": "state_setup_success.mp3", "tts": false},
+                {"name": "system_prompt_ffs_success.mp3", "tts": true}
+            ],
+            "auto-stop": true
+        },
+        {
+            "name": "system_prompt_assets_initialization_complete_silent",
+            "animation": {"name": "anim_start_success", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "system_prompt_assets_initialization_failed",
+            "animation": {"name": "anim_OOBE_start_error", "transparent": false, "groupId" : 5},
+            "earcon": [{"name": "system_prompt_ota_critical_error.mp3", "tts": true}]
+        },
+        {
+            "name": "system_prompt_assets_initialization_failed_silent",
+            "animation": {"name": "anim_OOBE_start_error", "transparent": false, "groupId" : 5}
+        },
+        {
+            "name": "notification-on",
+            "animation": {"name": "sms_unheard", "transparent": true, "groupId" : 7}
+        },
+        {
+            "name": "notification-off",
+            "animation": {"name": "sms_unheard", "transparent": true, "groupId" : 7}
+        },
+        {
+            "name": "notification-incoming",
+            "animation": {"name": "sms_incoming", "transparent": false, "groupId" : 5},
+            "auto-stop": true
+        },
+        {
+            "name": "wifi-down-withoutTTS",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId" : 8}
+        },
+        {
+            "name": "wifi-down",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId" : 8},
+            "earcon": [{"name": "system_prompt_error_offline_not_connected_to_internet_else.mp3", "tts": true}]
+        },
+        {
+            "name": "call-incoming",
+            "animation": {"name": "call_incoming", "transparent": false, "groupId" : 9}
+        },
+        {
+            "name": "call-connected",
+            "animation": {"name": "call_connected", "transparent": false, "groupId" : 9}
+        },
+        {
+            "name": "call-connected-end",
+            "animation": {"name": "call_connected_end", "transparent": false, "groupId" : 9}
+        },
+        {
+            "name": "call-connected-end-error",
+            "animation": {"name": "call_connected_end", "transparent": false, "groupId" : 9},
+            "earcon": [{"name": "comms_call_disconnected.mp3", "tts": false}]
+        },
+        {
+            "name": "call-outbound-dialing",
+            "animation": {"name": "call_outbound_dialing", "transparent": false, "groupId" : 9}
+        },
+        {
+            "name": "call-outbound-ringing",
+            "animation": {"name": "call_outbound_ringing", "transparent": false, "groupId" : 9}
+        },
+        {
+            "name": "zzz-log-upload",
+            "animation": {"name": "mics-off_end", "transparent": true, "groupId" : 10},
+            "earcon": [{"name": "ui_error_generic_2.mp3", "tts": false}]
+        },
+        {
+            "name": "zzz-disco",
+            "animation": {"name": "zzz_disco", "transparent": true, "groupId" : 10}
+        },
+        {
+            "name": "zzz-rainbow",
+            "animation": {"name": "zzz_rainbow", "transparent": true, "groupId" : 10}
+        },
+        {
+            "name": "zzz-turbo-boost",
+            "animation": {"name": "zzz_turbo-boost", "transparent": true, "groupId" : 10}
+        },
+        {
+            "name": "bluetooth-connected",
+            "animation": {"name": "btconnect", "transparent": false, "groupId" : 11},
+            "earcon": [{"name": "state_bluetooth_connected.mp3", "tts": false}]
+        },
+        {
+            "name": "bluetooth-disconnected",
+            "animation": {"name": "btdiscconnect", "transparent": false, "groupId" : 11},
+            "earcon": [{"name": "state_bluetooth_disconnected.mp3", "tts": false}]
+        },
+        {
+            "name": "privacy-on-earcon",
+            "earcon": [{"name": "state_privacy_mode_on.wav", "tts": false}],
+            "preemptive": true
+        },
+        {
+            "name": "privacy-off-earcon",
+            "earcon": [{"name": "state_privacy_mode_off.wav", "tts": false}],
+            "preemptive": true
+        },
+        {
+            "name": "anim-start-phase2",
+            "animation": {"name": "anim_start_phase2", "transparent": true, "groupId": 13}
+        },
+        {
+            "name": "anim-start-phase3",
+            "animation": {"name": "anim_start_phase3", "transparent": true, "groupId": 13}
+        },
+        {
+            "name": "anim-start-success",
+            "animation": {"name": "anim_start_success", "transparent": true, "groupId": 13}
+        },
+        {
+            "name": "anim-start-error",
+            "animation": {"name": "error", "transparent": false, "groupId" : 13}
+        },
+        {
+            "name": "do-not-disturb",
+            "animation": {"name": "do_not_disturb", "transparent": false, "groupId": 14}
+        },
+        {
+            "name": "settings-change-in-progress",
+            "animation": {"name": "wakeword-change", "transparent": false, "groupId": 15}
+        },
+        {
+            "name": "settings-change-succeeded",
+            "animation": {"name": "active-talking", "transparent": false, "groupId": 15},
+            "earcon": [{"name": "system_prompt_ffs_success.mp3", "tts": true}],
+            "auto-stop": true
+        },
+        {
+            "name": "settings-change-failed",
+            "animation": {"name": "error", "transparent": false, "groupId": 15}
+        },
+        {
+            "name": "discovery-in-progress",
+            "animation": {"name": "scone-setup", "transparent": false, "groupId": 16}
+        },
+        {
+            "name": "scone-connected",
+            "animation": {"name": "scone-success", "transparent": false, "groupId": 11},
+            "earcon": [
+                {"name": "state_remote_pairing_success.mp3", "tts": false},
+                {"name": "system_scone_prompt_success.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "scone-exit-pairing",
+            "animation": {"name": "scone-error", "transparent": false, "groupId": 11},
+            "earcon": [
+                {"name": "system_scone_prompt_timed_out.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "scone-upgrade",
+            "earcon": [
+                {"name": "ui_error_generic_1.mp3", "tts": false},
+                {"name": "system_scone_updating_software.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "scone-upgrade-complete",
+            "earcon": [
+                {"name": "state_remote_pairing_success.mp3", "tts": false},
+                {"name": "system_scone_update_complete.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "scone-mic-on",
+            "animation": {"name": "scone-active", "transparent": "false", "groupId": 19},
+            "earcon": [
+                {"name": "ui_wakesound_touch.wav", "tts": false}
+            ]
+        },
+        {
+            "name": "scone-mic-off",
+            "animation": {"name": "active-end", "transparent": "false", "groupId": 20},
+            "earcon": [
+                {"name": "ui_endpointing_touch.wav", "tts": false}
+            ],
+            "comment": "scone-end animation is a diff group id than scone-active to keep the animation from cutting off."
+        },
+        {
+            "name": "aed-detected",
+            "animation": {"name": "aed_detected", "transparent": false, "groupId": 17},
+            "earcon": [
+                {"name": "state_sent_to_cloud.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "aed-detected-noearcon",
+            "animation": {"name": "aed_detected", "transparent": false, "groupId": 17}
+        },
+        {
+            "name": "aed-enabled",
+            "animation": {"name": "aed_enabled", "transparent": true, "groupId": 18}
+        },
+        {
+            "name": "power-save",
+            "animation": {"name": "active-talking", "transparent": false, "groupId": 0},
+            "auto-stop": true,
+            "earcon": [
+                {"name": "ui_error_generic_3.mp3", "tts": false},
+                {"name": "system_prompt_low_energy_mode_triggered.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "power-save-uber-button-exit",
+            "animation": {"name": "active-talking", "transparent": false, "groupId": 0},
+            "auto-stop": true,
+            "earcon": [
+                {"name": "ui_error_generic_3.mp3", "tts": false},
+                {"name": "system_prompt_low_energy_mode_uber_button_exit.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "error-noprofileprelaunchmsg",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+            "earcon": [
+                {"name": "ui_error_generic_1.mp3", "tts": false},
+                {"name": "system_prompt_error_offline_no_profile.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "equalizer-change",
+            "animation": {"name": "volume_step-30", "transparent": true, "groupId": 1},
+            "preemptive": true
+        },
+        {
+            "name": "error-set-timezone",
+            "earcon": [
+                {"name": "error_set_timezone.mp3", "tts": true}
+            ]
+        },
+        {
+            "name": "network-offline-restart-router-device",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+            "earcon" : [
+                {"name":  "network_offline_restart_router_and_echo_device.mp3", "tts": true }
+            ]
+        },
+        {
+            "name": "network-offline-restart-router",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+            "earcon" : [
+                {"name":  "network_offline_restart_router.mp3", "tts": true }
+            ]
+        },
+        {
+            "name": "network-offline-update-wifi-info",
+            "animation": {"name": "anim_start_error_short", "transparent": false, "groupId": 0},
+            "earcon" : [
+                {"name":  "network_offline_need_to_update_wifi_info.mp3", "tts": true }
+            ]
+        },
+        {
+            "name": "tap-generic",
+            "earcon": [
+                {"name": "med_ui_tap_generic_single.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "tap-pause",
+            "earcon": [
+                {"name": "med_ui_tap_pause.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "tap-resume",
+            "earcon": [
+                {"name": "med_ui_tap_resume.mp3", "tts": false}
+            ]
+        },
+        {
+            "name": "personality",
+            "animation": {"name": "personality", "transparent": false, "groupId": 21}
+        },
+        {
+            "name": "personality-end",
+            "animation": {"name": "personality-end", "transparent": false, "groupId": 21}
+        },
+        {
+            "name": "deep-thinking",
+            "animation": {"name": "deep-thinking", "transparent": true, "groupId": 22}
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+# Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+#
+
+# the service name should be short otherwise the system cannot start it
+on property:sys.boot_completed=1
+    mkdir /data/securedStorageLocation/LocalAutomationExecution 0777
+    start LocalAutoSvc
+service LocalAutoSvc /system/bin/LocalAutomationExecutionD
+    class main
+    user system
+    group aipc ace_group dbus system puffin ace_kvstore ace_maplite inet
+    disabled

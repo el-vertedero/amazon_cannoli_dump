@@ -1,0 +1,1069 @@
+{
+    "MonitorEngineConfig":{
+      "Tick_interval_sec": 1,
+      "Tick_interval_microsec": 0
+    },
+    "MonitorConfig":[
+       {
+          "Monitor Name":"ProcessMemMonitor",
+          "Active":true,
+          "MetricName":"PssKB",
+          "Sample_interval_ticks":3600,
+          "Metric_logcat_interval_ticks":3600,
+          "Metric_report_interval_ticks":3600,
+          "PMET_Metric_Interface":{
+             "ProgramName":"ProcessMemMonitor",
+             "Active":true
+          },
+          "Minerva_Metric_Interface":{
+             "Schema_Id":"u65v/2/02330470",
+             "Group_Id":"kdgdqij1",
+             "Active":true,
+             "Metrics":[
+               {
+                  "Name": "psskb_process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "psskb_process_usage",
+                  "DimensionTag":"PssKb",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               },
+               {
+                  "Name": "oom_score",
+                  "DimensionTag":"OomScore",
+                  "Type": "int"
+               }
+            ]
+          }
+       },
+       {
+          "Monitor Name":"SysHealthMemMonitor",
+          "Active":true,
+          "MetricName":"SysHealthMemoryUsage",
+          "Minerva_Metric_Interface":{
+            "Schema_Id":"6n4w/2/02330473",
+            "Group_Id":"3cbco06m",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "mem_metric_type",
+                  "DimensionTag":"MemMetricType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "mem_metric_keys",
+                  "DimensionTag":"MemMetricKeys",
+                  "Type": "str"
+               },
+               {
+                  "Name": "mem_metric_values",
+                  "DimensionTag":"MemMetricValues",
+                  "Type": "str"
+               },
+               {
+                  "Name": "mem_sys_aggregation_period",
+                  "DimensionTag":"MemSysAggregationPeriod",
+                  "Type": "int"
+               },
+               {
+                  "Name": "mem_app_snapshot_period",
+                  "DimensionTag":"MemAppSnapshotPeriod",
+                  "Type": "int"
+               }
+           ]
+         }
+       },
+       {
+         "Monitor Name":"ProcessCpuMonitor",
+         "Active":true,
+         "MetricName":"CpuUsage",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"ProcessCpuMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"y1n7/2/02330470",
+            "Group_Id":"eipdc47o",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "cpu_process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "cpu_process_usage",
+                  "DimensionTag":"CpuUsage",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"SysHealthCpuMonitor",
+         "Active":true,
+         "MetricName":"SysHealthCpuUsage",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"2aip/2/0e330473",
+            "Group_Id":"3cbco06m",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "cpu_metric_type",
+                  "DimensionTag":"CpuMetricType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "cpu_metric_keys",
+                  "DimensionTag":"CpuMetricKeys",
+                  "Type": "str"
+               },
+               {
+                  "Name": "cpu_metric_values",
+                  "DimensionTag":"CpuMetricValues",
+                  "Type": "str"
+               },
+               {
+                  "Name": "cpu_sys_aggregation_period",
+                  "DimensionTag":"CpuSysAggregationPeriod",
+                  "Type": "int"
+               },
+               {
+                  "Name": "cpu_app_snapshot_period",
+                  "DimensionTag":"CpuAppSnapshotPeriod",
+                  "Type": "int"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"CpuUsageMonitor",
+         "Active":true,
+         "MetricName":"CpuUsageMonitor",
+         "Sample_interval_ticks":1,
+         "Metric_logcat_interval_ticks":600,
+         "Metric_report_interval_ticks":86400,
+         "Worker_Thread_interval_millisec":500,
+         "PMET_Metric_Interface":{
+            "ProgramName":"CpuUsageMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"n82k/2/02330470",
+            "Group_Id":"eipdc47o",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "cpu_utilization_name",
+                  "DimensionTag":"CpuUtilType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "cpu_utilization_value",
+                  "DimensionTag":"CpuUtilVal",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"MemoryUsageMonitor",
+         "Active":true,
+         "MetricName":"MemoryUsageMonitor",
+         "Sample_interval_ticks":1,
+         "Metric_logcat_interval_ticks":600,
+         "Metric_report_interval_ticks":86400,
+         "PMET_Metric_Interface":{
+            "ProgramName":"MemoryUsageMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"4kw3/2/02330470",
+            "Group_Id":"kdgdqij1",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "memory_utilization_name",
+                  "DimensionTag":"MemUtilType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "memory_utilization_value",
+                  "DimensionTag":"MemUtilVal",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"SystemMemMonitor",
+         "Active":true,
+         "MetricName":"SystemMemMonitor",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"SystemMemMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"hetp/2/02330470",
+            "Group_Id":"kdgdqij1",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "system_memory_type",
+                  "DimensionTag":"SystemMemType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "system_memory_value",
+                  "DimensionTag":"SystemMemVal",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"ProcessRssMonitor",
+         "Active":true,
+         "MetricName":"TotalRssKb",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"ProcessRssMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"83v0/2/06330410",
+            "Group_Id":"zmtmw00o",
+            "Active":false,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "RssKb",
+                  "DimensionTag":"RssKb",
+                  "Type": "int"
+               },
+               {
+                  "Name": "PID",
+                  "DimensionTag":"PID",
+                  "type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"ProcessResidencyMonitor",
+         "Active":true,
+         "MetricName":"ProcessResidency",
+         "Sample_interval_ticks":1800,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":86400,
+         "PMET_Metric_Interface":{
+            "ProgramName":"ProcessResidencyMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"iatj/2/02330470",
+            "Group_Id":"zmtmw00o",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "life_cycle",
+                  "DimensionTag":"LifeCycle",
+                  "Type": "str"
+               },
+               {
+                  "Name": "pid_changed",
+                  "DimensionTag":"PidChanged",
+                  "Type": "str"
+               },
+               {
+                  "Name": "utc_epoch_time",
+                  "DimensionTag":"UtcEpochTime",
+                  "Type": "str"
+               },
+               {
+                  "Name": "start_bit",
+                  "DimensionTag":"StartBit",
+                  "Type": "int"
+               },
+               {
+                  "Name": "total_sample_count",
+                  "DimensionTag":"TotalSampleCount",
+                  "Type": "int"
+               },
+               {
+                  "Name": "active_count",
+                  "DimensionTag":"ActiveCount",
+                  "Type": "int"
+               },
+               {
+                  "Name": "pid_changed_count",
+                  "DimensionTag":"PidChangedCount",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"DiskUsageMonitor",
+         "Active":true,
+         "MetricName":"PercentageUsed",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":86400,
+         "PMET_Metric_Interface":{
+            "ProgramName":"DiskUsageMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"3grc/2/02330470",
+            "Group_Id":"fisdmhts",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "partition_path",
+                  "DimensionTag":"PartitionPath",
+                  "Type": "str"
+               },
+               {
+                  "Name": "percent_used",
+                  "DimensionTag":"PercentUsed",
+                  "Type": "int"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         },
+         "ProfileCustomConfig": true
+      },
+      {
+         "Monitor Name":"SysHealthDiskUsageMonitor",
+         "Active":true,
+         "MetricName":"SysHealthStorageUsage",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"iyjc/2/02330473",
+            "Group_Id":"3cbco06m",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "storage_metric_type",
+                  "DimensionTag":"StorageMetricType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "storage_metric_keys",
+                  "DimensionTag":"StorageMetricKeys",
+                  "Type": "str"
+               },
+               {
+                  "Name": "storage_metric_values",
+                  "DimensionTag":"StorageMetricValues",
+                  "Type": "str"
+               },
+               {
+                  "Name": "storage_snapshot_period",
+                  "DimensionTag":"StorageSnapshotPeriod",
+                  "Type": "int"
+               }
+            ]
+         },
+         "ProfileCustomConfig": true
+      },
+      {
+         "Monitor Name":"CPUClockMonitor",
+         "Active":true,
+         "MetricName":"CpuFreqDuration",
+         "Sample_interval_ticks":86400,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":86400,
+         "PMET_Metric_Interface":{
+            "ProgramName":"CpuClockMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"wf6b/2/06330410",
+            "Group_Id":"y2dnv1w4",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "cpu_duration_type",
+                  "DimensionTag":"CpuDurationType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "duration",
+                  "DimensionTag":"Duration",
+                  "Type": "int"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"IonMemMonitor",
+         "Active":"true",
+         "MetricName":"IonKB",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":43200,
+         "PMET_Metric_Interface":{
+            "ProgramName":"IonMemMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"6okt/2/06330410",
+            "Group_Id":"y2dnv1w4",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "total_mem_kb",
+                  "DimensionTag":"TotalMemKb",
+                  "Type": "int"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"VmPressureMonitor",
+         "Active":true,
+         "MetricName":"VMPRESSURE",
+         "Sample_interval_ticks":0,
+         "Metric_logcat_interval_ticks":0,
+         "Metric_report_interval_ticks":0,
+         "PMET_Metric_Interface":{
+            "ProgramName":"VmPressureMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"b4mo/2/06330410",
+            "Group_Id":"y2dnv1w4",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "vm_usage",
+                  "DimensionTag":"VMUsage",
+                  "Type": "int"
+               },
+               {
+                  "Name": "vm_status",
+                  "DimensionTag":"VMStatus",
+                  "Type": "str"
+               },
+               {
+                  "Name": "group_name",
+                  "DimensionTag":"GroupName",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"DeviceStateMonitor",
+         "Active":true,
+         "MetricName":"DeviceState",
+         "Sample_interval_ticks":0,
+         "Metric_logcat_interval_ticks":0,
+         "Metric_report_interval_ticks":0
+      },
+      {
+         "Monitor Name":"PerfCpuInfoMonitor",
+         "Active":true,
+         "MetricName":"PerfCpuInfo",
+         "Sample_interval_ticks":0,
+         "Metric_logcat_interval_ticks":0,
+         "Metric_report_interval_ticks":0
+      },
+      {
+         "Monitor Name":"VmStatMonitor",
+         "Active":true,
+         "MetricName":"VmStatMonitor",
+         "Sample_interval_ticks":600,
+         "Metric_logcat_interval_ticks":600,
+         "Metric_report_interval_ticks":0
+      },
+      {
+         "Monitor Name":"FlashMetricMonitor",
+         "Active":true,
+         "MetricName":"emmc_health",
+         "Sample_interval_ticks":86400,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":86400,
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"xn3k/2/02330470",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "value",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "LifetimeTypeA",
+                  "DimensionTag":"LifetimeTypeA",
+                  "Type": "str"
+               },
+               {
+                  "Name": "LifetimeTypeB",
+                  "DimensionTag":"LifetimeTypeB",
+                  "Type": "str"
+               },
+               {
+                  "Name": "ManfID",
+                  "DimensionTag":"ManfID",
+                  "Type": "str"
+               },
+               {
+                  "Name": "PreEolInfo",
+                  "DimensionTag":"PreEolInfo",
+                  "Type": "str"
+               },
+               {
+                  "Name": "key",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "metadata",
+                  "DimensionTag":"metadata",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"EmmcTBW",
+         "Active":true,
+         "MetricName":"emmc_tbw",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"4uj5/2/02330470",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "ManfID",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "name",
+                  "DimensionTag":"metadata",
+                  "Type": "str"
+               },
+               {
+                  "Name": "value",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"EmmcMLC",
+         "Active":true,
+         "MetricName":"emmc_avg_mlc",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"emoh/2/02330470",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "ManfID",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "name",
+                  "DimensionTag":"metadata",
+                  "Type": "str"
+               },
+               {
+                  "Name": "value",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"EmmcTLC",
+         "Active":true,
+         "MetricName":"emmc_avg_tlc",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"znrm/2/023304700",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "ManfID",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "name",
+                  "DimensionTag":"metadata",
+                  "Type": "str"
+               },
+               {
+                  "Name": "value",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"EmmcSLC",
+         "Active":true,
+         "MetricName":"emmc_avg_slc",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"1at8/2/02330470",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "ManfID",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "name",
+                  "DimensionTag":"metadata",
+                  "Type": "str"
+               },
+               {
+                  "Name": "value",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"EmmcAvgTBW",
+         "Active":true,
+         "MetricName":"emmc_total_avg_tbw",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"ms19/2/02330470",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "value",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "ManfID",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "name",
+                  "DimensionTag":"metadata",
+                  "Type": "str"
+               },
+               {
+                  "Name": "LifetimeTypeA",
+                  "DimensionTag":"LifetimeTypeA",
+                  "Type": "str"
+               },
+               {
+                  "Name": "LifetimeTypeB",
+                  "DimensionTag":"LifetimeTypeB",
+                  "Type": "str"
+               },
+               {
+                  "Name": "total_avg_slc",
+                  "DimensionTag":"a_total_avg_slc",
+                  "Type": "str"
+               },
+               {
+                  "Name": "total_avg_mlc",
+                  "DimensionTag":"a_total_avg_mlc",
+                  "Type": "str"
+               },
+               {
+                  "Name": "total_avg_tlc",
+                  "DimensionTag":"a_total_avg_tlc",
+                  "Type": "str"
+               },
+               {
+                  "Name": "total_tbw",
+                  "DimensionTag":"a_total_tbw",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"EmmcEOLMetric",
+         "Active":true,
+         "MetricName":"emmc_eol",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"d9tj/2/09330411",
+            "Group_Id":"lk1nigk5",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "lifetimeA",
+                  "DimensionTag":"lifetimeA",
+                  "Type": "str"
+               },
+               {
+                  "Name": "lifetimeB",
+                  "DimensionTag":"lifetimeB",
+                  "Type": "str"
+               },
+               {
+                  "Name": "vendorCode",
+                  "DimensionTag":"vendorCode",
+                  "Type": "str"
+               },
+               {
+                  "Name": "preEOL",
+                  "DimensionTag":"preEOL",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"ProcessIOMonitor",
+         "Active":true,
+         "MetricName":"AppEmmcConsumption",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":28800,
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"azum/2/02330470",
+            "Group_Id":"9j5sydxy",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "ProcessName",
+                  "DimensionTag":"key",
+                  "Type": "str"
+               },
+               {
+                  "Name": "bytes_written",
+                  "DimensionTag":"value",
+                  "Type": "int"
+               },
+               {
+                  "Name": "unit",
+                  "DimensionTag":"unit",
+                  "Type": "str"
+               },
+               {
+                  "Name": "operation",
+                  "DimensionTag":"operation",
+                  "Type": "str"
+               },
+               {
+                  "Name": "program",
+                  "DimensionTag":"program",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               },
+               {
+                  "Name": "classification",
+                  "DimensionTag":"classification",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"MemoryEventMonitor",
+         "Active":true,
+         "MetricName":"MemoryEventThreshold",
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"2y13/2/06330470",
+            "Group_Id":"kdgdqij1",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "memory_event_lvl",
+                  "DimensionTag":"MemoryLevel",
+                  "Type": "str"
+               },
+               {
+                  "Name": "memory_threshold_kb",
+                  "DimensionTag":"MemLevelThreshold",
+                  "Type": "int"
+               },
+               {
+                  "Name": "config_version",
+                  "DimensionTag":"ConfigVersion",
+                  "Type": "str"
+               },
+               {
+                  "Name": "entitlement",
+                  "DimensionTag":"alexaPremiumDefault",
+                  "Type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"ArcusClientMetricsStatus",
+         "Active":true,
+         "MetricName":"ArcusClientMetricsStatus",
+         "Minerva_Metric_Interface":{
+           "Schema_Id":"",
+           "Group_Id":"",
+           "Active":true,
+           "Metrics":[
+              {
+                 "Name": "programName",
+                 "DimensionTag":"ProgramName",
+                 "Type": "str"
+              },
+              {
+                 "Name": "configVersion",
+                 "DimensionTag":"Version",
+                 "Type": "str"
+              },
+              {
+                 "Name": "configStatus",
+                 "DimensionTag":"Status",
+                 "Type": "str"
+              },
+              {
+                 "Name": "appConfigId",
+                 "DimensionTag":"ConfigId",
+                 "Type": "str"
+              }
+          ]
+        }
+      },
+      {
+         "Monitor Name":"ArcusClientMetricsCounter",
+         "Active":true,
+         "MetricName":"ArcusClientMetricsCounter",
+         "Minerva_Metric_Interface":{
+           "Schema_Id":"",
+           "Group_Id":"",
+           "Active":true,
+           "Metrics":[
+              {
+                 "Name": "programName",
+                 "DimensionTag":"ProgramName",
+                 "Type": "str"
+              },
+              {
+                 "Name": "Type",
+                 "DimensionTag":"Type",
+                 "Type": "str"
+              },
+              {
+                 "Name": "Status",
+                 "DimensionTag":"Status",
+                 "Type": "str"
+              },
+              {
+                 "Name": "Count",
+                 "DimensionTag":"Count",
+                 "Type": "int"
+              },
+              {
+                 "Name": "appConfigId",
+                 "DimensionTag":"ConfigId",
+                 "Type": "str"
+              }
+          ]
+        }
+      }
+    ],
+    "MinervaConfig":{
+       "Enabled":true,
+       "Region":"us-east-1",
+       "GroupId":"y2dnv1w4",
+       "Entitlement":"NOT_ENTITLED"
+    }
+}

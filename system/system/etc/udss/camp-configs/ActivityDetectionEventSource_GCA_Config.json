@@ -1,0 +1,50 @@
+{
+    "description": "ActivityDetectionEventSource GCA config",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "ActivityDetectionEventSourceGCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.ActivityDetectionEventSource",
+                        "version": "1.0",
+                        "configuration": {
+                            "supportedActivities": [
+                                {
+                                    "type": "ENTER_OR_EXIT_FROM_DOOR"
+                                },
+                                {
+                                    "type": "COOKING"
+                                },
+                                {
+                                    "type": "HAVING_MEAL"
+                                },
+                                {
+                                    "type": "READING"
+                                },
+                                {
+                                    "type": "WATCHING_TV"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Scene Detection Data Stream",
+            "type": "core.SceneDetData"
+        }
+    ],
+    "exec": [
+        {
+            "command": "connect",
+            "input": "Scene Detection Data Stream",
+            "consumer": "GenericCA|Events|Alexa.ActivityDetectionEventSource|IPCOut"
+        }
+    ]
+}

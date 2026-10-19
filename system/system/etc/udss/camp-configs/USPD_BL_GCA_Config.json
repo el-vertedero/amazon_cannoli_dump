@@ -1,0 +1,212 @@
+{
+    "description": "USPD Events Receiver",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "uspdGCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.MotionSensor",
+                        "version": "3.2",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "detectionState",
+                                    "type": "string",
+                                    "default": "NOT_DETECTED"
+                                },
+                                {
+                                    "name": "enablement",
+                                    "type": "string",
+                                    "default": "DISABLED"
+                                },
+                                {
+                                    "name": "detectionRange",
+                                    "type": "string",
+                                    "default": "HIGH"
+                                },
+                                {
+                                    "name": "detectionSensitivity",
+                                    "type": "string",
+                                    "default": "MEDIUM"
+                                },
+                                {
+                                    "name": "detectionTechnology",
+                                    "type": "string",
+                                    "default": "ULTRASONIC_BASIC"
+                                }
+                            ],
+                            "proactivelyReported": true,
+                            "retrievable": true
+                        },
+                        "configuration": {
+                            "configurationExample": true
+                        }
+                    },
+                    "directives": [
+                        {
+                            "name": "SetEnablement"
+                        },
+                        {
+                            "name": "SetDetectionSensitivity"
+                        },
+                        {
+                            "name": "SetDetectionRange"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "USPDEnablementHandler",
+            "type": "core.json.accessor",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetEnablement|IPCIn"
+            ],
+            "args": {
+                "accessKey": "directive.payload.enablement"
+            }
+        },
+        {
+            "name": "USPDRangeHandler",
+            "type": "core.json.accessor",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetDetectionRange|IPCIn"
+            ],
+            "args": {
+                "accessKey": "directive.payload.detectionRange"
+            }
+        },
+        {
+            "name": "USPDSensitivityHandler",
+            "type": "core.json.accessor",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetDetectionSensitivity|IPCIn"
+            ],
+            "args": {
+                "accessKey": "directive.payload.detectionSensitivity"
+            }
+        },
+        {
+            "name": "USPDStorage",
+            "type": "core.USPDStorage",
+            "inputs": [
+                "USPDEnablementHandler",
+                "USPDRangeHandler",
+                "USPDSensitivityHandler"
+            ]
+        },
+        {
+            "name": "USPDStream",
+            "type": "core.USPD",
+            "inputs": [
+                "USPDStorage"
+            ]
+        },
+        {
+            "name": "USPDChangeReportHandler",
+            "type": "core.USPDChangeReportHandler",
+            "inputs": [
+                "USPDStream"
+            ]
+        },
+        {
+            "name": "USPDDetectionTechStream",
+            "type": "core.USPDDetectionTech"
+        },
+        {
+            "name": "Clear enablement IPCOut Cache upon SetEnablement Directive",
+            "type": "core.clearcache",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetEnablement|IPCIn",
+                "GenericCA|Properties|Alexa.MotionSensor|enablement|IPCOut"
+            ]
+        },
+        {
+            "name": "Clear detectionRange IPCOut Cache upon SetDetectionRange Directive",
+            "type": "core.clearcache",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetDetectionRange|IPCIn",
+                "GenericCA|Properties|Alexa.MotionSensor|detectionRange|IPCOut"
+            ]
+        },
+        {
+            "name": "Clear detectionSensitivity IPCOut Cache upon SetDetectionSensitivity Directive",
+            "type": "core.clearcache",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetDetectionSensitivity|IPCIn",
+                "GenericCA|Properties|Alexa.MotionSensor|detectionSensitivity|IPCOut"
+            ]
+        },
+        {
+            "name": "USPDEnablement directive response event builder",
+            "type": "core.avsevents.response",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetEnablement|IPCIn",
+                "GenericCA|Properties|Alexa.MotionSensor|enablement|IPCOut"
+            ]
+        },
+        {
+            "name": "USPDRange directive response event builder",
+            "type": "core.avsevents.response",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetDetectionRange|IPCIn",
+                "GenericCA|Properties|Alexa.MotionSensor|detectionRange|IPCOut"
+            ]
+        },
+        {
+            "name": "USPDSensitivity directive response event builder",
+            "type": "core.avsevents.response",
+            "inputs": [
+                "GenericCA|Directives|Alexa.MotionSensor|SetDetectionSensitivity|IPCIn",
+                "GenericCA|Properties|Alexa.MotionSensor|detectionSensitivity|IPCOut"
+            ]
+        }
+    ],
+    "exec": [
+        {
+            "command": "connect",
+            "input": "USPDEnablement directive response event builder",
+            "consumer": "GenericCA|Events|Alexa.MotionSensor|IPCOut"
+        },
+        {
+            "command": "connect",
+            "input": "USPDRange directive response event builder",
+            "consumer": "GenericCA|Events|Alexa.MotionSensor|IPCOut"
+        },
+        {
+            "command": "connect",
+            "input": "USPDSensitivity directive response event builder",
+            "consumer": "GenericCA|Events|Alexa.MotionSensor|IPCOut"
+        },
+        {
+            "command": "connect",
+            "input": "USPDChangeReportHandler",
+            "consumer": "GenericCA|Properties|Alexa.MotionSensor|detectionState|Setting"
+        },
+        {
+            "command": "connect",
+            "input": "USPDEnablementHandler",
+            "consumer": "GenericCA|Properties|Alexa.MotionSensor|enablement|Setting"
+        },
+        {
+            "command": "connect",
+            "input": "USPDRangeHandler",
+            "consumer": "GenericCA|Properties|Alexa.MotionSensor|detectionRange|Setting"
+        },
+        {
+            "command": "connect",
+            "input": "USPDSensitivityHandler",
+            "consumer": "GenericCA|Properties|Alexa.MotionSensor|detectionSensitivity|Setting"
+        },
+        {
+            "command": "connect",
+            "input": "USPDDetectionTechStream",
+            "consumer": "GenericCA|Properties|Alexa.MotionSensor|detectionTechnology|Setting"
+        }
+    ]
+}

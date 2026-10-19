@@ -1,0 +1,359 @@
+{
+    "compatible" : "perfhald",
+    "version" : 1,
+
+    "global": {
+        "vmpressure_timeout_ms" : 60000,
+        "vmpressure_poll_timeout_ms" : 900000,
+        "vmpurge_timeout_ms" : 60000,
+        "vmpurge_grace_ms" : 60000,
+        "vmpurge_purge_enable" : 0
+    },
+
+    "cgroups" : {
+        "memory" : {
+            "memcg" : [
+                {
+                    "name" : "bluebottle",
+                    "softlimitMB" : 105,
+                    "memlimitMB" : 150,
+                    "process" : [
+                        {
+                            "pname" : "AlexaHybridExec",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname" : "acenna_service",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname" : "SkillContainer",
+                            "oom_score_adj" : -1000
+                        }
+                    ]
+                },
+                {
+                    "name" : "non-bluebottle",
+                    "softlimitMB" : 154,
+                    "memlimitMB" : 220,
+                    "process" : [
+                        {
+                            "pname":"mixer",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"puffinmrmd",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"PuffinApp",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"commsd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"SmartHomed",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"assetmgrd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"halo_cli",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"haloprovd",
+                            "oom_score_adj" :-1000
+                        },
+                        {
+                            "pname":"hub-core",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"halo_logr",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"trackerd",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"logmgr",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"logd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"acedropboxd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"debuggerd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ambientlightd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ledcontroller",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"acebuttond",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"btmanagerd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"BTSinkPlayer",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"meshmgr_svc",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"aceusagestatd",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"atsd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"pwrsvcd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"dbus-daemon",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"vold",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_messaging_service",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_dioded",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"fmonitor",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"psbroker",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"fireos-dha",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_otad",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"shmd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_thermald",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_metric_daemon",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"dcm",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ffs_provisionee_svc",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_coex_metric",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"akserver",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"aceinputmanager",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"TCommShim",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"Todo",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"otad",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"AceCredentialManagerService",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"netmgrd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"tokend",
+                            "oom_score_adj" : 0
+                        },
+                        {
+                            "pname":"wifid",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"wifisvc",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ss_proxy_svc",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"factory-reset",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"provisionerd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"tee-supplicant",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"sntp",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"ace_powerd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"wpa_supplicant",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"gadgetsd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"cmbd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"dacd",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"presencebeacond",
+                            "oom_score_adj" : -1000
+                        },
+                        {
+                            "pname":"oobed",
+                            "oom_score_adj" : -1000
+                        }
+                    ]
+                }
+            ]
+        },
+        "cpu" : {
+            "cpuset" : [
+                {
+                    "name" : "bluebottle",
+                    "cpu-set" : "0-1",
+                    "process" : [
+                        {
+                            "pname" : "unkown"
+                        }
+                    ]
+                }
+            ],
+            "cpuctl" : [
+                {
+                    "name" : "bluebottle",
+                    "cpu-share" : "0-1",
+                    "rt_sched_period" : 300000,
+                    "rt_sched_run" : 900000,
+                    "process" : [
+                        {
+                            "pname" : "unkown"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "oom" : {
+        "minfree-oom" : [
+                {
+                    "limitMB" : 6,
+                    "score_adj" : 0
+                },
+                {
+                    "limitMB" : 100,
+                    "score_adj" : 60
+                },
+                {
+                    "limitMB" : 200,
+                    "score_adj" : 300
+                },
+                {
+                    "limitMB" : 300,
+                    "score_adj" : 700
+                }
+        ],
+        "no-purge" : [
+        ],
+        "sys-procs" : [
+                {
+                    "pname":"init"
+                }
+        ]
+    },
+    "psi" : {
+        "memory" : [
+                {
+                    "window" : 1000,
+                    "levels" : [
+                        {
+                            "pressure_type":"low",
+                            "threshold_ms" : 0
+                        },
+                        {
+                            "pressure_type":"medium",
+                            "threshold_ms" : 200
+                        },
+                        {
+                            "pressure_type":"critical",
+                            "threshold_ms" : 20
+                        }
+                    ]
+                }
+        ]
+    }
+}

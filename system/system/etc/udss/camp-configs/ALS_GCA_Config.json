@@ -1,0 +1,116 @@
+{
+    "description": "ALS GCA config",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "alsGCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.LightSensor",
+                        "version": "3.1",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "illuminance",
+                                    "type": "number",
+                                    "default": "-1",
+                                    "lazyPersistence": true
+                                },
+                                {
+                                    "name": "enablement",
+                                    "type": "string",
+                                    "default": "DISABLED"
+                                }
+                            ],
+                            "proactivelyReported": true,
+                            "retrievable": true
+                        }
+                    },
+                    "directives": [
+                        {
+                            "name": "SetEnablement"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ALS Data Stream",
+            "type": "core.ALSData"
+        },
+        {
+            "name": "ALS Enablement Directive Accessor",
+            "type": "core.json.accessor",
+            "args": {
+                "accessKey": "directive.payload.enablement"
+            }
+        },
+        {
+            "name": "Clear enablement IPCOut Cache upon SetEnablement Directive",
+            "type": "core.clearcache",
+            "inputs": [
+                "GenericCA|Directives|Alexa.LightSensor|SetEnablement|IPCIn",
+                "GenericCA|Properties|Alexa.LightSensor|enablement|IPCOut"
+            ]
+        },
+        {
+            "name": "directive response event builder",
+            "type": "core.avsevents.response",
+            "inputs": [
+                "GenericCA|Directives|Alexa.LightSensor|SetEnablement|IPCIn",
+                "GenericCA|Properties|Alexa.LightSensor|enablement|IPCOut"
+            ]
+        },
+        {
+            "name": "enablement toggler",
+            "type": "core.toggle",
+            "inputs": [
+                "GenericCA|Properties|Alexa.LightSensor|enablement|Setting",
+                "GenericCA|Properties|Alexa.LightSensor|illuminance|IPCOut"
+            ]
+        },
+        {
+            "name": "lux refire",
+            "type": "core.refire",
+            "inputs": [
+                "enablement toggler",
+                "GenericCA|Properties|Alexa.LightSensor|illuminance|Setting"
+            ]
+        },
+        {
+            "name": "ALS Filter Stream",
+            "type": "core.ALSFilter"
+        }
+    ],
+    "exec": [
+        {
+            "command": "connect",
+            "input": "GenericCA|Directives|Alexa.LightSensor|SetEnablement|IPCIn",
+            "consumer": "ALS Enablement Directive Accessor"
+        },
+        {
+            "command": "connect",
+            "input": "ALS Enablement Directive Accessor",
+            "consumer": "GenericCA|Properties|Alexa.LightSensor|enablement|Setting"
+        },
+        {
+            "command": "connect",
+            "input": "directive response event builder",
+            "consumer": "GenericCA|Events|Alexa.LightSensor|IPCOut"
+        },
+        {
+            "command": "connect",
+            "input": "ALS Data Stream",
+            "consumer": "ALS Filter Stream"
+        },
+        {
+            "command": "connect",
+            "input": "ALS Filter Stream",
+            "consumer": "GenericCA|Properties|Alexa.LightSensor|illuminance|Setting"
+        }
+    ]
+}

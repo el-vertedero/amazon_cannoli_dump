@@ -1,0 +1,58 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [
+      {
+        "version": "3",
+        "namespace": "Alexa.PowerController",
+        "directiveName": "TurnOn",
+        "operationName": "turnOn"
+      },
+      {
+        "version": "3",
+        "namespace": "Alexa.PowerController",
+        "directiveName": "TurnOff",
+        "operationName": "turnOff"
+      },
+      {
+        "version": "3.3",
+        "namespace": "Alexa.PowerController",
+        "directiveName": "TurnOn",
+        "operationName": "turnOn"
+      },
+      {
+        "version": "3.3",
+        "namespace": "Alexa.PowerController",
+        "directiveName": "TurnOff",
+        "operationName": "turnOff"
+      },
+      {
+        "version": "0.1",
+        "namespace": "Alexa.PowerController",
+        "directiveName": "TurnOn",
+        "operationName": "turnOn"
+      },
+      {
+        "version": "0.1",
+        "namespace": "Alexa.PowerController",
+        "directiveName": "TurnOff",
+        "operationName": "turnOff"
+      }
+    ],
+    "properties": [
+      {
+        "deviceStateName": "powerState",
+        "applicationPropertyName": "powerState",
+        "version": "3",
+        "namespace": "Alexa.PowerController"
+      },
+      {
+        "deviceStateName": "powerState",
+        "applicationPropertyName": "powerState",
+        "version": "3.3",
+        "namespace": "Alexa.PowerController"
+      }
+    ],
+    "events": []
+  }
+}

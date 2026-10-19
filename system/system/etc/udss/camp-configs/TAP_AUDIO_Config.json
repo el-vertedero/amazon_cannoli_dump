@@ -1,0 +1,69 @@
+{
+    "description": "Audio Tap pipeline responsible for handling the business logic on device",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "AudioTypeUpdateIPCInStream",
+            "type": "core.ipc.input",
+            "args": {
+                "publisher": "com.amazon.puffin",
+                "eventName": "UpdateAudioType",
+                "payloadParamType": "int"
+            }
+        },
+        {
+            "name": "EnqueueObserverIPCInStream",
+            "type": "core.ipc.input",
+            "args": {
+                "publisher": "com.amazon.puffin",
+                "eventName": "TapSubscribe",
+                "payloadParamType": "int"
+            }
+        },
+        {
+            "name": "DequeueObserverIPCInStream",
+            "type": "core.ipc.input",
+            "args": {
+                "publisher": "com.amazon.puffin",
+                "eventName": "TapUnsubscribe",
+                "payloadParamType": "int"
+            }
+        },
+        {
+            "name": "TapPriorityCAMPStream",
+            "type": "Tap.TapPriorityCAMPStream",
+            "inputs": [
+                "EnqueueObserverIPCInStream",
+                "DequeueObserverIPCInStream"
+            ]
+        },
+        {
+            "name": "AudioTypeUpdateStream",
+            "type": "Tap.AudioTypeUpdateStream",
+            "inputs": [
+                "AudioTypeUpdateIPCInStream"
+            ]
+        },
+        {
+            "name": "AudioTapNotifierCAMPStream",
+            "type": "Tap.AudioTapNotifierCAMPStream",
+            "inputs": [
+                "TapPriorityCAMPStream",
+                "AudioTypeUpdateStream"
+            ]
+        },
+        {
+            "name": "TapPublishingStream",
+            "type": "core.ipc.output",
+            "args": {
+                "eventName": "TapDetected",
+                "cacheName": "TapDetected",
+                "payloadParamType": "int"
+            },
+            "inputs": [
+                "AudioTapNotifierCAMPStream"
+            ]
+        }
+    ]
+}

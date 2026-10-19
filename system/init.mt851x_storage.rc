@@ -1,0 +1,37 @@
+# MT851x NAND specific rc
+
+import init.nand.ubi.rc
+import init.mt851x.nand.ubi.rc
+
+on post-fs-data
+   chmod 0666 /sys/devices/platform/11018000.nfi/operation_resets
+   chmod 0644 /sys/kernel/debug/ubi/ubi0/sync_erase_retry_failures
+   chmod 0644 /sys/kernel/debug/ubi/ubi0/sync_erase_retry_successes
+
+on property:ro.boot.slot_suffix=_a
+    symlink /dev/storage/by-name/system_a /dev/storage/by-name/system
+    symlink /dev/block/system_a /dev/block/system
+
+on property:ro.boot.slot_suffix=_b
+    symlink /dev/storage/by-name/system_b /dev/storage/by-name/system
+    symlink /dev/block/system_b /dev/block/system
+
+# After data has mounted check the dev flags for writeable system flag and run
+# r/w check which will both setprop and run r/w setup.
+on fs
+    start rw_system_check
+    wait /dev/rwcheckdone 5
+
+# If the property is set to true any time, then run the r/w check
+on property:amazon.writeable_system=true
+    start rw_system_check
+
+# If the property is set to false any time, then run the r/w check to clear
+on property:amazon.writeable_system=false
+    start rw_system_check
+
+service rw_system_check /system/bin/writeable_system_check.sh
+    class main
+    user root
+    disabled
+    oneshot

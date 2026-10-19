@@ -1,0 +1,326 @@
+{
+  "Name": "EdgeFlowModelConfig",
+  "ModelCategories": {
+    "FDBD": "FDBD_dsp",
+    "OD": "OD_dsp",
+    "HOE":  "HOE_dsp",
+    "FL": "FL_dsp",
+    "FR": "FR_dsp",
+    "BR": "BR_dsp",
+    "DD": "DD_dsp",
+    "DOE": "DOE_dsp",
+    "HDE": "HDE_dsp",
+    "FOE": "FOE_dsp",
+    "DPR": "DPR_dsp",
+    "SSL": "SSL_cpu",
+    "SE": "SE_cpu",
+    "SEGMENTATION": "Segmentation_Mv2_DeepLabV3Plus_dsp",
+    "DEEPFEATURE": "SuperPoint_dsp",
+    "DEEPMATCH": "SuperGlue_dsp",
+    "TEST": "TEST_ONLY"
+  },
+  "FDBD": {
+    "FDBD_dsp": {
+      "ModelPath": "hdfd/hdfd_hkd.tflite",
+      "ModelPostPPath": "detection_nms.json",
+      "ModelVersion": "6.2",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "Preprocessor/sub": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "concat": "confidence",
+        "concat_1": "boundingbox"
+      }
+    }
+  },
+  "OD": {
+    "OD_dsp": {
+      "ModelPath": "od/od.tflite",
+      "ModelPostPPath": "detection_nms.json",
+      "ModelVersion": "2.2",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "Preprocessor/sub": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "concat": "confidence",
+        "concat_1": "boundingbox"
+      }
+    }
+  },
+  "HOE": {
+    "HOE_dsp": {
+      "ModelPath": "hoe/hoe_hkd.tflite",
+      "ModelVersion": "4.2",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "hoe_identity": "hoe_out",
+        "Identity": "heatmap_out"
+      }
+    }
+  },
+  "FL": {
+    "FL_dsp": {
+      "ModelPath": "fl/fl.tflite",
+      "ModelVersion": "3.6",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "images": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "Output/fl_identity": "onet_loc",
+        "Output/lc_identity": "onet_conf",
+        "Output/fo_identity": "onet_orientation"
+      }
+    }
+  },
+  "FR": {
+    "FR_dsp": {
+      "ModelPath": "fr/fr.tflite",
+      "ModelVersion": "1.1",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "OutputNeedsDequantization": true
+    }
+  },
+  "BR": {
+    "BR_dsp": {
+      "ModelPath": "br/br.tflite",
+      "ModelVersion": "7.2",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "MobilenetV2/Logits/AvgPool:0": "br_out"
+      }
+    }
+  },
+  "DD": {
+    "DD_dsp": {
+      "ModelPath": "dd/dd.tflite",
+      "ModelPostPPath": "dock_detection_nms.json",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "Preprocessor/sub": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "concat": "confidence",
+        "concat_1": "boundingbox"
+      }
+    }
+  },
+  "DOE": {
+    "DOE_dsp": {
+      "ModelPath": "doe/doe.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "hoe_identity:0": "doe_out"
+      }
+    }
+  },
+  "HDE": {
+    "HDE_dsp": {
+      "ModelPath": "hde/hde.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "Output/depth_estimation:0": "hde_out"
+      }
+    }
+  },
+  "FOE": {
+    "FOE_dsp": {
+      "ModelPath": "foe/foe.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "angle_logits:0": "foe_out"
+      }
+    }
+  },
+  "DPR": {
+    "DPR_dsp": {
+      "ModelPath": "dpr/dpr.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "Placeholder": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "MobilenetV2/Logits/AvgPool:0": "dpr_out"
+      }
+    }
+  },
+  "SEGMENTATION": {
+    "Segmentation_Mv2_DeepLabV3Plus_dsp": {
+      "ModelPath": "segmentation/deeplab_v3_quant.tflite",
+      "ModelVersion": "3.0",
+      "Runtime": "dsp",
+      "SplitNodeIndex": -1,
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "MobilenetV2/MobilenetV2/input": "input"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "ArgMax": "seg_map_out",
+        "RawSemanticProbabilities": "probabilities"
+      }
+    }
+  },
+  "DEEPFEATURE": {
+    "SuperPoint_cpu": {
+      "ModelPath": "deepfeature/superpoint.tflite",
+      "ModelPostPPath": "superpoint_nms.json",
+      "ModelVersion": "1.0",
+      "Runtime": "cpu",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "superpoint/pred_data_sharding/stack": "input"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "superpoint/pred_tower0/detector/DepthToSpace": "detector_confidence",
+        "superpoint/pred_tower0/descriptor/l2_normalize": "descriptor"
+      }
+    },
+    "SuperPoint_dsp": {
+      "ModelPath": "deepfeature/super_point.dsp.tflite",
+      "ModelPostPPath": "superpoint_nms.json",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "superpoint/pred_data_sharding/stack": "input"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "superpoint/tower0/detector/strided_slice": "detector_confidence",
+        "superpoint/tower0/descriptor/ResizeBilinear": "descriptor"
+      }
+    }
+  },
+  "DEEPMATCH": {
+    "SuperGlue_dsp": {
+      "ModelPath": "deepmatch/superglue.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "SplitNodeIndex": -1,
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "Placeholder": "keypoint0",
+        "Placeholder_1": "keypoint1",
+        "Placeholder_2": "desc0",
+        "Placeholder_3": "desc1"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "quantize/FakeQuantWithMinMaxArgs_8": "superglue_output"
+      }
+    }
+  },
+  "SSL": {
+    "SSL_cpu": {
+      "ModelPath": "vad_lite.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "cpu",
+      "Threads": 1,
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "serving_default_input_1:0": "serving_default_input_1:0",
+        "serving_default_input_2:0": "serving_default_input_2:0",
+        "serving_default_input_3:0": "serving_default_input_3:0"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "StatefulPartitionedCall:1": "StatefulPartitionedCall:1",
+        "StatefulPartitionedCall:2": "StatefulPartitionedCall:2",
+        "StatefulPartitionedCall:0": "StatefulPartitionedCall:0"
+      }
+    }
+  },
+  "SE": {
+    "SE_cpu": {
+      "ModelPath": "tflite-cp-1217.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "cpu",
+      "Threads": 1,
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "serving_default_input_1:0": "serving_default_input_1:0",
+        "serving_default_input_2:0": "serving_default_input_2:0",
+        "serving_default_input_3:0": "serving_default_input_3:0"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "StatefulPartitionedCall:1": "StatefulPartitionedCall:1",
+        "StatefulPartitionedCall:2": "StatefulPartitionedCall:2",
+        "StatefulPartitionedCall:0": "StatefulPartitionedCall:0"
+      }
+    }
+  },
+  "TEST": {
+    "Test_Mv2_dsp": {
+      "ModelPath": "test/mobilenet_v2_1.0_224_quant.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "dsp",
+      "InputNeedsQuantization": true,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": true,
+      "OutputNodeMaps": {
+        "output": "mv2_out"
+      }
+    },
+    "Test_Mv2_gpu": {
+      "ModelPath": "test/mobilenet_v2_1.0_224.tflite",
+      "ModelVersion": "1.0",
+      "Runtime": "gpu",
+      "InputNeedsQuantization": false,
+      "InputNodeMaps": {
+        "input": "input"
+      },
+      "OutputNeedsDequantization": false,
+      "OutputNodeMaps": {
+        "output": "MobilenetV2/Predictions/Reshape_1"
+      }
+    }
+  }
+}

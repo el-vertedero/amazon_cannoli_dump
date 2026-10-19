@@ -1,0 +1,5 @@
+service factory-reset /system/bin/factory-reset
+    class late_start
+    user factory_reset
+    group aipc inet dbus ace_group system ace_kvstore ace_maplite keystore wakelock davs
+    oneshot

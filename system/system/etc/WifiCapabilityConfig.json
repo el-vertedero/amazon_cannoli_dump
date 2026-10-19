@@ -1,0 +1,50 @@
+{
+    "applicationProtocols": [
+        {
+            "type": "PHILIPS_HUE",
+            "maxVersion": "1.0",
+            "transportProtocols": [
+                {
+                    "type": "WI-FI",
+                    "maxVersion": "5.0"
+                }
+            ],
+            "commissioneeTypes": {
+                "displayCategories": [
+                    "LIGHT"
+                ]
+            }
+        },
+        {
+            "type": "WEMO",
+            "maxVersion": "1.0",
+            "transportProtocols": [
+                {
+                    "type": "WI-FI",
+                    "maxVersion": "5.0"
+                }
+            ],
+            "commissioneeTypes": {
+                "displayCategories": [
+                    "SMARTPLUG",
+                    "SWITCH"
+                ]
+            }
+        },
+        {
+            "type": "IPP",
+            "maxVersion": "2.1",
+            "transportProtocols": [
+                {
+                    "type": "WI-FI",
+                    "maxVersion": "5.0"
+                }
+            ],
+            "commissioneeTypes": {
+                "displayCategories": [
+                    "PRINTER"
+                ]
+            }
+        }
+    ]
+}

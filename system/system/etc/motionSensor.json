@@ -1,0 +1,105 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [],
+    "properties": [
+      {
+        "deviceStateName": "detectionState",
+        "applicationPropertyName": "detectionState",
+        "version": "3",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionState",
+        "applicationPropertyName": "detectionState",
+        "version": "3.1",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionState",
+        "applicationPropertyName": "detectionState",
+        "version": "3.2",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "enablement",
+        "applicationPropertyName": "enablement",
+        "version": "3.1",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "enablement",
+        "applicationPropertyName": "enablement",
+        "version": "3.2",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionRange",
+        "applicationPropertyName": "detectionRange",
+        "version": "3.1",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionRange",
+        "applicationPropertyName": "detectionRange",
+        "version": "3.2",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionSensitivity",
+        "applicationPropertyName": "detectionSensitivity",
+        "version": "3.1",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionSensitivity",
+        "applicationPropertyName": "detectionSensitivity",
+        "version": "3.2",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionTechnology",
+        "applicationPropertyName": "detectionTechnology",
+        "version": "3.2",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionState",
+        "applicationPropertyName": "detectionState",
+        "version": "3.3",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "occupancyClassification",
+        "applicationPropertyName": "occupancyClassification",
+        "version": "3.3",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "enablement",
+        "applicationPropertyName": "enablement",
+        "version": "3.3",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionRange",
+        "applicationPropertyName": "detectionRange",
+        "version": "3.3",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionSensitivity",
+        "applicationPropertyName": "detectionSensitivity",
+        "version": "3.3",
+        "namespace": "Alexa.MotionSensor"
+      },
+      {
+        "deviceStateName": "detectionTechnology",
+        "applicationPropertyName": "detectionTechnology",
+        "version": "3.3",
+        "namespace": "Alexa.MotionSensor"
+      }
+    ],
+    "events": []
+  }
+}

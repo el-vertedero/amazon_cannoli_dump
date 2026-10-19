@@ -1,0 +1,75 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [],
+    "properties": [
+      {
+        "deviceStateName": "battery",
+        "applicationPropertyName": "battery",
+        "version": "3.2",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "battery",
+        "applicationPropertyName": "battery",
+        "version": "3",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "radioDiagnostics",
+        "applicationPropertyName": "radioDiagnostics",
+        "version": "3.2",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "radioDiagnostics",
+        "applicationPropertyName": "radioDiagnostics",
+        "version": "3",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "networkThroughput",
+        "applicationPropertyName": "networkThroughput",
+        "version": "3.2",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "networkThroughput",
+        "applicationPropertyName": "networkThroughput",
+        "version": "3",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "connectivity",
+        "applicationPropertyName": "connectivity",
+        "version": "3",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "connectivity",
+        "applicationPropertyName": "connectivity",
+        "version": "3.0",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "connectivity",
+        "applicationPropertyName": "connectivity",
+        "version": "3.1",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "connectivity",
+        "applicationPropertyName": "connectivity",
+        "version": "3.2",
+        "namespace": "Alexa.EndpointHealth"
+      },
+      {
+        "deviceStateName": "connectivity",
+        "applicationPropertyName": "connectivity",
+        "version": "3.3",
+        "namespace": "Alexa.EndpointHealth"
+      }
+    ],
+    "events": []
+  }
+}

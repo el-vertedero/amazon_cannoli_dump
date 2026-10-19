@@ -1,0 +1,13 @@
+#
+# Copyright (c) 2018  Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+service boot2_anim_stop /system/bin/stop_animation.sh anim_start_phase2
+    user ledcontroller
+    group dbus
+    disabled
+    oneshot
+
+on property:amazon.headless.BOOT_COMPLETED=1
+    start boot2_anim_stop

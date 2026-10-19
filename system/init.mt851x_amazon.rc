@@ -1,0 +1,473 @@
+# MTK project .rc configure
+
+# Import ACE init.rc
+import init.ace.rc
+
+import init.avahi-daemon.rc
+import init.ledcontroller.rc
+import init.mt851x.usb.rc
+import init.wifi.rc
+import init.oobe.rc
+import init.puffin.rc
+import init.factory_reset.rc
+import init.mt851x_storage.rc
+import init.dacd.rc
+import init.whad_cc.rc
+
+on init
+    mount tmpfs tmpfs /mnt/media_rw/ mode=0755,uid=1000,gid=1000
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+    mount tmpfs tmpfs /storage/usbotg mode=0755,uid=1000,gid=1000
+    # Load persistent dm-verity state
+    verity_load_state
+
+on boot
+    export DOWNLOAD_CACHE /cache
+    mkdir /data/avs 0750 puffin puffin
+    mkdir /data/avs/resources 0750 puffin puffin
+    mkdir /data/avs/tmp 0750 puffin puffin
+    mkdir /data/hybridrouter 0750 puffin puffin
+    mkdir /data/wha 0750 puffinmrm puffinmrm
+    mkdir /data/wha/tmp 0750 puffinmrm puffinmrm
+
+    mkdir /data/gadgets 0750 gadgetsd gadgetsd
+    mkdir /data/gadgets/ota 0750 gadgetsd gadgetsd
+    mkdir /data/gadgets/audio 0750 gadgetsd gadgetsd
+
+#puffinmrm
+    chown puffinmrm puffinmrm /data/avs/btdevice.db.json
+    chown puffinmrm puffinmrm /data/avs/btdevice.userdb.json
+
+#odot
+   mkdir /data/odot 0755 odot odot
+
+#cmbd
+   mkdir /data/cmbd 0700 puffin puffin
+
+   # This is required for KATS/CI purposes. TODO: This needs to
+   # move into OOBE or whatever other service will ultimately
+   # declare that boot has completed.
+   setprop sys.boot_completed 1
+   setprop service.bootanim.exit 1
+
+   start shmd
+   # Note: healthcheck may require execution *after* all fs init stages
+   start healthcheck
+   chown ace_button_mgr ace_button_mgr /sys/devices/platform/gpio-privacy/state
+   chown ace_button_mgr ace_button_mgr /sys/devices/platform/gpio-privacy/enable
+
+on property:kvs_init_completed=1
+    chown ace_maplite ace_maplite /data/ace/kvstorage/map.db
+    chown credmgr credmgr /data/ace/kvstorage/credmgr.db
+    chown wifi wifi /data/ace/kvstorage/WifiCred.db
+    chown ace_messaging ace_messaging /data/ace/kvstorage/messaging.db
+    start tokend
+    start acebuttond
+    start acethermald
+
+on property:kvs_init_completed=1 && property:pwrsvcd.ready=1
+    start acepowerd
+
+on post-fs-data
+    insmod /system/lib/modules/btmtksdio.ko
+    # Update dm-verity state and set partition.*.verified properties
+    verity_update_state
+
+    # create directories for davs
+    # preinstalled davs directory could be wiped out by factory reset
+    mkdir /data/davs 0750 davs davs
+    mkdir /data/davs/requests 0750 davs davs
+    mkdir /data/davs/resources 0750 davs davs
+
+#Define device for ATCID
+    chmod 660 /dev/ttyGS0
+    chown system /dev/ttyGS0
+    chmod 660 /dev/ttyGS1
+    chown system /dev/ttyGS1
+
+# Zigbee data path
+    mkdir /data/misc/zigbee 0770 system system
+
+# mixer files
+    mkdir /data/mixer_meta/ 0770 audio audio
+    mkdir /data/mixer_streams/ 0777 audio audio
+    mkdir /data/misc/audio 0770 audio audio
+    chown audio audio /sys/devices/platform/soc/1000b000.pinctrl/mt_gpio
+    chown audio audio /data/mixer_meta/audiodVolumes
+    chown audio audio /data/mixer_meta/btsinkplayer.pid
+    chown audio audio /data/mixer_meta/mixer.pid
+
+# rfkill node for zigbee
+    chown system system /sys/class/rfkill/rfkill0/state
+    chmod 0660 /sys/class/rfkill/rfkill0/state
+    chown system system /sys/class/rfkill/rfkill1/state
+    chmod 0660 /sys/class/rfkill/rfkill1/state
+
+# dhcp
+    mkdir /data/misc/dhcp 0775 dhcp wifi
+    chown system dhcp /data/misc/dhcp
+
+# wifisvc  keystore
+    mkdir /data/misc/wifi/keystore 0755 wifi wifi
+    chown wifi wifi /data/misc/wifi/keystore
+
+# powerd
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+
+#mqueue
+    mkdir /dev/mqueue
+    mount -t mqueue none /dev/mqueue
+
+#maplite
+    mkdir /data/account 0755 maplite maplite
+    chown maplite maplite /data/account
+
+#securedStorage
+    mkdir /data/securedStorageLocation 0771 system amz_group
+
+#davs file check
+    start davsCheckAsDavs
+    start davsCheckAsRoot
+
+# power interrupt metric
+    chmod 0666 /sys/class/hwmon/hwmon0/irq_count
+
+on post-fs
+#mute button pwm
+    write /sys/class/pwm/pwmchip0/export 1
+#disable pm print time logs
+    write /sys/power/pm_print_times 0
+
+#pwrsvcd
+   chmod 660 /sys/power/wakeup_count
+   start pwrsvcd
+
+on init
+    # Refer to http://source.android.com/devices/tech/storage/index.html
+    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
+    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
+    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
+    #           Developers expect data stored in these locations to be available over long periods of time."
+    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
+    #
+    # export SECONDARY_STORAGE /storage/sdcard1
+
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
+    class late_start
+    disabled
+
+on early-boot
+    start btmac
+    start set_memtotal
+
+on property:service.nvram_init=ready
+    start mixer
+
+on property:audio_mixer.init=true
+    start BTSinkPlayer
+    start btmanagerd
+
+on property:com.amazon.cmbd.run=1
+    start cmbd
+
+on property:com.amazon.cmbd.run=0
+    stop cmbd
+
+on property:com.amazon.puffin.PUFFIN_START=1 && property:audio_mixer.init=true
+    start puffinmrmd
+    start puffin
+    start cmbd
+    start assetmgrd
+    start dacd
+
+service set_memtotal /system/bin/set_memtotal_prop.sh
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:setmemtotalpropscript:s0
+
+service atci_service /vendor/bin/atci_service
+    socket atci-service stream 660 radio system
+    socket atci-serv-fw stream 660 radio system
+    user root
+    disabled
+    group radio system
+service atcid-daemon-u /vendor/bin/atcid
+    user system
+    group radio system media
+    disabled
+    oneshot
+
+service atcid-daemon-e /vendor/bin/atcid
+    user root
+    group radio system
+    disabled
+    oneshot
+
+# "ip_local_reserved_ports" is too long too.
+on property:sys.sysctl.ip_loc_res_ports=*
+    write /proc/sys/net/ipv4/ip_local_reserved_ports ${sys.sysctl.ip_loc_res_ports}
+
+service dhcpcd-wlan0 /system/bin/dhcpcd wlan0 -AdLK
+    class main
+    disabled
+
+service dhcpcd-eth0 /system/bin/dhcpcd eth0 -AdLK
+    class main
+    disabled
+
+service dhcpcd-br0 /system/bin/dhcpcd br0 -AdLK
+    class main
+    disabled
+
+service dhcpcd-static /system/bin/dhcpcd_static.sh
+    class main
+    disabled
+    oneshot
+
+service renewdhcp-wlan0 /system/bin/dhcpcd wlan0 -N
+    class main
+    disabled
+    oneshot
+
+service dnsmasq /system/bin/p2p_dnsmasq.sh
+    class main
+    user root
+    group system dbus dhcp
+    disabled
+    oneshot
+
+service sntpd /system/bin/sntp -f
+    class late_start
+    user root
+    group system dbus wifi aipc
+
+service wifisvc /system/bin/wifisvc
+    class late_start
+    user root
+    group system wifi dbus aipc inet ace_kvstore ace_group ace_maplite
+
+service acepowerd /system/bin/ace_powerd
+    class main
+    user ace_powerd
+    group dbus aipc system ace_kvstore ace_group
+    disabled
+
+on early_property:ro.build.type=eng
+start atci_service
+start atcid-daemon-e
+service audio-daemon /vendor/bin/audiocmdservice_atci
+    class main
+    socket atci-audio stream 660 media system
+    user media
+    group nvram media system sdcard_rw
+    disabled
+    oneshot
+
+# BT MAC
+    service btmac /system/bin/btmac.sh
+    user root
+    group radio system
+    disabled
+    oneshot
+
+# OTA
+on property:rota.status=install_applying
+    write /sys/block/mmcblk0boot0/force_ro 0
+
+on property:rota.status=install_success
+    write /sys/block/mmcblk0boot0/force_ro 1
+
+on property:rota.status=install_error
+    write /sys/block/mmcblk0boot0/force_ro 1
+
+on property:rota.status=install_corrupt
+    write /sys/block/mmcblk0boot0/force_ro 1
+
+on property:rota.status=install_verifying
+    write /sys/block/mmcblk0boot0/force_ro 1
+
+service shmd /system/bin/shmd
+    class main
+    user system
+    group system
+
+service assetmgrd /system/bin/assetmgrd
+    setenv SHMLIB_DISABLE_ONLOAD true
+    class main
+    user davs
+    group davs dbus aipc inet ace_kvstore ace_group ace_maplite
+    disabled
+
+on property:com.amazon.assetmgrd.run=1
+    start assetmgrd
+
+on property:com.amazon.assetmgrd.run=0
+    stop assetmgrd
+
+# start service with user as davs to delete individual files
+# and directories (owner as davs)
+service davsCheckAsDavs /system/bin/davsFileCheck.sh
+    class main
+    user davs
+    group root davs system shell
+    disabled
+    oneshot
+
+# start service with user as root to delete
+# directories (owner as root)
+service davsCheckAsRoot /system/bin/davsFileCheck.sh
+    class main
+    user root
+    group root davs system shell
+    disabled
+    oneshot
+
+service mixer /system/bin/mixer
+    class main
+    user audio
+    group audio dbus aipc media nvram system input gadgetsd factory_reset
+
+service BTSinkPlayer /system/bin/BTSinkPlayer
+    class main
+    user audio
+    group audio dbus
+
+service acebuttond /system/bin/acebuttond
+    class main
+    user ace_button_mgr
+    group aipc dbus input ace_kvstore ace_group wakelock system
+    disabled
+
+service disable_rf /system/bin/disable_rf.sh
+    user root
+    disabled
+    oneshot
+
+service acethermald /system/bin/ace_thermald
+    class main
+    user ace_thermald
+    group dbus aipc system ace_kvstore ace_group
+    disabled
+
+service gadgetsd /system/bin/gadgetsd
+   class main
+   user gadgetsd
+   group gadgetsd dbus inet aipc ace_group
+   disabled
+
+on property:com.amazon.gadgetsd.run=1
+    start gadgetsd
+
+on property:com.amazon.gadgetsd.run=0
+    stop gadgetsd
+
+service ace_messaging /system/bin/ace_messaging_service
+     class main
+     user ace_messaging
+     group dbus inet ace_group ace_kvstore ace_messaging aipc ace_maplite
+
+service tokend /system/bin/tokend
+   class main
+   user ace_tokend
+   group inet ace_kvstore ace_group dbus ace_maplite aipc
+   disabled
+
+service otad /system/bin/otad
+    setenv SHMLIB_DISABLE_ONLOAD true
+    class main
+    user ace_otad
+    group dbus aipc ace_kvstore ace_group inet cache
+
+service healthcheck /system/bin/healthcheck
+    class main
+    group system keystore drmrpc display_controller
+    disabled
+    oneshot
+
+service puffinmrmd /system/bin/puffinmrmd /system/etc/AlexaClientSDKConfig.json
+    class main
+    user puffinmrm
+    group aipc dbus inet ace_group drmrpc system puffin puffinmrm audio keystore ace_kvstore ace_maplite
+    disabled
+
+service cmbd /system/bin/cmbd
+    class main
+    user puffin
+    group aipc dbus inet ace_group system puffin wifi cache shell
+    disabled
+    oneshot
+
+service wipe_fos_flags /init.fosflags.sh wipe
+    class core
+    oneshot
+    disabled
+
+on property:amazon.fos_flags.wipe=1
+    start wipe_fos_flags
+
+on property:persist.lab126.eth0.enabled=1
+    write /sys/kernel/debug/usb/11211000.usb/mode "host"
+
+on property:persist.lab126.eth0.enabled=0
+    write /sys/kernel/debug/usb/11211000.usb/mode "device"
+
+# ADD_BOOT_PROF_PRINTS_START
+# Adding Boot Profiling Prints to BootProf
+# Device - mt851x
+# Device Specific Info - None.
+on early-init
+    write /proc/bootprof "INIT: early-init"
+
+on init
+    write /proc/bootprof "INIT: on init"
+
+on boot
+    write /proc/bootprof "INIT: on boot"
+
+on late-init
+    write /proc/bootprof "INIT: on late-init"
+
+on post-fs
+    write /proc/bootprof "INIT: on post-fs"
+
+on post-fs-data
+    write /proc/bootprof "INIT: on post-fs-data"
+
+on fs
+    write /proc/bootprof "INIT: on fs"
+
+on property:sys.boot_completed=1
+    write /proc/bootprof "INIT: on property:sys.boot_completed=1"
+    stop vold
+
+on property:audio_mixer.init=true
+    write /proc/bootprof "INIT: on property:audio_mixer.init=true"
+
+on property:ro.amazon.fosflags=1
+    write /proc/bootprof "INIT: on property:ro.amazon.fosflags=1"
+
+on load_all_props_action
+    write /proc/bootprof "INIT: on load_all_props_action"
+
+on firmware_mounts_complete
+    write /proc/bootprof "INIT: on firmware_mounts_complete"
+
+on property:sys.boot_from_charger_mode=1
+    write /proc/bootprof "INIT: on property:sys.boot_from_charger_mode=1"
+
+on property:com.amazon.puffin.PUFFIN_START=1
+    write /proc/bootprof "INIT: on com.amazon.puffin.PUFFIN_START=1"
+
+on property:com.amazon.puffin.INITIALIZE=*
+    write /proc/bootprof "INIT: on com.amazon.puffin.INITIALIZE=${com.amazon.puffin.INITIALIZE}"
+
+on property:com.amazon.puffin.OOBED_START=on_boot
+    write /proc/bootprof "INIT: on com.amazon.puffin.OOBED_START=on_boot"
+
+on property:com.amazon.puffin.ALEXA_STS=READY
+    write /proc/bootprof "INIT: on com.amazon.puffin.ALEXA_STS=READY"
+
+# ADD_BOOT_PROF_PRINTS_END

@@ -1,0 +1,17 @@
+##
+## kill lipc_test?? before running next lipc test programs except the process
+## whose pid is PID
+##
+## Usage: clean_lipc_env [PID]
+##
+## Modified by Hareet
+##for x in $( ps ax -o pid,comm 2>/dev/null | grep lipc_test | awk '{print $1}')
+for x in $( pgrep -f lipc_test )
+do
+  if [ $x != $1 ] 
+  then
+    kill -9 $x
+    sleep 1
+  fi
+done
+

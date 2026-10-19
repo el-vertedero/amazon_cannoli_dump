@@ -1,0 +1,16 @@
+{
+    "applicationProtocols": [
+        {
+            "type": "OTHER",
+            "name": "LAP",
+            "maxVersion": "1.0",
+            "commissioneeTypes": {
+                "displayCategories": [
+                    "LIGHT",
+                    "SMARTPLUG",
+                    "SWITCH"
+                ]
+            }
+        }
+    ]
+}

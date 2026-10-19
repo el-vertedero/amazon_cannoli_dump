@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  headless_core_hardware.xml
+  Copyright (c) [2017] Amazon.com, Inc. or its affiliates.  All rights reserved.
+
+  PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<permissions>
+
+    <!-- These are hardware components that all headless devices must
+         include.
+    -->
+    <!-- Amazon device specific features -->
+    <feature name="amazon.hardware.headless" />
+
+</permissions>

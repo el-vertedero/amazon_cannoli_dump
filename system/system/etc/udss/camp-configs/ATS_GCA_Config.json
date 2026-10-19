@@ -1,0 +1,43 @@
+{
+    "description": "ATS GCA config",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "atsGCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.TemperatureSensor",
+                        "version": "3",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "temperature",
+                                    "type": "object",
+                                    "default": "{\"value\": -280, \"scale\": \"CELSIUS\"}",
+                                    "persisted": false
+                                }
+                            ],
+                            "proactivelyReported": true,
+                            "retrievable": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "ATS Data Stream",
+            "type": "ats.ATSData"
+        }
+    ],
+    "exec": [
+        {
+            "command": "connect",
+            "input": "ATS Data Stream",
+            "consumer": "GenericCA|Properties|Alexa.TemperatureSensor|temperature|Setting"
+        }
+    ]
+}

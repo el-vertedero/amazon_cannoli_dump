@@ -1,0 +1,36 @@
+{
+  "duty_cycle": {
+    "5G": [
+      {
+        "on_time": 10,
+        "off_time": 20
+      }
+    ],
+    "default": [
+      {
+        "on_time": 10,
+        "off_time": 10
+      }
+    ]
+  },
+  "nm_time": {
+    "enter": [
+      {
+        "hour": 2,
+        "minute": 0
+      }
+    ],
+    "exit_start": [
+      {
+        "hour": 6,
+        "minute": 0
+      }
+    ],
+    "exit_end": [
+      {
+        "hour": 6,
+        "minute": 30
+      }
+    ]
+  }
+}

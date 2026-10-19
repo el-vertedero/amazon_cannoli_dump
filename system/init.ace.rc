@@ -1,0 +1,35 @@
+# ACE init.rc configuration
+
+on post-fs-data
+
+# Create AIPC path
+    mkdir /dev/aipc 2770 aipc aipc
+
+# KVS Util
+    mkdir /data/ace 0770 ace_group ace_group
+    mkdir /data/ace/kvstorage 0770 ace_kvstore ace_kvstore
+#copy the database from old location to new location if needed
+#need to remove this later
+    copy /data/ace/kvstorage.db /data/ace/kvstorage/kvstorage.db
+    chown ace_kvstore ace_kvstore /data/ace/kvstorage/kvstorage.db
+    rm /data/ace/kvstorage.db
+    chown ace_kvstore ace_kvstore /data/ace/kvstorage/map.db
+    start kvs_util
+
+service kvs_util /system/bin/kvs_util
+    user ace_kvstore
+    group ace_kvstore ace_group
+    oneshot
+    disabled
+
+on boot
+# Start ACE daemons
+
+
+# Bluetooth daemon
+service btmanagerd /system/bin/btmanagerd
+    class main
+    user root
+    group aipc bluetooth net_bt_admin dbus ace_kvstore net_bt_stack ace_group
+    disabled
+

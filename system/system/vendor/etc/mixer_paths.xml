@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mixer>
+	<!-- These are the initial mixer settings -->
+	<ctl name="CM0_Bypass_Switch" value="0" />
+	<ctl name="VA_IN Mux" value="UL9" />
+	<ctl name="VA_IN_IO Mux" value="UL9_IO" />
+	<!-- Connect GASRC 2 to eTDM -->
+	<ctl name="O04 I36 Switch" value="1" />
+	<ctl name="O05 I37 Switch" value="1" />
+	<!-- Connect DLM to GASRC 2,3 -->
+	<ctl name="O46 I22 Switch" value="1" />
+	<ctl name="O47 I23 Switch" value="1" />
+	<ctl name="O48 I24 Switch" value="1" />
+	<ctl name="O49 I25 Switch" value="1" />
+	<!-- Connect TDM to GASRC 0,1 -->>
+	<ctl name="O42 I42 Switch" value="1" />
+	<ctl name="O43 I43 Switch" value="1" />
+	<ctl name="O44 I44 Switch" value="1" />
+	<ctl name="O45 I45 Switch" value="1" />
+	<!-- Connect GASRC 2,3 to CM -->
+	<ctl name="O29 I36 Switch" value="1" />
+	<ctl name="O30 I37 Switch" value="1" />
+	<ctl name="O31 I38 Switch" value="1" />
+	<ctl name="O32 I39 Switch" value="1" />
+	<!-- Connect DL2 to eTDM -->
+	<ctl name="O04 I40 Switch" value="1" />
+	<ctl name="O05 I41 Switch" value="1" />
+	<!-- Connect DL2 to CM -->
+	<ctl name="O29 I40 Switch" value="1" />
+	<ctl name="O30 I41 Switch" value="1" />
+	<!-- Connect DL3 to GASRC 3 -->
+	<ctl name="O48 I20 Switch" value="1" />
+	<ctl name="O49 I21 Switch" value="1" />
+	<!-- GASRC configuration -->
+	<ctl name="GASRC0 Input Mux" value="Gasrc_4ch" />
+	<ctl name="GASRC0 Output Mux" value="Gasrc_4ch" />
+	<ctl name="GASRC1 Input Mux" value="Gasrc_4ch" />
+	<ctl name="GASRC1 Output Mux" value="Gasrc_4ch" />
+	<ctl name="GASRC2 Input Mux" value="Gasrc_2ch" />
+	<ctl name="GASRC2 Output Mux" value="Gasrc_2ch" />
+	<ctl name="GASRC3 Input Mux" value="Gasrc_2ch" />
+	<ctl name="GASRC3 Output Mux" value="Gasrc_2ch" />
+	<!-- DL2 Playback  -->
+	<ctl name="PCM_DL2_IO Switch" value="1" />
+	<ctl name="BE_DL2_IO Switch" value="1" />
+
+	<!-- These are actual sound device specific mixer settings -->
+	<path name="normal-playback speaker">
+	</path>
+
+	<path name="normal-playback speaker-ti">
+		<ctl name="Speaker Volume" value="201" />
+		<ctl name="Amp Gain Volume" value="12" />
+		<!-- Amp fault handling -->
+		<ctl name="Woofer Irq Handler" value="1" />
+	</path>
+
+	<path name="normal-playback speaker-maxim">
+		<ctl name="Speaker Safe Mode A" value="0" />
+		<ctl name="Speaker Volume A" value="10" />
+		<ctl name="Digital Volume A" value="126" />
+		<ctl name="DC Blocker Switch A" value="1" />
+		<!-- Amp fault handling -->
+		<ctl name="Woofer Irq Handler" value="1" />
+		<ctl name="IRQ CTRL" value="1" />
+		<ctl name="INT EN1" value="255" />
+		<ctl name="INT EN2" value="255" />
+	</path>
+
+	<path name="normal-playback bt-echo-reference">
+		<ctl name="LineOut_Enable" value="0" />
+	</path>
+
+	<path name="normal-playback receiver">
+	</path>
+
+	<path name="normal-playback speaker-and-headphone">
+	</path>
+
+	<path name="normal-playback bt-sco">
+	</path>
+
+	<path name="low-latency-playback speaker">
+	</path>
+
+	<path name="low-latency-playback headphone">
+	</path>
+
+	<path name="low-latency-playback receiver">
+	</path>
+
+	<path name="low-latency-playback speaker-and-headphone">
+	</path>
+
+	<path name="normal-capture builtin-mic">
+	</path>
+
+	<path name="normal-capture builtin-mic-ti">
+		<ctl name="O26 I32 Switch" value="1" />
+		<ctl name="O27 I33 Switch" value="1" />
+		<ctl name="O28 I34 Switch" value="1" />
+		<ctl name="ADC Reset A" value="1" />
+		<ctl name="Ch1 Slot Offset A" value="1" />
+		<ctl name="Ch2 Slot Offset A" value="0" />
+		<ctl name="Ch3 Slot Offset A" value="2" />
+		<ctl name="Ch4 Slot Offset A" value="3" />
+		<ctl name="Ch1 Gain A" value="14" />
+		<ctl name="Ch2 Gain A" value="14" />
+		<ctl name="Ch3 Gain A" value="14" />
+		<ctl name="Ch4 Gain A" value="14" />
+		<ctl name="Ch1 Digital Capture Vol A" value="201" />
+		<ctl name="Ch2 Digital Capture Vol A" value="201" />
+		<ctl name="Ch3 Digital Capture Vol A" value="201" />
+		<ctl name="Ch4 Digital Capture Vol A" value="0" />
+	</path>
+
+	<path name="normal-capture builtin-mic-ak">
+		<ctl name="O26 I34 Switch" value="1" />
+		<ctl name="O27 I35 Switch" value="1" />
+		<ctl name="O28 I33 Switch" value="1" />
+		<ctl name="AK5704 Pull-down Disable bits PSW0N" value="1" />
+		<ctl name="AK5704 Pull-down Disable bits PSW1N" value="1" />
+		<ctl name="AK5704 Pull-down Disable bits PSW2N" value="1" />
+		<ctl name="AK5704 Clock Mode Select" value="MKCI PLL Mode" />
+		<!-- 32-bit linear -->
+		<ctl name="AK5704 SDTO Data Length" value="32-bit Linear" />
+		<!--  TDM = 128 -->
+		<ctl name="AK5704 TDM Mode Select" value="TDM128" />
+
+		<ctl name="AK5704 ADC1A Enable" value="On" />
+		<ctl name="AK5704 ADC1B Enable" value="On" />
+		<ctl name="AK5704 ADC2A Enable" value="On" />
+		<ctl name="AK5704 ADC2B Enable" value="On" />
+		<ctl name="AK5704 SDTO1 MUX" value="ADC1" />
+		<ctl name="AK5704 SDTO2 MUX" value="ADC2" />
+
+		<!-- Channel gain set to 3dB -->
+		<ctl name="AK5704 MIC Amp Gain 1A" value="1" />
+		<ctl name="AK5704 MIC Amp Gain 1B" value="1" />
+		<ctl name="AK5704 MIC Amp Gain 2A" value="1" />
+		<ctl name="AK5704 MIC Amp Gain 2B" value="1" />
+
+		<!-- Digital gain 1.875dB (0x96) -->
+		<ctl name="AK5704 Input Digital Volume 1A" value="150" />
+		<ctl name="AK5704 Input Digital Volume 1B" value="150" />
+		<ctl name="AK5704 Input Digital Volume 2A" value="150" />
+		<ctl name="AK5704 Input Digital Volume 2B" value="150" />
+	</path>
+
+	<path name="normal-capture headset-mic">
+	</path>
+
+	<path name="normal-capture bt-sco">
+	</path>
+
+	<path name="speaker">
+	</path>
+
+	<path name="headphone">
+	</path>
+
+	<path name="receiver">
+	</path>
+
+	<path name="speaker-and-headphone">
+		<path name="speaker" />
+		<path name="headphone" />
+	</path>
+
+	<path name="digital-mic">
+	</path>
+
+	<path name="builtin-mic">
+	</path>
+
+	<path name="back-mic">
+	</path>
+
+	<path name="headset-mic">
+	</path>
+
+</mixer>

@@ -1,0 +1,26 @@
+service perfmonitord /system/bin/perfmonitord
+    user system
+    group system readproc aipc ace_kvstore ace_group inet
+    writepid /dev/cpuctl/bg_non_interactive/cgroup.procs
+    class main
+
+on post-fs
+    insmod /system/lib/modules/perfinfo.ko
+    chown root system /sys/kernel/perfinfo/total_pss_kb
+    chmod 0660 /sys/kernel/perfinfo/total_pss_kb
+    chown root system /sys/kernel/perfinfo/target_pid_kill
+    chmod 0660 /sys/kernel/perfinfo/target_pid_kill
+    chown root system /sys/kernel/perfinfo/oom_score_adj
+    chmod 0660 /sys/kernel/perfinfo/oom_score_adj
+    restorecon_recursive /sys/kernel/perfinfo
+    chmod 0404 /sys/kernel/slab/ksm_rmap_item/object_size
+
+    insmod /system/lib/modules/perf_cpu_info.ko
+    chown root system /proc/perf_cpu_info
+    chmod 0660 /proc/perf_cpu_info
+    mkdir /data/perfmonitord 0777 system system
+    restorecon_recursive /data/perfmonitord
+
+on property:sys.amzn.amzn_mmc_utils=1
+    start amzn_mmc_utils
+    setprop sys.amzn.amzn_mmc_utils 0

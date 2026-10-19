@@ -1,0 +1,99 @@
+{
+  "configSyncRepeatIntervalMinutes": 1440,
+  "configSyncRetryIntervalMinutes": 60,
+  "features": {
+    "WSS_OVER_BLE": {
+      "default": true,
+      "exceptions": {
+        "unsupported_devices": [],
+        "unsupported_locales": []
+      }
+    },
+    "WSS_OVER_WIFI": {
+      "default": true,
+      "exceptions": {
+        "unsupported_devices": [],
+        "unsupported_locales": []
+      }
+    },
+    "external.FULL_LPM": {
+      "default": true,
+      "exceptions": {
+        "unsupported_devices": [],
+        "unsupported_locales": []
+      }
+    },
+    "external.ONE_MIC_ENERGY_EXTRACTION": {
+      "default": true,
+      "exceptions": {
+        "unsupported_devices": [],
+        "unsupported_locales": []
+      }
+    },
+    "external.ONE_MIC_UPLOAD_AUDIO": {
+      "default": true,
+      "exceptions": {
+        "unsupported_devices": [],
+        "unsupported_locales": []
+      }
+    },
+    "external.ACSDK_ACL_RECONNECT_ENABLED": {
+      "default": true,
+      "exceptions": {
+        "unsupported_devices": [],
+        "unsupported_locales": []
+      }
+    },
+    "external.MC_ASR_ENABLED": {
+      "default": false,
+      "exceptions": {
+        "unsupported_devices": ["ECHO_DOT_3"],
+        "unsupported_locales": []
+      }
+    },
+    "external.TIMER_VISUALIZATION_ENABLED": {
+      "default": false,
+      "exceptions": {
+        "unsupported_devices": [
+          "ECHO_3",
+          "ECHO_DOT_3_REFRESH",
+          "ECHO_DOT_3_CLOCK",
+          "ECHO_4",
+          "ECHO_DOT_4",
+          "ECHO_DOT_4_CLOCK"
+        ],
+        "unsupported_locales": []
+      }
+    },
+    "external.LOCAL_STOP_WITH_WAKEWORD_ENABLED":{
+      "default":false,
+      "exceptions":{
+         "unsupported_devices":[],
+         "unsupported_locales":[]
+      },
+      "configuration":{
+         "timezone":[
+            "PDT",
+            "PST",
+            "CDT",
+            "CST",
+            "EDT",
+            "EST",
+            "MDT",
+            "MST"
+         ],
+         "localtime":[
+            "5:00:00",
+            "5:30:00",
+            "6:00:00",
+            "6:30:00",
+            "7:00:00",
+            "7:30:00",
+            "8:00:00"
+         ],
+         "active_period_in_sec":60,
+         "buffering_in_millis":1600
+      }
+   }
+  }
+}

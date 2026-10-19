@@ -1,0 +1,24 @@
+on boot
+    # load random seed that stored during last boot
+    chmod 0750 /system/bin/random_seed.sh
+    start load_seed
+    start store_seed
+
+# carry over entropy pool before from last run
+service load_seed /system/bin/random_seed.sh load
+    class main
+    user system
+    group system
+    disabled
+    oneshot
+
+# periodically store random seed to file
+service store_seed /system/bin/random_seed.sh
+    class main
+    user system
+    group system
+    disabled
+
+on post-fs-data
+    # random seed data file context
+    mkdir /data/seed 0770 system system

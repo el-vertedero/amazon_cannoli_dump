@@ -1,0 +1,28 @@
+# This rc file is applicable only to fos6.
+# For fos5, see product specific rc scripts.
+on post-fs-data
+    mkdir /data/alexahybrid                         0777 ahe ahe
+    mkdir /data/alexahybrid/files                   0777 ahe ahe
+    mkdir /data/alexahybrid/files/AmWorking         0777 ahe ahe
+    mkdir /data/alexahybrid/files/AmModel           0777 ahe ahe
+    mkdir /data/alexahybrid/files/CoreEngineWorking 0777 ahe ahe
+    mkdir /data/alexahybrid/files/smartHomeSkill    0777 ahe ahe
+    mkdir /data/alexahybrid/files/working-directory 0777 ahe ahe
+    mkdir /data/alexahybrid/ec-sockets              0777 ahe ahe
+    mkdir /data/alexahybrid/ps-sockets              0777 ahe ahe
+    mkdir /data/alexahybrid/lsf-sockets             0777 ahe ahe
+    mkdir /data/alexahybrid/lro-sockets             0777 ahe ahe
+
+on property:com.amazon.puffin.PUFFIN_START=1 && property:audio_mixer.init=true
+    start dacd
+
+service ahe /system/bin/start_ahe.sh -c /system/bin/AlexaHybridExecutionControllerLitespeed
+    class main
+    user ahe
+    group ahe aipc dbus inet ace_kvstore ace_group ace_maplite
+
+service ahe_firewall /system/bin/firewall.sh start alexa_hybrid_firewall
+    user root
+    group system shell
+    disabled
+    oneshot

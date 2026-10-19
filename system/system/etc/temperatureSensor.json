@@ -1,0 +1,27 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [],
+    "properties": [
+      {
+        "deviceStateName": "temperature",
+        "applicationPropertyName": "temperature",
+        "version": "3.1",
+        "namespace": "Alexa.TemperatureSensor"
+      },
+      {
+        "deviceStateName": "temperature",
+        "applicationPropertyName": "temperature",
+        "version": "3",
+        "namespace": "Alexa.TemperatureSensor"
+      },
+      {
+        "deviceStateName": "temperature",
+        "applicationPropertyName": "temperature",
+        "version": "3.0",
+        "namespace": "Alexa.TemperatureSensor"
+      }
+    ],
+    "events": []
+  }
+}

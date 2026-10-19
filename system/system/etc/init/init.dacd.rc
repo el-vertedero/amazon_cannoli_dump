@@ -1,0 +1,4 @@
+service dacd /system/bin/dacd
+    user dacd
+    group dacd aipc ace_kvstore ace_group ace_maplite dbus
+    disabled

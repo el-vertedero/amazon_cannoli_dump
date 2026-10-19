@@ -1,0 +1,365 @@
+{
+  "common": {
+    "invalidregex": [
+      "(^|[^(])\\([^(]",
+      "[^)]\\)([^)]|$)",
+      "(^|[^{]){[^{]",
+      "[^}]}([^}]|$)",
+      "<[^>]+(<|$)",
+      "(^|>)[^<]+>",
+      "<<((?!>>).)*(<|$)",
+      "(^|>)((?<!<<).)*>>",
+      "\\[[^]]*(\\[|$)",
+      "(^|\\])[^[]*\\]",
+      "{{((?!}}).)*({|$)",
+      "(^|}})((?<!{{).)*(?<!{{)}}",
+      "\\(\\(((?!\\)\\)).)*(\\(|$)",
+      "(^|\\)\\))((?<!\\(\\().)*(?<!\\(\\()\\)\\)"
+    ],
+    "substitutesregex": {
+      "ignoreregex": "([ ]*({{((?!}}).)*}}|\\[[^]]*\\]|\\(\\(((?!\\)\\)).)*\\)\\)|<[^>]*>|<)*[ ]*)"
+    },
+    "commands": {
+      "stop": "stop"
+    },
+    "matchingregex": "(?<!\\w)({0})(?!\\w)",
+    "matchingregexwithrepetition": "(?<!\\w)({0})(\\s+({0}))*(?!\\w)",
+    "uncertainregex": "\\(\\(((?<!\\)\\)).)*{wakeword}.*\\)\\)",
+    "notdevicedirectedregex": "({{{{((?<!}}}}).)*{wakeword}.*}}}})|(({wakeword})[ ]*<incidental>)",
+    "mediasourceregex": "<<((?<!>>).)*{wakeword}.*>>",
+    "noprefixregex": "^{ignoreregex}*[^\\w]*{wakeword}",
+    "ignoredtranscripts": [
+      "[unk]"
+    ],
+    "wakeword": {
+      "target": {
+        "alexa": {
+          "locale_specific_wakeword": "alexa",
+          "supportedregex": "alexa",
+          "closeformsregex": "alex-|-lexa|-xa"
+        },
+        "echo": {
+          "locale_specific_wakeword": "echo",
+          "supportedregex": "echo",
+          "closeformsregex": "ech-|-cho"
+        },
+        "amazon": {
+          "locale_specific_wakeword": "amazon",
+          "supportedregex": "amazon",
+          "closeformsregex": "amaz-|-azon"
+        },
+        "computer": {
+          "locale_specific_wakeword": "computer",
+          "supportedregex": "computer",
+          "closeformsregex": "$^"
+        },
+        "ziggy": {
+          "locale_specific_wakeword": "ziggy",
+          "supportedregex": "ziggy",
+          "closeformsregex": "$^"
+        },
+        "hey_disney": {
+          "locale_specific_wakeword": "hey disney",
+          "supportedregex": "hey disney",
+          "closeformsregex": "disney"
+        },
+        "hey_samuel": {
+          "locale_specific_wakeword": "hey samuel",
+          "supportedregex": "hey samuel",
+          "closeformsregex": "samuel"
+        },
+        "hey_shaq": {
+          "locale_specific_wakeword": "hey shaq",
+          "supportedregex": "hey shaq",
+          "closeformsregex": "shaq|shack"
+        },
+        "hey_melissa": {
+          "locale_specific_wakeword": "hey melissa",
+          "supportedregex": "hey melissa",
+          "closeformsregex": "melissa"
+        },
+        "amit_ji": {
+          "locale_specific_wakeword": "amit ji",
+          "supportedregex": "amit ji|amitji|amit jee|amitjee|amith ji|amithji|amith jee|amithjee",
+          "closeformsregex": "$^"
+        },
+        "hey_santa": {
+          "locale_specific_wakeword": "hey santa",
+          "supportedregex": "hey santa",
+          "closeformsregex": "santa"
+        }
+      }
+    },
+    "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:hi *|hey *|hello *|yeah *|ok *|okay *|no *|yes *|um *|oh *|uh *|a *)+){ignoreregex}*{wakeword}"
+  },
+  "en_US": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alecha|aletcha|alecka|aleska|alessa|alexa's|alexas|alexie|alexi|alexia|alexis|alexta|alexum|lexi|lexxy|arexa|aletha|alessha|lexis|lexus|lexia|aleksha|alexsha|elexa|alixa|lexa"
+          },
+          "echo": {
+            "closeformsregex": "ech-|-cho|eggo"
+          }
+        }
+      }
+    }
+  },
+  "en_IN": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alecha|aletcha|alessha|alexa's|alexas|alexia|alexis|alexta|lexia|lexis|lexus|aleksha|alexsha|elexa|alixa|lexa"
+          },
+          "echo": {
+            "closeformsregex": "ech-|-cho|eggo|ikko"
+          }
+        }
+      }
+    }
+  },
+  "en_GB": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alessa|alecha|aletcha|alexa's|alexas|alexi|alexie|alexia|alexis|lexi|lexxy|alexta|lexia|lexis|lexus|elexa|alixa|lexa"
+          }
+        }
+      }
+    }
+  },
+  "en_CA": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alecha|aletcha|alecka|aleska|alessa|alexa's|alexas|alexie|alexi|alexia|alexis|alexta|alexum|lexi|lexxy|arexa|aletha|alessha|lexis|lexus|lexia|aleksha|alexsha|elexa|alixa|lexa"
+          },
+          "echo": {
+            "closeformsregex": "ech-|-cho|eggo"
+          }
+        }
+      }
+    }
+  },
+  "en_AU": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alessa|alecha|aletcha|alexa's|alexas|alexi|alexie|alexia|alexis|lexi|lexxy|alexta|lexia|lexis|lexus|elexa|alixa|lexa"
+          }
+        }
+      }
+    }
+  },
+  "fr_FR": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|aegza|aexa|alessa|aessa|alesse|alessia|alexan|alexas|alexi|alexia|alexis|alexo|alexta|aliexa|arexa|awexa|aouexa|legza|lexia|halexa|alecza|alekza|alegza|aleixa|alexe|alixa|elexa|lexa|alesa|aletza|aletsa"
+          },
+          "echo": {
+            "closeformsregex": "ech-|-cho|ego|eggo|ecco"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:bonjour *|ok *|oui *|salut *|allo *|aye *|euh *|yo *|emmm *|non *|hé *|hey *|okay *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "ja_JP": {
+    "common": {
+      "noprefixregex": "^{ignoreregex}*[^\\w]*(?:\\[\\w+\\|)?{wakeword}",
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "locale_specific_wakeword": "アレクサ",
+            "supportedregex": "アレクサさん|アレクサ(?!\\|)|alexa",
+            "closeformsregex": "(?<=\\[アレクサ\\|)\\w+(?=\\])"
+          },
+          "echo": {
+            "locale_specific_wakeword": "エコー",
+            "supportedregex": "エコーさん|エコー(?!\\|)|echo",
+            "closeformsregex": "(?<=\\[エコー\\|)\\w+(?=\\])"
+          },
+          "amazon": {
+            "locale_specific_wakeword": "アマゾン",
+            "supportedregex": "アマゾンさん|アマゾン(?!\\|)|amazon",
+            "closeformsregex": "(?<=\\[アマゾン\\|)\\w+(?=\\])"
+          },
+          "computer": {
+            "locale_specific_wakeword": "コンピューター",
+            "supportedregex": "コンピューターさん|コンピューター(?!\\|)|computer",
+            "closeformsregex": "(?<=\\[コンピューター\\|)\\w+(?=\\])"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:ねぇ\\s*|やぁ\\s*)+){ignoreregex}*{wakeword}",
+      "commands": {
+        "stop": "ストップ"
+      }
+    }
+  },
+  "it_IT": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|aegza|alecca|aleccia|alecta|aleska|alesse|alessia|alesta|alexan|alexei|alexia|alexis|alexo|alexta|arexa|ellexa|lessa|lexia|oexa|halexa|aexa|alecza|alegza|aleixa|alessa|alexe|alezza|alixa|alesa|aletza|aletsa"
+          },
+          "echo": {
+            "closeformsregex": "ech-|-cho|ego|eggo|ecco|eco"
+          },
+          "computer": {
+            "closeformsregex": "compiuto"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:hey *|ei *|ok *|okay *|oi *|uei *|ciao *|eh *|ehi *|sì *|ah *|a *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "es_ES": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|aesa|aexa|ailexa|alaxa|aleca|alechia|alecta|alesha|alesia|alexai|alexas|alexei|alexia|alexis|alexo|elexa|malexa|olexa|palexa|alecha|aletcha|alesa|jalexa|lexa|alixa"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:ey *|oye *|hola *|eh *|este *|a *|sí *|ay *|ok *|ah *|no *|hey *|por favor *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "fr_CA": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|aegza|aexa|alessa|aessa|alesse|alessia|alexan|alexas|alexi|alexia|alexis|alexo|alexta|aliexa|arexa|awexa|aouexa|legza|lexia|halexa|alecza|alekza|alegza|aleixa|alexe|alixa|elexa|lexa"
+          },
+          "amazon": {
+            "closeformsregex": "-mazon"
+          },
+          "echo": {
+            "closeformsregex": "ech-|-cho|ego|eggo|ecco"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:bonjour *|ok *|oui *|salut *|allo *|aye *|euh *|yo *|emmm *|non *|hé *|hey *|okay *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "es_MX": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|aesa|aexa|ailexa|alaxa|aleca|alecha|alechia|alecta|alesha|alesia|alexai|alexas|alexei|alexia|alexis|alexo|elexa|malexa|olexa|palexa|alesa|jalexa|lexa|alixa|aletcha"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:ey *|oye *|hola *|eh *|este *|a *|sí *|ay *|ok *|ah *|no *|hey *|por favor *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "de_DE": {
+    "common": {
+      "commands": {
+        "stop": "stop|stopp"
+      },
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alescha|aleschka|alesa|alessa|alexta|alexi|alexia|alexis|aliexa|aljexa|awexa|alexan|lexis|lexus|lexia|alaxa|alexe|alixa|elexa|olexa|ulexa|lexa"
+          },
+          "echo": {
+            "supportedregex": "echo|ecko",
+            "closeformsregex": "ech-|-cho"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:hi *|hey *|hello *|yeah *|ok *|okay *|no *|yes *|um *|oh *|uh *|a * |ähhh * |äh *|ahhh *|öhhh *|ähmmm *|hmmm *|öhmmm *|ohhh und oh *|ja *|hallo *|nein *|ey *|nee *|ah *|ach *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "pt_BR": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|alex|alexei|alexis|alexas|alexia|alexie|alesha|aleshia|alesa|alessa|alixa|alexe|alecza|alexo|alecha|aletcha|elexa|lexa|aletsa|lexia"
+          },
+          "amazon": {
+            "closeformsregex": "mazon|amaz"
+          },
+          "echo": {
+            "closeformsregex": "ech|cho"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:oi *|ei *|olá *|fala *|sim *|ô *|e aí *|bom dia *|boa tarde *|boa noite *|por favor *|não *|a *|ok *|eh *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "hi_IN": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|alex|alexander|alexis|alexa's|alexas|alexie|alexia|aleca|aletcha|alisha|lexis|lexus|lexia|aleksha|elsa|lexa|अच्छा|अपेक्षा|अलिशा|अलीशा|अलेक्षा|acchā|apekṣā|aliśā|alīśā|alekṣā"
+          },
+          "amazon": {
+            "closeformsregex": "अमिज़ां|अम्मिजान|अमाजान|अम्मीजान|amizāṁ|ammijāna|amājāna|ammījāna"
+          },
+          "echo": {
+            "closeformsregex": "ego|इक्का|ikkā"
+          },
+          "amit_ji": {
+            "locale_specific_wakeword": "अमित जी",
+            "supportedregex": "amit ji|amitji|amit jee|amitjee|amith ji|amithji|amith jee|amithjee|अमित जी|अमितजी|अमित जि|अमितजि|अमीत जी|अमीतजी|अमीत जि|अमीतजि|अमिथ जी|अमिथजी|अमिथ जि|अमिथजि|अमीथ जी|अमीथजी|अमीथ जि|अमीथजि"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:hi *|hey *|hello *|yeah *|ok *|okay *|no *|yes *|um *|oh *|uh *|a *|oe *|oye *|ओए *|नमस्ते *|ओह *|नहीं *|हाँ *|जी *|हाँजी *|हांजी *|namaste *|oha *|nahīṁ *|hām̐ *|hām̐jī *|hāṁjī *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "es_US": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "closeformsregex": "alex-|-lexa|-xa|alex|alexei|alexander|alexis|alexa's|alexas|alexie|alexia|alexandra|alesa|alessa|alixa|alexe|alecza|alexo|alecha|aletcha|elexa|lexa"
+          },
+          "amazon": {
+            "closeformsregex": "amazons"
+          },
+          "echo": {
+            "closeformsregex": "checho"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:ey *|oye *|hola *|eh *|este *|a *|sí *|ay *|ok *|ah *|no *|hey *|por favor *)+){ignoreregex}*{wakeword}"
+    }
+  },
+  "ar_SA": {
+    "common": {
+      "wakeword": {
+        "target": {
+          "alexa": {
+            "locale_specific_wakeword": "أليكسا",
+            "supportedregex": "أليكسا|أليكسا|اليكسا|الكسا|ألكسا|الكسه|ألكسه"
+          },
+          "echo": {
+            "locale_specific_wakeword": "إيكو",
+            "supportedregex": "إيكو|إيكو|ايكو|اكو|إكو|أكو"
+          },
+          "amazon": {
+            "locale_specific_wakeword": "أمازون",
+            "supportedregex": "أمازون|أمازون|امازون"
+          }
+        }
+      },
+      "allowedprefixregex": "^{ignoreregex}*[^\\w]*((?:يا *|يالله *|يلّا *|هلا *|أهلا *|سلام *|نعم *|أوك *|أوكي *|أوكيه *|أه *|إيه *|أي *|إي *|أيوة *|إيوة *|لا *|شكرا *)+){ignoreregex}*{wakeword}"
+    }
+  }
+}

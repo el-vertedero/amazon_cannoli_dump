@@ -1,0 +1,33 @@
+{
+	"version": 1,
+	"configSyncRepeatIntervalMillis": 86400000,
+	"configSyncFirstIntervalMillis": 3600000,
+	"configSyncRetryIntervalMillis": 300000,
+	"configSyncRetryAttemptLimit": 3,
+	"syncMaxDurationMillis": 60000,
+	"nps-config": [{
+		"kill-switch": {
+			"default": false,
+			"exceptions": {
+				"devices": []
+			}
+		}
+	}],
+	"zts-config": [{
+			"5g-kill-switch": {
+				"default": false,
+				"exceptions": {
+					"devices": []
+				}
+			}
+		},
+		{
+			"nm-kill-switch": {
+				"default": false,
+				"exceptions": {
+					"devices": []
+				}
+			}
+		}
+	]
+}

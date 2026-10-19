@@ -1,0 +1,12 @@
+# ACE Factory reset init.rc configuration
+
+# 16 char limit on service names, thus "fr_service"
+service fr_service /system/bin/pre_factory_reset.sh
+    user root
+    # ace_group - Required to access /data/ace/kvstore
+    # to whitelist zigbee data in shallow factory reset
+    group root cache ace_group
+    # Must be explicitly started
+    disabled
+    # Do not restart this service if it exits
+    oneshot

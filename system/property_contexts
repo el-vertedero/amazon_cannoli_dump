@@ -1,0 +1,482 @@
+#line 1 "system/sepolicy/property_contexts"
+##########################
+# property service keys
+#
+#
+net.rmnet               u:object_r:net_radio_prop:s0
+net.gprs                u:object_r:net_radio_prop:s0
+net.ppp                 u:object_r:net_radio_prop:s0
+net.qmi                 u:object_r:net_radio_prop:s0
+net.lte                 u:object_r:net_radio_prop:s0
+net.cdma                u:object_r:net_radio_prop:s0
+net.dns                 u:object_r:net_radio_prop:s0
+sys.usb.config          u:object_r:system_radio_prop:s0
+ril.                    u:object_r:radio_prop:s0
+ro.ril.                 u:object_r:radio_prop:s0
+gsm.                    u:object_r:radio_prop:s0
+persist.radio           u:object_r:radio_prop:s0
+
+net.                    u:object_r:system_prop:s0
+dev.                    u:object_r:system_prop:s0
+ro.runtime.             u:object_r:system_prop:s0
+hw.                     u:object_r:system_prop:s0
+ro.hw.                  u:object_r:system_prop:s0
+sys.                    u:object_r:system_prop:s0
+sys.cppreopt            u:object_r:cppreopt_prop:s0
+sys.powerctl            u:object_r:powerctl_prop:s0
+sys.usb.ffs.            u:object_r:ffs_prop:s0
+service.                u:object_r:system_prop:s0
+wlan.                   u:object_r:system_prop:s0
+dhcp.                   u:object_r:dhcp_prop:s0
+dhcp.bt-pan.result      u:object_r:pan_result_prop:s0
+bluetooth.              u:object_r:bluetooth_prop:s0
+
+debug.                  u:object_r:debug_prop:s0
+debug.db.               u:object_r:debuggerd_prop:s0
+dumpstate.              u:object_r:dumpstate_prop:s0
+log.                    u:object_r:log_prop:s0
+log.tag                 u:object_r:log_tag_prop:s0
+log.tag.WifiHAL         u:object_r:wifi_log_prop:s0
+security.perf_harden    u:object_r:shell_prop:s0
+service.adb.root        u:object_r:shell_prop:s0
+service.adb.tcp.port    u:object_r:shell_prop:s0
+
+persist.audio.          u:object_r:audio_prop:s0
+persist.debug.          u:object_r:persist_debug_prop:s0
+persist.logd.           u:object_r:logd_prop:s0
+persist.logd.security   u:object_r:device_logging_prop:s0
+persist.logd.logpersistd        u:object_r:logpersistd_logging_prop:s0
+logd.logpersistd        u:object_r:logpersistd_logging_prop:s0
+persist.log.tag         u:object_r:log_tag_prop:s0
+persist.mmc.            u:object_r:mmc_prop:s0
+persist.sys.            u:object_r:system_prop:s0
+persist.sys.safemode    u:object_r:safemode_prop:s0
+ro.sys.safemode         u:object_r:safemode_prop:s0
+persist.sys.audit_safemode      u:object_r:safemode_prop:s0
+persist.service.        u:object_r:system_prop:s0
+persist.service.bdroid. u:object_r:bluetooth_prop:s0
+persist.security.       u:object_r:system_prop:s0
+
+# Boolean property set by system server upon boot indicating
+# if device owner is provisioned.
+ro.device_owner         u:object_r:device_logging_prop:s0
+
+# selinux non-persistent properties
+selinux.restorecon_recursive   u:object_r:restorecon_prop:s0
+selinux.                       u:object_r:security_prop:s0
+
+# default property context
+*                       u:object_r:default_prop:s0
+
+# data partition encryption properties
+vold.                   u:object_r:vold_prop:s0
+ro.crypto.              u:object_r:vold_prop:s0
+
+# ro.build.fingerprint is either set in /system/build.prop, or is
+# set at runtime by system_server.
+ro.build.fingerprint    u:object_r:fingerprint_prop:s0
+
+# ctl properties
+ctl.bootanim            u:object_r:ctl_bootanim_prop:s0
+ctl.dumpstate           u:object_r:ctl_dumpstate_prop:s0
+ctl.fuse_               u:object_r:ctl_fuse_prop:s0
+ctl.mdnsd               u:object_r:ctl_mdnsd_prop:s0
+ctl.ril-daemon          u:object_r:ctl_rildaemon_prop:s0
+ctl.bugreport           u:object_r:ctl_bugreport_prop:s0
+ctl.console             u:object_r:ctl_console_prop:s0
+ctl.                    u:object_r:ctl_default_prop:s0
+
+# NFC properties
+nfc.                    u:object_r:nfc_prop:s0
+
+# These properties are not normally set by processes other than init.
+# They are only distinguished here for setting by qemu-props on the
+# emulator/goldfish.
+config.                 u:object_r:config_prop:s0
+ro.config.              u:object_r:config_prop:s0
+dalvik.                 u:object_r:dalvik_prop:s0
+ro.dalvik.              u:object_r:dalvik_prop:s0
+
+#fosmod_fos_flags begin
+amazon.fos_flags.       u:object_r:shell_prop:s0
+#fosmod_fos_flags end
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/mtk/common/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+#=============allow ccci_mdinit to start gsm0710muxd==============
+ctl.gsm0710muxd u:object_r:ctl_gsm0710muxd_prop:s0
+ctl.gsm0710muxd-s u:object_r:ctl_gsm0710muxd-s_prop:s0
+ctl.gsm0710muxd-d u:object_r:ctl_gsm0710muxd-d_prop:s0
+ctl.gsm0710muxdmd2 u:object_r:ctl_gsm0710muxdmd2_prop:s0
+
+#=============allow ccci_mdinit to ctl. mdlogger==============
+ctl.mdlogger u:object_r:ctl_mdlogger_prop:s0
+ctl.emdlogger1       u:object_r:ctl_emdlogger1_prop:s0
+ctl.emdlogger2       u:object_r:ctl_emdlogger2_prop:s0
+ctl.emdlogger3       u:object_r:ctl_emdlogger3_prop:s0
+ctl.dualmdlogger       u:object_r:ctl_dualmdlogger_prop:s0
+
+#=============allow mtkrild to set persist.ril property==============
+persist.ril u:object_r:persist_ril_prop:s0
+
+#=============allow netlog==============
+#debug.mtklog.init.flag
+debug.mtklog  u:object_r:debug_mtklog_prop:s0
+#persist.mtklog.log2sd.path
+persist.mtklog u:object_r:persist_mtklog_prop:s0
+#debug.netlog.stopreason
+debug.netlog u:object_r:debug_netlog_prop:s0
+
+#=============allow netd to set mtk_wifi.*========================
+mtk_wifi. u:object_r:mtk_wifi_prop:s0
+
+#=============allow mdlogger==============
+debug.mdlogger u:object_r:debug_mdlogger_prop:s0
+
+#=============allow AEE==============
+# persist.mtk.aee.mode && persist.mtk.aee.dal
+persist.mtk.aee u:object_r:persist_mtk_aee_prop:s0
+
+# persist.aee.core.dump && persist.aee.core.direct
+persist.aee u:object_r:persist_aee_prop:s0
+
+# debug.mtk.aee.db
+debug.mtk.aee u:object_r:debug_mtk_aee_prop:s0
+
+#=============allow AEE_Dumpstate==============
+debug.bq.dump u:object_r:debug_bq_dump_prop:s0
+
+#=============allow mdinit==============
+ctl.ril-daemon-mtk   u:object_r:ctl_ril-daemon-mtk_prop:s0
+ctl.ril-daemon-s   u:object_r:ctl_ril-daemon-s_prop:s0
+ctl.ril-daemon-d   u:object_r:ctl_ril-daemon-d_prop:s0
+ctl.ril-daemon-md2   u:object_r:ctl_ril-daemon-md2_prop:s0
+ctl.viarild       u:object_r:ctl_viarild_prop:s0
+ctl.ril-proxy   u:object_r:ctl_ril-proxy_prop:s0
+
+ctl.ccci_fsd         u:object_r:ctl_ccci_fsd_prop:s0
+ctl.ccci2_fsd         u:object_r:ctl_ccci2_fsd_prop:s0
+ctl.ccci3_fsd         u:object_r:ctl_ccci3_fsd_prop:s0
+ctl.muxreport-daemon u:object_r:ctl_muxreport-daemon_prop:s0
+
+ril.active.md        u:object_r:ril_active_md_prop:s0
+ril.mux.report.case  u:object_r:ril_mux_report_case_prop:s0
+ril.cdma.report      u:object_r:ril_cdma_report_prop:s0
+
+#=============allow mnld_prop ==============
+gps.clock.type u:object_r:mnld_prop:s0
+gps.gps.version u:object_r:mnld_prop:s0
+debug.gpsdbglog.enable u:object_r:mnld_prop:s0
+
+#=============allow audiohal==============
+streamout.     u:object_r:audiohal_prop:s0
+af.     u:object_r:audiohal_prop:s0
+streamin.     u:object_r:audiohal_prop:s0
+a2dp.     u:object_r:audiohal_prop:s0
+persist.af.     u:object_r:audiohal_prop:s0
+
+#=============allow wmt ==============
+persist.mtk.wcn u:object_r:wmt_prop:s0
+service.wcn u:object_r:wmt_prop:s0
+
+#=============allow sensor daemon==============
+ctl.msensord     u:object_r:ctl_msensord_prop:s0
+ctl.s62xd     u:object_r:ctl_s62xd_prop:s0
+ctl.akmd8963     u:object_r:ctl_akmd8963_prop:s0
+ctl.akmd09911     u:object_r:ctl_akmd09911_prop:s0
+ctl.geomagneticd     u:object_r:ctl_geomagneticd_prop:s0
+ctl.orientationd     u:object_r:ctl_orientationd_prop:s0
+ctl.emdlogger5       u:object_r:ctl_emcsmdlogger_prop:s0
+ctl.eemcs_fsd         u:object_r:ctl_eemcs_fsd_prop:s0
+ctl.istd8303            u:object_r:ctl_istd8303_prop:s0
+ctl.st480               u:object_r:ctl_st480_prop:s0
+
+#=============allow c2k_prop ==============
+net.cdma.mdmstat u:object_r:net_cdma_mdmstat:s0
+
+#=============allow bt prop==============
+bt.                         u:object_r:bluetooth_prop:s0
+persist.bt.          u:object_r:bluetooth_prop:s0
+
+#=============allow ccci_mdinit md status ==============
+mtk.md   u:object_r:mtk_md_prop:s0
+#============= allow factory idle current prop ==============
+debug.factory.idle_state    u:object_r:factory_idle_state_prop:s0
+
+#=============allow ftrace log property================
+ftrace.buffer.log     u:object_r:ftrace_log_prop:s0
+
+#=============allow service.nvram_init property================
+service.nvram_init     u:object_r:service_nvram_init_prop:s0
+
+#=============allow ro.wlan.mtk.wifi.5g property================
+ro.wlan.mtk.wifi.5g     u:object_r:wifi_5g_prop:s0
+
+#=============Allow EM To Set Camera APP Mode  ==============
+mtk.client.      u:object_r:mtk_em_prop:s0
+
+#=============allow mediatek_prop ==============
+mediatek. u:object_r:mediatek_prop:s0
+
+#=============allow em set protocol================
+volte.emergency.pdn.protocol    u:object_r:mtk_em_pdn_prop:s0
+
+#=============allow em set protocol================
+persist.ims.simulate   u:object_r:mtk_em_ims_simulate_prop:s0
+
+#=============allow em set protocol================
+persist.auto_answer   u:object_r:mtk_em_auto_answer_prop:s0
+
+#=============allow em set protocol================
+persist.bt.sspdebug.enable   u:object_r:bluetooth_prop:s0
+
+#=============allow atcid==============
+ctl.atcid-daemon-u u:object_r:ctl_atcid-daemon-u_prop:s0
+ctl.atci_service u:object_r:ctl_atci_service_prop:s0
+persist.service.atci.   u:object_r:persist_service_atci_prop:s0
+
+#=============allow em set ril.force_apn_change property================
+ril.force_apn_change u:object_r:mtk_em_ril_apnchange_prop:s0
+
+
+#== property to show if rpmb service is ready.
+sys.rpmb.ready u:object_r:sys_rpmb_ready_prop:s0
+
+#============= battery_lifetime_data property  ==============
+debug.battery_lifetime. u:object_r:battery_lifetime_prop:s0
+persist.battery_lifetime. u:object_r:battery_lifetime_prop:s0
+
+#=============allow playready device certificate id property============
+ro.playready_device_cert_id u:object_r:pr_device_cert_id_prop:s0
+
+#=============allow playready device certificate id property============
+ro.playready_device_cert_digest u:object_r:pr_device_cert_digest_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/halo/property_contexts"
+######################
+# property contexts
+#
+vendor.halo.            u:object_r:halo_prop:s0
+persist.vendor.halo.    u:object_r:halo_prop:s0
+
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/property_contexts"
+ro.build.lab126.        u:object_r:kats_build_prop:s0
+persist.sys.ota.        u:object_r:amazon_ota_prop:s0
+ro.runtime.update_verifier u:object_r:amazon_ota_prop:s0
+ro.product.config.type  u:object_r:devicetype_prop:s0
+ro.amzn_drm.            u:object_r:amzn_drm_prop:s0
+ro.amzn_dha.            u:object_r:amzn_dha_prop:s0
+wifi.ro.                u:object_r:wifi_prop:s0
+persist.sys.amzn_drm.skip_mask  u:object_r:amzn_drm_prop:s0
+persist.dice.proactiveDetection     u:object_r:dice_prop:s0
+persist.leakrecovery.         u:object_r:leakrecovery_enable_prop:s0
+internal.zigbee.sh_migrate      u:object_r:internal_zigbee_sh_migrate:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/XOProperty/property_contexts"
+#
+# Copyright (c) 2020 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+ro.amzn_xo.value u:object_r:amzn_xo_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/ace/property_contexts"
+net.change                          u:object_r:net_change_prop:s0
+kvs_init_completed                  u:object_r:kvs_init_completed:s0
+acs_metric.send_fail_count          u:object_r:acs_metric_send_fail_count:s0
+ffs_service_crashed                 u:object_r:ffs_service_crashed:s0
+ffs_task_crashed                    u:object_r:ffs_task_crashed:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/fireos/AmazonLogd/property_contexts"
+persist.vpartition.     u:object_r:vpartition_prop:s0
+vpartition.             u:object_r:vpartition_prop:s0
+logd.init.              u:object_r:logd_init_prop:s0
+sys.time.update         u:object_r:systime_update_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/fireos/BspDiagService/property_contexts"
+# Copyright (c) 2022-2023 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+
+boot_verification_complete    u:object_r:update_verifier_prop:s0
+sys.amzn_bsp_diag.disk_write  u:object_r:amzn_emmc_diskstat_write_prop:s0
+sys.amzn_bsp_diag.emmc_       u:object_r:amzn_emmc_lifetime_prop:s0
+persist.sys.amzn.             u:object_r:amzn_emmc_metric_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/fireos/WholeHomeAudio/quantum/property_contexts"
+amazon.wha.quantum  u:object_r:quantum_start_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Dacd/property_contexts"
+dacd.config.     u:object_r:dacd_config_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/property_contexts"
+com.amazon.puffin.OOBE_SETUP        u:object_r:oobe_setup_prop:s0
+com.amazon.puffin.OOBED_START       u:object_r:oobed_start_prop:s0
+com.amazon.puffin.PUFFIN_START      u:object_r:puffin_start_prop:s0
+com.amazon.puffin.LPM_ELIGIBLE      u:object_r:lpm_start_prop:s0
+ctl.fr_service                      u:object_r:ctl_fr_service_prop:s0
+puffin.enter_power_save             u:object_r:puffin_power_save_prop:s0
+ctl.update_engine                   u:object_r:ctl_update_engine_prop:s0
+init.svc.update_engine              u:object_r:update_engine_status_prop:s0
+persist.puffin.locale               u:object_r:puffin_locale_wakeword_prop:s0
+persist.puffin.wakeword             u:object_r:puffin_locale_wakeword_prop:s0
+persist.puffin.i18nConfig           u:object_r:puffin_locale_wakeword_prop:s0
+persist.amazon.scl.host             u:object_r:puffin_avs_endpoint_prop:s0
+persist.amazon.scl.stage            u:object_r:puffin_avs_stage_prop:s0
+persist.puffin.OutputDevice         u:object_r:puffin_output_volume_prop:s0
+persist.puffin.vol.                 u:object_r:puffin_output_volume_prop:s0
+persist.puffin.mute.                u:object_r:puffin_output_volume_prop:s0
+persist.reggae.                     u:object_r:reggae_prop:s0
+persist.amazon.demo.type            u:object_r:demo_type_prop:s0
+persist.com.amazon.demo.dcs_url     u:object_r:demo_dcs_url_prop:s0
+persist.puffin.MessageRouter        u:object_r:ww_router_prop:s0
+persist.spotify.version             u:object_r:spotify_version_prop:s0
+persist.spotify.lpm                 u:object_r:spotify_lpm_prop:s0
+ue.prefs.nextoperation              u:object_r:ue_next_operation_prop:s0
+com.amazon.puffin.ALEXA_STS         u:object_r:alexa_connected_prop:s0
+com.amazon.puffin.INITIALIZE        u:object_r:puffin_initialize_prop:s0
+com.amazon.csm2puffin.INIT          u:object_r:csm2puffin_initialize_prop:s0
+persist.otad.update_count           u:object_r:update_count_prop:s0
+persist.pwrsvcd.WL_TREATMENT        u:object_r:pwrsvc_weblab_prop:s0
+persist.amazon.whad.                u:object_r:wha_prop:s0
+persist.puffin_app.from_crash       u:object_r:restart_from_crash:s0
+ledcontroller.restart               u:object_r:ledcontroller_restart:s0
+persist.puffin.uspd.                u:object_r:uspd_prop:s0
+persist.puffin.MCASRSupported       u:object_r:mc_asr_supported:s0
+persist.puffin.MCASRMode            u:object_r:mc_asr_mode:s0
+persist.memtotal                    u:object_r:memtotal_prop:s0
+persist.puffin.tap.media.enable     u:object_r:puffin_tap_media_enable_prop:s0
+persist.puffin.ntt.mode.            u:object_r:puffin_ntt_mode_support_prop:s0
+persist.ra.banyan.benefits          u:object_r:banyan_entitlement_prop:s0
+com.amazon.cmbd.run                 u:object_r:puffin_cmbd_prop:s0
+com.amazon.ahe.run                  u:object_r:ahe_run_prop:s0
+com.amazon.gadgetsd.run             u:object_r:puffin_gadgetsd_prop:s0
+com.amazon.aicfd.run                u:object_r:aicfd_run_prop:s0
+com.amazon.assetmgrd.run            u:object_r:puffin_assetmgrd_prop:s0
+com.amazon.ahe.disable              u:object_r:ahe_disable_prop:s0
+com.amazon.ahe.force                u:object_r:ahe_force_prop:s0
+com.amazon.adepd.run                u:object_r:puffin_adepd_prop:s0
+com.amazon.credmgr.run              u:object_r:puffin_credmgr_prop:s0
+puffin.device_registered            u:object_r:puffin_device_registered:s0
+persist.puffin.entitled.sounds      u:object_r:puffin_entitled_sounds_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/FactoryReset/property_contexts"
+persist.amazon.factoryreset     u:object_r:factoryreset_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/LedController/property_contexts"
+firsttime.ledcontroller.launch      u:object_r:firsttime_ledcontroller_launch_prop:s0
+persist.ledbrightness.bootup        u:object_r:puffin_led_brightness_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Mixer/property_contexts"
+audio_mixer.init u:object_r:audio_init_prop:s0
+
+# Used for setting the volume for device first-time boot-up from CSM2Puffin
+persist.mixer.init. u:object_r:audio_init_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Oobe/property_contexts"
+p2p.server.	                u:object_r:p2p_server_prop:s0
+p2p.interface   	        u:object_r:p2p_interface:s0
+lab126.p2p.companion.app.ip	u:object_r:lab126_p2p_companion_app_ip:s0
+lab126.headless.locales     	u:object_r:lab126_headless_locales:s0
+com.lab126.dnsmasq_script   	u:object_r:com_lab126_dnsmasq_script:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Provisionerd/property_contexts"
+com.amazon.provd.RESTART_COUNT  u:object_r:provd_restart_cnt_prop:s0
+persist.provd.NEXT_SYNC_TIME    u:object_r:provd_next_sync_time_prop:s0
+persist.provd.USE_TEST_CONFIG   u:object_r:provd_use_test_config_prop:s0
+persist.pwrsvc.LPM_ENABLED      u:object_r:provd_lpm_flag_prop:s0
+persist.puffin.ONE_MIC_ENABLED  u:object_r:provd_onemic_flag_prop:s0
+persist.puffin.ONE_MIC_UPLOAD_AUDIO_ENABLED  u:object_r:provd_onemicuploadaudio_flag_prop:s0
+persist.puffin.ACL_RECONNECT    u:object_r:provd_aclreconnect_flag_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Ota/property_contexts"
+persist.otad.target_sw_version	                u:object_r:otad_target_sw_version:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Wifi/property_contexts"
+lab126.wifid.ready                  u:object_r:lab126_wifid_prop:s0
+lab126.populate.iptables            u:object_r:lab126_wifid_prop:s0
+lab126.oobe.start.tcptunnel         u:object_r:lab126_wifid_prop:s0
+lab126.oobe.local.listening.prt     u:object_r:lab126_wifid_prop:s0
+lab126.p2p.setup.nat                u:object_r:lab126_wifid_prop:s0
+persist.lab126.eth0.enabled	    u:object_r:persist_lab126_ethernet_prop:s0
+persist.oobe.compapp.port           u:object_r:persist_oobe_compapp_port_prop:s0
+persist.wifi.rssi.thresholds        u:object_r:persist_wifi_rssi_thresholds:s0
+wlan.driver.status                  u:object_r:lab126_wifid_prop:s0
+ctl.p2p_supplicant                  u:object_r:ctl_net_prop:s0
+ctl.dnsmasq                         u:object_r:ctl_net_prop:s0
+ctl.dhcpcd                          u:object_r:ctl_net_prop:s0
+ctl.dhcpcd-static                   u:object_r:ctl_net_prop:s0
+ctl.renew_dhcpcd                    u:object_r:ctl_net_prop:s0
+ctl.socks5stream                    u:object_r:ctl_net_prop:s0
+persist.sys.saved_time              u:object_r:time_saved_prop:s0
+sys.time.setonboot                  u:object_r:time_update_prop:s0
+sys.wifi.socks.shutdown             u:object_r:sys_socks_prop:s0
+logd.time.update                    u:object_r:logd_time_prop:s0
+ctl.sntpd                           u:object_r:ctl_sntp_prop:s0
+dns.reject.ipv6                     u:object_r:dns_reject_ipv6:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Power/property_contexts"
+ctl.disable_rf                      u:object_r:ctl_disable_rf:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/ffs/property_contexts"
+ftv.p2p.server.addr                   u:object_r:ftv_p2p_addr_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/FactoryResetDaemon/property_contexts"
+persist.fr.EARCON_DIR        u:object_r:fr_earcon_dir_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Pwrsvcd/property_contexts"
+# So pwrsvcd can issue property_set("pwrsvcd.ready", "1");
+pwrsvcd.ready u:object_r:pwrsvcd_ready_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/fireos/FactoryResetWhitelist/property_contexts"
+backup_whitelist.     u:object_r:backup_whitelist_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/puffin/Eeroinside/property_contexts"
+ctl.mesh_supplicant                 u:object_r:ctl_net_prop:s0
+ctl.mesh_hostapd                    u:object_r:ctl_net_prop:s0
+ctl.eeroinsided                     u:object_r:ctl_eeroinsided_prop:s0
+ctl.eero_monitor                    u:object_r:ctl_eero_monitor_prop:s0
+eeroinsided.mesh.                   u:object_r:eri_wifimesh_prop:s0
+persist.eri-aipc.mesh.disable       u:object_r:eri_wifimesh_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/perfmonitord/common/property_contexts"
+perfrecoveryd.                  u:object_r:perfrecovery_config_prop:s0
+perfmonitor.config.override     u:object_r:perfmonitord_config_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/common/powerdaemon/common/property_contexts"
+persist.powerarcus.NEXT_SYNC    u:object_r:powerarcus_next_sync_prop:s0
+persist.powerarcus.TEST_CONFIG   u:object_r:powerarcus_test_config_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
+#line 1 "device/amazon/common/sepolicy/mtk/mt851x/nand/property_contexts"
+amazon.writeable_system     u:object_r:writesys_prop:s0
+#line 1 "out/target/product/cannoli/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+

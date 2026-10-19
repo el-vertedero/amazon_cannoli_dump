@@ -1,0 +1,136 @@
+{
+    "configuration": {
+        "num_detection_types": 12,
+        "acoustic_event": [
+            {
+                "name": "humanPresence",
+                "score_output_index": 0,
+                "score_detection_threshold": 0.79,
+                "score_near_miss_threshold": 0.60,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 108,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "smokeAlarm",
+                "score_output_index": 1,
+                "score_detection_threshold": 0.825,
+                "score_near_miss_threshold": 0.40,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "glassBreak",
+                "score_output_index": 2,
+                "score_detection_threshold": 0.80,
+                "score_near_miss_threshold": 0.40,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "dogBark",
+                "score_output_index": 3,
+                "score_detection_threshold": 0.991,
+                "score_near_miss_threshold": 0.88,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "babyCry",
+                "score_output_index": 4,
+                "score_detection_threshold": 0.955,
+                "score_near_miss_threshold": 0.60,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "snore",
+                "score_output_index": 5,
+                "score_detection_threshold": 0.964,
+                "score_near_miss_threshold": 0.80,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "cough",
+                "score_output_index": 6,
+                "score_detection_threshold": 0.982,
+                "score_near_miss_threshold": 0.80,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "waterSounds",
+                "score_output_index": 7,
+                "score_detection_threshold": 0.901,
+                "score_near_miss_threshold": 0.85,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "beepingAppliance",
+                "score_output_index": 8,
+                "score_detection_threshold": 0.953,
+                "score_near_miss_threshold": 0.750,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "smokeSiren",
+                "score_output_index": 9,
+                "score_detection_threshold": 0.825,
+                "score_near_miss_threshold": 0.40,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1,
+                "detection_descriptor_profile": {
+                    "version": "1.0",
+                    "detector_variant": "SMOKE_SIREN"
+                }
+            },
+            {
+                "name": "carbonMonoxideSiren",
+                "score_output_index": 10,
+                "score_detection_threshold": 0.825,
+                "score_near_miss_threshold": 0.40,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            },
+            {
+                "name": "runningWater",
+                "score_output_index": 11,
+                "score_detection_threshold": 0.982,
+                "score_near_miss_threshold": 0.80,
+                "confidence_score_scale_factor": 1,
+                "energy_threshold": 82,
+                "energy_min_num_samples": 1
+            }
+        ]
+    },
+    "result_emission": {
+        "metrics_event_period_msec": 3600000,
+        "regular_event_period_msec": 9980,
+        "cloud_json_header": "amzn1.activity.device.detection.audio.aed"
+    },
+    "score_tracking": {
+        "histogram": {
+            "max": 1,
+            "min": 0,
+            "size": 20
+        },
+        "temporal": {
+            "bucket_count": 20
+        }
+    },
+    "object_type_name": "acoustic_event_detection_config",
+    "object_type_version": 1
+}

@@ -1,0 +1,48 @@
+{
+	"system_mem": {
+		"memory_read_interval_sec": 60,
+		"critical_memory_threshold_percent": 80,
+		"critical_memory_bucket": "visible",
+		"critical_memory_default_threshold_kb": 53248,
+		"critical_memory_measurement_time": 21600,
+		"critical_memory_over_threshold_percent": 80,
+		"critical_memory_action": "reboot",
+		"critical_memory_minimum_uptime_sec": 604800,
+		"critical_memory_minimum_idle_time_sec": 900,
+		"critical_memory_idle_override_time_sec": 86400,
+		"lmk_counter_threshold": "Visible",
+		"lmk_target_kills": 5000,
+		"system_mem_heartbeat_samples": 60,
+		"idle_detection_interval_sec": 60,
+		"critical_memory_swap_free_threshold_kb": 0,
+		"critical_memory_s_unreclaim_threshold_kb": 54272
+	},
+	"proc_scan": {
+		"proc_scan_interval_sec": 1800,
+		"rss_read_interval_sec": 1,
+		"pss_read_interval_sec": 30,
+		"num_pss_processes": 30,
+		"num_historical_vals": 12,
+		"pss_logging": 0,
+		"process_mem_heartbeat_samples": 2
+	},
+	"device_upl": {
+		"dupl_monitoring_enabled": true,
+		"critical_upl_threshold_ms": 150,
+		"critical_upl_bad_sample_count_threshold": 30
+	},
+	"process_vmstats": {
+		"proc_stat_monitoring_enabled": false,
+		"proc_stat_sample_interval_sec": 60,
+		"proc_stat_logcat_interval_sec": 600,
+		"proc_stat_process_list": [
+		]
+	},
+	"process_guardrail": {
+		"process_guardrail_monitoring_enabled": true,
+		"guardrail_check_interval_sec": 1800,
+		"pss_sleep_interval_sec": 2,
+		"process_kill_metrics_interval_sec": 86400
+	},
+	"sample": true
+}

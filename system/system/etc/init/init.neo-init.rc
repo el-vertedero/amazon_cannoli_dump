@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2022 - 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on early-boot
+   start neo-init
+
+# This section is a place holder for the native service re-naming
+# We're assuming the new name won't be more that 80 bytes.
+# (80 Bytes = 21 bytes of executable path + 59 bytes from place holder)
+#                                             |
+#                                             V
+service neo-init /system/bin/neo-init "                                                           "
+   user root
+   group root readproc system

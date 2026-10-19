@@ -1,0 +1,54 @@
+#!/system/bin/sh
+#
+# Copyright (c) 2018  Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+# This script is used to trigger button press from script
+
+press_button() {
+    sendevent /dev/input/event3 1 $1 1
+    sendevent /dev/input/event3 0 0 0
+    [ "$2" ] && sleep $2
+    sendevent /dev/input/event3 1 $1 0
+    sendevent /dev/input/event3 0 0 0
+}
+
+vol_up() {
+    press_button 115
+}
+
+vol_down() {
+    press_button 114
+}
+
+uber() {
+    press_button 138
+}
+
+oobe() {
+    press_button 138 5
+}
+
+mute() {
+    sendevent /dev/input/event3 5 14 0
+    sendevent /dev/input/event3 0 0 0
+}
+
+unmute() {
+    sendevent /dev/input/event3 5 14 1
+    sendevent /dev/input/event3 0 0 0
+}
+
+factory_reset() {
+    press_button 138 22
+}
+
+[ "$1" = "vol-up" ] && vol_up
+[ "$1" = "vol-down" ] && vol_down
+[ "$1" = "fr" ] && factory_reset
+[ "$1" = "oobe" ] && oobe
+[ "$1" = "mute" ] && mute
+[ "$1" = "unmute" ] && unmute
+[ "$1" = "uber" ] && uber

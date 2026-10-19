@@ -1,0 +1,21 @@
+{
+    "version": 100000000,
+"memory_event": {
+        "thresholds": {
+            "classicDefault": {
+                "critical_mem_threshold_kb": 461000,
+                "high_mem_threshold_kb": 440000,
+                "medium_mem_threshold_kb": 420000
+            },
+            "alexaPremiumDefault": {
+                "critical_mem_threshold_kb": 461000,
+                "high_mem_threshold_kb": 440000,
+                "medium_mem_threshold_kb": 420000
+            }
+        },
+        "memory_events_enabled": true,
+        "default_mem_event_ticks": 60,
+        "short_len": 10,
+        "long_len": 30
+    }
+}

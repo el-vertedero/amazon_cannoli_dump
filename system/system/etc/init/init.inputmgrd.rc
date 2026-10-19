@@ -1,0 +1,8 @@
+on property:kvs_init_completed=1
+    start aceinputmanager
+
+service aceinputmanager /system/bin/aceinputmanager
+    class main
+    user ace_input_mgr
+    group aipc dbus input ace_kvstore ace_group wakelock system
+    disabled

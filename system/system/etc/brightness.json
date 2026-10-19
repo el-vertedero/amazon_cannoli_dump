@@ -1,0 +1,28 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [
+      {
+        "namespace": "Alexa.BrightnessController",
+        "version": "3",
+        "directiveName": "SetBrightness",
+        "operationName": "setBrightness"
+      },
+      {
+        "namespace": "Alexa.BrightnessController",
+        "version": "3",
+        "directiveName": "AdjustBrightness",
+        "operationName": "adjustBrightness"
+      }
+    ],
+    "properties": [
+      {
+        "deviceStateName": "brightness",
+        "applicationPropertyName": "brightness",
+        "version": "3",
+        "namespace": "Alexa.BrightnessController"
+      }
+    ],
+    "events": []
+  }
+}

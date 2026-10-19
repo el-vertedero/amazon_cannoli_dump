@@ -1,0 +1,5 @@
+on post-fs-data
+    start logmgr
+service logmgr /system/bin/logmgr
+    user system
+    group system aipc dbus inet ace_group ace_kvstore ace_maplite

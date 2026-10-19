@@ -1,0 +1,63 @@
+#
+# Copyright 2020-2025 Amazon.com, Inc. or its affiliates. All rights reserved.
+#
+# AMAZON PROPRIETARY/CONFIDENTIAL
+#
+# You may not use this file except in compliance with the terms and conditions
+# set forth in the accompanying LICENSE.TXT file.
+#
+# THESE MATERIALS ARE PROVIDED ON AN "AS IS" BASIS. AMAZON SPECIFICALLY
+# DISCLAIMS, WITH RESPECT TO THESE MATERIALS, ALL WARRANTIES, EXPRESS,
+# IMPLIED, OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+#
+
+# Service instance on bootup.
+service provisionee_svc /system/bin/ffs_provisionee_svc
+    class core
+    user oobe
+    group aipc dbus inet ace_kvstore keystore ace_group drmrpc ace_maplite
+    disabled
+    oneshot
+
+# Service instance for registration event.
+service fetchtoken_reg /system/bin/ffs_provisionee_svc -t
+    class core
+    user oobe
+    group aipc dbus inet ace_kvstore keystore ace_group drmrpc ace_maplite
+    disabled
+    oneshot
+
+on property:kvs_init_completed=1
+    start provisionee_svc
+
+# Used for error handling, as service is oneshot there is no way to recover
+# the service after crash, "ffs_service_crashed" property is set to 1 when a
+# signal or interrupt is received. Sleep is introduced between stop and start
+# for stop command to complete.
+on property:ffs_service_crashed=1
+    stop provisionee_svc
+    exec - root root -- /system/bin/sleep 5
+    start provisionee_svc
+
+# on device registration event puffin.device_registered is set to 1.
+on property:puffin.device_registered=1
+    stop provisionee_svc
+    stop fetchtoken_reg
+    exec - root root -- /system/bin/sleep 5
+    start fetchtoken_reg
+
+# on device de-registration event puffin.device_registered is set to 0.
+on property:puffin.device_registered=0
+    stop provisionee_svc
+    stop fetchtoken_reg
+    exec - root root -- /system/bin/sleep 5
+    start fetchtoken_reg
+
+# Crash handling for token task, we use the fetchtoken_reg as it can handle both
+# registration and de-registration event and there may be existing fetchtoken_reg
+# service in backoff delay.
+on property:ffs_task_crashed=1
+    stop fetchtoken_reg
+    exec - root root -- /system/bin/sleep 5
+    start fetchtoken_reg

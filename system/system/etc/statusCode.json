@@ -1,0 +1,13 @@
+{
+  "transformation": {
+    "type": "javascript",
+    "module": "statusCode/main.js"
+  },
+  "deviceCapabilities": {
+    "capabilities": [
+      {
+        "namespace": "Alexa.StatusCodeController"
+      }
+    ]
+  }
+}

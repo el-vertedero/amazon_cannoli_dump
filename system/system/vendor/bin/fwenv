@@ -1,0 +1,22 @@
+#!/system/bin/sh
+
+MFG=/mnt/halo/run/mfg
+
+case $1 in
+	"serial")    echo "$(cat $MFG/$1)" ;;
+	"serial_no") echo "$(cat $MFG/$1)" ;;
+	"ringnetid") echo "$(cat $MFG/$1)" ;;
+	"authtoken") echo "$(cat $MFG/$1)" ;;
+	"regcode")
+		echo "PRY883" ;;
+	"ethaddr")
+		sed 's/\(..\)/\1:/g; s/:$//' $MFG/serial ;;
+	"emflag")
+		echo "0" ;; # factory reset is not implemented
+	"emflag=*")
+		echo "ignoring factory reset flag change" ;;
+	"")
+		echo "error: argument required" ; exit 1 ;;
+	*)
+		echo "error: unknown argument" ; exit 1 ;;
+esac

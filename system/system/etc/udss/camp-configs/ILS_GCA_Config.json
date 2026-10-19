@@ -1,0 +1,40 @@
+{
+    "description": "ILS GCA config",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "ilsGCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.Sensor.Proximity",
+                        "instance": "BLUETOOTH",
+                        "version": "1.0",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "deviceProximity",
+                                    "type": "object",
+                                    "default": "{\"neighbors\":[]}"
+                                }
+                            ],
+                            "proactivelyReported": true,
+                            "retrievable": true
+                        }
+                    },
+                    "directives": [
+                        {
+                            "name": "SetSecurityMaterial"
+                        },
+                        {
+                            "name": "SetDeviceProximityPolicy"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

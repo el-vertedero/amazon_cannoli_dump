@@ -1,0 +1,4 @@
+on post-fs-data
+    mkdir /data/powerdaemon/ 0700 PowerDaemon PowerDaemon
+    mkdir /data/powerdaemon/arcus 0700 PowerDaemon PowerDaemon
+    mkdir /data/powerdaemon/arcus/configs 0700 PowerDaemon PowerDaemon

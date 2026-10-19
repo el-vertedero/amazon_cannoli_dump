@@ -1,0 +1,85 @@
+{
+    "applicationProtocols": [
+        {
+            "type": "MATTER",
+            "maxVersion": "1.5",
+            "transportProtocols": [
+                {
+                    "type": "WI-FI",
+                    "maxVersion": "5.0"
+                }
+            ],
+            "commissioneeTypes": {
+                "displayCategories": [
+                    "AIR_CONDITIONER",
+                    "AIR_PURIFIER",
+                    "AIR_QUALITY_MONITOR",
+                    "BURNER",
+                    "CARBON_MONOXIDE_SENSOR",
+                    "CONTACT_SENSOR",
+                    "COOKING_APPLIANCE",
+                    "COOKTOP",
+                    "COOLING_CABINET",
+                    "DISHWASHER",
+                    "FAN",
+                    "FREEZER",
+                    "HUB",
+                    "HUMIDITY_SENSOR",
+                    "INTERIOR_BLIND",
+                    "LIGHT",
+                    "LIGHT_SENSOR",
+                    "MICROWAVE",
+                    "MOTION_SENSOR",
+                    "NETWORK_HARDWARE",
+                    "OTHER",
+                    "REFRIGERATOR",
+                    "REMOTE",
+                    "ROUTER",
+                    "SMARTLOCK",
+                    "SMARTPLUG",
+                    "SMOKE_SENSOR",
+                    "SWITCH",
+                    "TEMPERATURE_SENSOR",
+                    "THERMOSTAT",
+                    "VACUUM_CLEANER",
+                    "WATER_LEAK_SENSOR"
+                ],
+                "deviceTypes": [
+                    "10",
+                    "14",
+                    "15",
+                    "19",
+                    "21",
+                    "22",
+                    "43",
+                    "44",
+                    "45",
+                    "67",
+                    "112",
+                    "113",
+                    "114",
+                    "116",
+                    "117",
+                    "118",
+                    "119",
+                    "120",
+                    "121",
+                    "123",
+                    "144",
+                    "256",
+                    "257",
+                    "262",
+                    "263",
+                    "266",
+                    "267",
+                    "268",
+                    "269",
+                    "514",
+                    "769",
+                    "770",
+                    "775"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "description": "USPD Events Receiver",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "USPD",
+            "type": "core.USPD"
+        }
+    ]
+}

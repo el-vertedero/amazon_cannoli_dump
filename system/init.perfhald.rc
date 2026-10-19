@@ -1,0 +1,9 @@
+service perfhald /system/bin/perfhald
+    user root
+    group system readproc aipc
+    writepid /dev/cpuctl/bg_non_interactive/cgroup.procs
+    class main
+
+on post-fs
+    chown system system /proc/pressure/memory
+    chmod 0660 /proc/pressure/memory

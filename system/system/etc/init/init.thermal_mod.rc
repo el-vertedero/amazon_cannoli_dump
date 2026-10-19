@@ -1,0 +1,5 @@
+on post-fs
+    setprop vendor.amazon_thermal_mod y
+
+on early-boot && property:vendor.amazon_thermal_mod=y
+    insmod /vendor/lib/modules/thermal_module.ko

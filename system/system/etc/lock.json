@@ -1,0 +1,40 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [
+      {
+        "namespace": "Alexa.LockController",
+        "version": "3",
+        "directiveName": "Lock",
+        "operationName": "lock"
+      },
+      {
+        "namespace": "Alexa.LockController",
+        "version": "3.1",
+        "directiveName": "Lock",
+        "operationName": "lock"
+      }
+    ],
+    "properties": [
+      {
+        "deviceStateName": "lockState",
+        "applicationPropertyName": "lockState",
+        "version": "3",
+        "namespace": "Alexa.LockController"
+      },
+      {
+        "deviceStateName": "lockState",
+        "applicationPropertyName": "lockState",
+        "version": "3.0",
+        "namespace": "Alexa.LockController"
+      },
+      {
+        "deviceStateName": "lockState",
+        "applicationPropertyName": "lockState",
+        "version": "3.1",
+        "namespace": "Alexa.LockController"
+      }
+    ],
+    "events": []
+  }
+}

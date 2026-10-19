@@ -1,0 +1,49 @@
+{
+    "version": 1.0,
+    "flow_inputs": {
+        "input": [
+            {
+                "name": "USPD",
+                "type": "ACE_SENSORS_STREAM_PRESENCE"
+            },
+            {
+                "name": "CSI",
+                "type": "ACE_SENSORS_STREAM_WIFI_CSI_PRESENCE"
+            }
+        ]
+    },
+    "flow_outputs": {
+        "output": [
+            {
+                "name": "uspd_wifi_csi_kt",
+                "type": "ACE_SENSORS_STREAM_PRESENCE"
+            }
+        ]
+    },
+    "connection_information": [
+        {
+            "connection": {
+                "input": [
+                    {
+                        "name": "USPD",
+                        "type": "ACE_SENSORS_STREAM_PRESENCE"
+                    },
+                    {
+                        "name": "CSI",
+                        "type": "ACE_SENSORS_STREAM_WIFI_CSI_PRESENCE"
+                    }
+                ],
+                "output": [
+                    {
+                        "name": "uspd_wifi_csi_kt",
+                        "type": "ACE_SENSORS_STREAM_PRESENCE",
+                        "visibility": true
+                    }
+                ],
+                "processing_algorithm": {
+                    "name": "uspd_wifi_csi_algorithm"
+                }
+            }
+        }
+    ]
+}

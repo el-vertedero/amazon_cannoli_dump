@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2020 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on post-fs-data
+    mkdir /data/atsd/ 0770 ats ats
+
+on property:sys.boot_completed=1
+    start atsd
+
+service atsd /system/bin/atsd
+    class main
+    user ats
+    group aipc dbus wakelock
+    disabled

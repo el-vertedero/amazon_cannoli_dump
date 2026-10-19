@@ -1,0 +1,113 @@
+{
+  "comments": "Assetmgrd Minerva Config",
+  "configs": [
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "davsHandler",
+      "GroupId": "woz9utjr",
+      "SchemaId": "fhqk/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "assetmgrdWatchdog",
+      "GroupId": "woz9utjr",
+      "SchemaId": "u1my/2/03330470",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "curlWrapper",
+      "GroupId": "fq0ahuav",
+      "SchemaId": "8g2h/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "DavsClient",
+      "GroupId": "fq0ahuav",
+      "SchemaId": "z9j9/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "davsRequester",
+      "GroupId": "0acjel0t",
+      "SchemaId": "zc30/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "davsPoll",
+      "GroupId": "5n5fm8bm",
+      "SchemaId": "no5j/2/02330403",
+      "MetricNameAsKey": true,
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "davsDownload",
+      "GroupId": "5n5fm8bm",
+      "SchemaId": "lzot/2/03330403",
+      "MetricNameAsKey": true,
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "DavsClient",
+      "GroupId": "0acjel0t",
+      "SchemaId": "tojs/2/02330400",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "MapLiteAuthDelegateAmd",
+      "GroupId": "fq0ahuav",
+      "SchemaId": "l7eh/2/02330400",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "requester",
+      "GroupId": "pom0cjmo",
+      "SchemaId": "7pxy/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "requesterFactory",
+      "GroupId": "aql5oop0",
+      "SchemaId": "8fo9/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "requesterMetadata",
+      "GroupId": "4u4ee66d",
+      "SchemaId": "egmi/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "StorageManager",
+      "GroupId": "y7vzww0x",
+      "SchemaId": "ms03/2/02330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "PuffinUtil",
+      "MethodName": "aipcWrapper",
+      "GroupId": "2bxydo4n",
+      "SchemaId": "uel0/2/03330410",
+      "Active": true
+    },
+    {
+      "ServiceName": "assetmgrd",
+      "MethodName": "assetmgrdLifecycle",
+      "GroupId": "6fuk9yhj",
+      "SchemaId": "06r1/2/03330460",
+      "MetricNameAsKey": true,
+      "Active": true
+    }
+  ]
+}

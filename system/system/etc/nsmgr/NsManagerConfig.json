@@ -1,0 +1,18 @@
+{
+    "comments": "Hierarchical Ns Mgr Config",
+    "configs": [
+        {
+            "namespace": ["motion", "presence"],
+            "eventType": "uspd"
+        },
+        {
+            "namespace": ["tap"],
+            "eventType": "single"
+        },
+        {
+            "namespace": ["tap"],
+            "eventType": "double"
+        }
+
+    ]
+}

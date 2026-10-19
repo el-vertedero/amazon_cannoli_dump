@@ -1,0 +1,1541 @@
+{
+  "1A1NL4BVLQ4L3N31A3SSG6GR8UU7SN": {
+    "A1NL4BVLQ4L3N3": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN1AWZZ5CVHX2CD": {
+    "AWZZ5CVHX2CD": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A18O6U1UQFJ0XK1A3SSG6GR8UU7SN": {
+    "A18O6U1UQFJ0XK": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A18O6U1UQFJ0XK1A3SSG6GR8UU7SN": {
+    "A18O6U1UQFJ0XK": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A3FX4UWTP28V1P1A3SSG6GR8UU7SN": {
+    "A3FX4UWTP28V1P": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3FX4UWTP28V1P1A3SSG6GR8UU7SN": {
+    "A3FX4UWTP28V1P": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A18O6U1UQFJ0XK1A3FX4UWTP28V1P1A3SSG6GR8UU7SN": {
+    "A18O6U1UQFJ0XK": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3FX4UWTP28V1P": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A2M35JJZWCQOMZ1A3SSG6GR8UU7SN": {
+    "A2M35JJZWCQOMZ": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A2M35JJZWCQOMZ1A3SSG6GR8UU7SN": {
+    "A2M35JJZWCQOMZ": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN2A7WXQPH584YP": {
+    "A7WXQPH584YP": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A3SSG6GR8UU7SN1A7WXQPH584YP": {
+    "A7WXQPH584YP": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A32DOYMUN6DTXA1A3SSG6GR8UU7SN": {
+    "A32DOYMUN6DTXA": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A32DOYMUN6DTXA1A3SSG6GR8UU7SN": {
+    "A32DOYMUN6DTXA": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A30YDR2MK8HMRV1A3SSG6GR8UU7SN": {
+    "A30YDR2MK8HMRV": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A30YDR2MK8HMRV1A3SSG6GR8UU7SN": {
+    "A30YDR2MK8HMRV": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A1RABVCI4QCIKC1A3SSG6GR8UU7SN": {
+    "A1RABVCI4QCIKC": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A1RABVCI4QCIKC1A3SSG6GR8UU7SN": {
+    "A1RABVCI4QCIKC": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A1RABVCI4QCIKC1A32DOYMUN6DTXA1A3SSG6GR8UU7SN": {
+    "A1RABVCI4QCIKC": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A32DOYMUN6DTXA": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A1RABVCI4QCIKC1A30YDR2MK8HMRV1A3SSG6GR8UU7SN": {
+    "A1RABVCI4QCIKC": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A30YDR2MK8HMRV": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A30YDR2MK8HMRV1A32DOYMUN6DTXA1A3SSG6GR8UU7SN": {
+    "A30YDR2MK8HMRV": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A32DOYMUN6DTXA": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 200,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3RBAYBE7VM0041A3SSG6GR8UU7SN": {
+    "A3RBAYBE7VM004": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 80,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 80,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A3RBAYBE7VM0041A3SSG6GR8UU7SN": {
+    "A3RBAYBE7VM004": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 80,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 80,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+   "1A1EIANJ7PNB0Q71A3SSG6GR8UU7SN": {
+    "A1EIANJ7PNB0Q7": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+   "1A2U21SRK4QGSE11A3SSG6GR8UU7SN": {
+    "A2U21SRK4QGSE1": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A2U21SRK4QGSE11A3SSG6GR8UU7SN": {
+    "A2U21SRK4QGSE1": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A2H4LV5GIZ1JFT1A3SSG6GR8UU7SN": {
+    "A2H4LV5GIZ1JFT": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A2H4LV5GIZ1JFT1A3SSG6GR8UU7SN": {
+    "A2H4LV5GIZ1JFT": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A2H4LV5GIZ1JFT1A2U21SRK4QGSE11A3SSG6GR8UU7SN": {
+    "A2H4LV5GIZ1JFT": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+  "A2U21SRK4QGSE1": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 225,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+   "1A3RMGO6LYLH7YN1A3SSG6GR8UU7SN": {
+    "A3RMGO6LYLH7YN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 125,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 125,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A3RMGO6LYLH7YN1A3SSG6GR8UU7SN": {
+    "A3RMGO6LYLH7YN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 125,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 125,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN1AIPK7MM90V7TB": {
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "AIPK7MM90V7TB": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A1Z88NGR2BK6A21A3SSG6GR8UU7SN": {
+    "A1Z88NGR2BK6A2": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A1Z88NGR2BK6A21A3SSG6GR8UU7SN": {
+    "A1Z88NGR2BK6A2": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A15996VY63BQ2D1A1Z88NGR2BK6A21A3SSG6GR8UU7SN": {
+    "A15996VY63BQ2D": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A1Z88NGR2BK6A2": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN1A4ZP7ZC4PI6TO": {
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A4ZP7ZC4PI6TO": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	}
+  },
+  "1A3SSG6GR8UU7SN2A4ZP7ZC4PI6TO": {
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A4ZP7ZC4PI6TO": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	}
+  },
+  "1A1XWJRHALS1REP1A3SSG6GR8UU7SN1A4ZP7ZC4PI6TO": {
+    "A1XWJRHALS1REP": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A4ZP7ZC4PI6TO": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	}
+  },
+  "1A15996VY63BQ2D1A3SSG6GR8UU7SN": {
+    "A15996VY63BQ2D": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A15996VY63BQ2D1A3SSG6GR8UU7SN": {
+    "A15996VY63BQ2D": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A1XWJRHALS1REP1A3SSG6GR8UU7SN": {
+    "A1XWJRHALS1REP": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A1XWJRHALS1REP1A3SSG6GR8UU7SN": {
+    "A1XWJRHALS1REP": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+	},
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN": {
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A3SSG6GR8UU7SN": {
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "2A11QM4H9HGV71H1A3SSG6GR8UU7SN": {
+    "A11QM4H9HGV71H": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A11QM4H9HGV71H1A3SSG6GR8UU7SN": {
+    "A11QM4H9HGV71H": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 150,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN2A4ZXE0RM7LQ7A": {
+      "A4ZXE0RM7LQ7A": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   },
+    "1A3SSG6GR8UU7SN1A4ZXE0RM7LQ7A": {
+      "A4ZXE0RM7LQ7A": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   },
+  "1A2DS1Q2TPDJ48U1A2H4LV5GIZ1JFT1A3SSG6GR8UU7SN": {
+    "A2DS1Q2TPDJ48U": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A2H4LV5GIZ1JFT": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+   },
+  "1A2H4LV5GIZ1JFT1A3SSG6GR8UU7SN1A4ZXE0RM7LQ7A": {
+    "A4ZXE0RM7LQ7A": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A2H4LV5GIZ1JFT": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+   },
+  "1A2DS1Q2TPDJ48U1A2U21SRK4QGSE11A3SSG6GR8UU7SN": {
+    "A2DS1Q2TPDJ48U": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A2U21SRK4QGSE1": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+   },
+  "1A2U21SRK4QGSE11A3SSG6GR8UU7SN1A4ZXE0RM7LQ7A": {
+    "A4ZXE0RM7LQ7A": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A2U21SRK4QGSE1": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+    "A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+   },
+  "2A2DS1Q2TPDJ48U1A3SSG6GR8UU7SN": {
+      "A2DS1Q2TPDJ48U": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   },
+   "1A2DS1Q2TPDJ48U1A3SSG6GR8UU7SN": {
+      "A2DS1Q2TPDJ48U": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   },
+   "1A2DS1Q2TPDJ48U1A3SSG6GR8UU7SN1A4ZXE0RM7LQ7A": {
+      "A2DS1Q2TPDJ48U": {
+       "num_freq_sets": 1,
+       "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A4ZXE0RM7LQ7A": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 1,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    },
+	"A3SSG6GR8UU7SN": {
+      "num_freq_sets": 1,
+      "config": [
+        {
+          "freq": 180,
+          "filter_type": 0,
+          "filter_order": 4,
+          "channel": 0
+        }
+      ]
+    }
+  },
+  "1A3SSG6GR8UU7SN1ASQZWP4GPYUT7": {
+      "ASQZWP4GPYUT7": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   },
+   "1A3SSG6GR8UU7SN2ASQZWP4GPYUT7": {
+      "ASQZWP4GPYUT7": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+  },
+  "1A2UONLFQW0PADH1A3SSG6GR8UU7SN": {
+      "A2UONLFQW0PADH": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 150,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 150,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+  },
+  "FHT": {
+      "FHT": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 0,
+            "filter_type": 3,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+  },
+  "2A3EH2E0YZ30OD61A3SSG6GR8UU7SN": {
+      "A3EH2E0YZ30OD6": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   },
+   "1A3EH2E0YZ30OD61A3SSG6GR8UU7SN": {
+      "A3EH2E0YZ30OD6": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 1,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      },
+      "A3SSG6GR8UU7SN": {
+        "num_freq_sets": 1,
+        "config": [
+          {
+            "freq": 180,
+            "filter_type": 0,
+            "filter_order": 4,
+            "channel": 0
+          }
+        ]
+      }
+   }
+}

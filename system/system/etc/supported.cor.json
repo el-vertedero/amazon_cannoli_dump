@@ -1,0 +1,6 @@
+{
+  "data": {
+    "allowed_cor": ["US", "GB", "CA", "IN", "MX", "DE", "FR", "ES"],
+    "beta_only_allowed_cor": []
+  }
+}

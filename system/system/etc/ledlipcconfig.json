@@ -1,0 +1,8 @@
+{
+    "com.amazon.puffin": ["set_animation", "unset_animation", "set_brightness", "set_brightness_table"],
+    "com.doppler.lasp": ["beam_index"],
+    "com.doppler.OTAUpdate": ["set_animation", "unset_animation"],
+    "com.crumpet.oobed": ["set_animation", "unset_animation"],
+    "com.amazon.factoryreset": ["set_animation", "unset_animation"],
+    "com.util.ledctrl": ["mcu_open"]
+}

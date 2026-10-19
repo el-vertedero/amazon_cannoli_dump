@@ -1,0 +1,46 @@
+on init
+    mkdir /dev/storage/
+    mkdir /dev/storage/by-name/
+
+on early-fs
+    # Preparation work needed before the fs init stage mounts the partitions
+
+    write /proc/bootprof "INIT:UBI_fs_prep_START"
+
+    # Wait for ubi nodes to be present
+    wait /dev/ubi0_0 5
+    wait /dev/ubi0_1 5
+    wait /dev/ubi0_2 5
+    wait /dev/ubi0_3 5
+    wait /dev/ubi0_4 5
+    wait /dev/ubi0_5 5
+    wait /dev/ubi0_6 5
+    wait /dev/ubi0_7 5
+    wait /dev/ubi0_8 5
+    wait /dev/ubi0_9 5
+    wait /dev/ubi0_10 5
+    wait /dev/ubi0_11 5
+    wait /dev/ubi0_12 5
+
+    wait /dev/storage/by-name/ 5
+
+    # Create nodes used as fstab device entries
+    symlink /dev/ubi0_0 /dev/storage/by-name/uboot_a
+    symlink /dev/ubi0_1 /dev/storage/by-name/uboot_b
+    symlink /dev/ubi0_2 /dev/storage/by-name/tee1
+    symlink /dev/ubi0_3 /dev/storage/by-name/tee2
+    symlink /dev/ubi0_4 /dev/storage/by-name/idme_nand
+    symlink /dev/ubi0_5 /dev/storage/by-name/persist
+    symlink /dev/ubi0_6 /dev/storage/by-name/misc
+    symlink /dev/ubi0_7 /dev/storage/by-name/boot_a
+    symlink /dev/ubi0_8 /dev/storage/by-name/boot_b
+    symlink /dev/ubi0_9 /dev/storage/by-name/system_a
+    symlink /dev/ubi0_10 /dev/storage/by-name/system_b
+    symlink /dev/ubi0_11 /dev/storage/by-name/cache
+    symlink /dev/ubi0_12 /dev/storage/by-name/userdata
+
+    symlink /dev/block/ubiblock0_9 /dev/block/system_a
+    symlink /dev/block/ubiblock0_10 /dev/block/system_b
+
+    # The system is now ready for fs init stage mounting
+    write /proc/bootprof "INIT:UBI_fs_prep_END"

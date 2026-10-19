@@ -1,0 +1,1601 @@
+{
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "b9gc/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0/max_ec",
+            "name": "max_ec",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0/bad_peb_count",
+            "name": "bad_peb_count",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "0"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_0/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_0/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_0/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "1"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_1/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_1/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_1/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "2"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_2/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_2/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_2/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "3"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_3/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_3/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_3/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "4"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_4/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_4/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_4/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "5"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_5/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_5/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_5/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "6"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_6/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_6/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_6/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "7"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_7/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_7/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_7/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "8"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_8/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_8/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_8/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "9"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_9/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_9/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_9/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "10"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_10/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_10/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_10/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "11"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_11/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_11/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_11/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "12"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_12/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_12/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_12/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "13"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_13/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_13/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_13/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "14"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_14/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_14/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_14/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "15"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_15/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_15/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_15/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "89t3/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_constant": {
+            "name": "volume_id",
+            "data_type": "string",
+            "value": "16"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_16/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_16/data_bytes",
+            "name": "data_bytes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0_16/corrupted",
+            "name": "corrupted",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd0"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd1"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd2"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd3"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd4"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd5"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd6"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "ad1q/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd7"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "437itonq",
+        "namespace_2": "6y6d/2/01330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bb_factory_total",
+            "name": "bb_factory_total",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bb_total",
+            "name": "bb_total",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bb_worn_total",
+            "name": "bb_worn_total",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bbt_goodblocks",
+            "name": "bbt_goodblocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "yp92/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "ubi_id",
+            "data_type": "string",
+            "value": "ubi0"
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0/max_ec",
+            "name": "max_ec",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/ubi/ubi0/bad_peb_count",
+            "name": "bad_peb_count",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/kernel/debug/ubi/ubi0/sync_erase_retry_failures",
+            "name": "sync_erase_retry_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/kernel/debug/ubi/ubi0/sync_erase_retry_successes",
+            "name": "sync_erase_retry_successes",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd0"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd0/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd1"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd1/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd2"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd2/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd3"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd3/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd4"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd4/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd5"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd5/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd6"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd6/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "6u6y/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_constant": {
+            "name": "mtd_id",
+            "data_type": "string",
+            "value": "mtd7"
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/name",
+            "name": "name",
+            "data_type": "string",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/bad_blocks",
+            "name": "bad_blocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/corrected_bits",
+            "name": "corrected_bits",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/sys/class/mtd/mtd7/ecc_failures",
+            "name": "ecc_failures",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "hy4s2s3w",
+        "namespace_2": "96ni/2/02330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bb_factory_total",
+            "name": "bb_factory_total",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bb_total",
+            "name": "bb_total",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bb_worn_total",
+            "name": "bb_worn_total",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/bbt_goodblocks",
+            "name": "bbt_goodblocks",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/data/misc/fmonitor/nand_operation_resets",
+            "name": "nand_operation_resets",
+            "data_type": "int",
+            "seek": true
+        },
+        "metrics_file": {
+            "path": "/dev/storage/raw-nand/nfi/nand_ids",
+            "name": "nand_ids",
+            "data_type": "string",
+            "seek": true
+        }
+    },
+
+    "monitor_group": {
+        "namespace_1": "nand_corrective_actions",
+        "namespace_2": "operation_resets",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 3600,
+        "monitor_file": {
+            "src_path": "/dev/storage/raw-nand/nfi/operation_resets",
+            "dest_path": "/data/misc/fmonitor/nand_operation_resets",
+            "data_type": "int",
+            "transfer_type": "add",
+            "seek": true
+        }
+    },
+
+    "metrics_group": {
+        "namespace_1": "89v6txw5",
+        "namespace_2": "n3a7/2/04330400",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 86400,
+        "backend_type": "MINERVA",
+        "metrics_file": {
+            "path": "/data/misc/fmonitor/pwr_irq_count",
+            "name": "pol_irq",
+            "data_type": "int",
+            "seek": true
+        }
+    },
+
+    "monitor_group": {
+        "namespace_1": "current_power_monitor",
+        "namespace_2": "power_interrupts",
+        "monitoring_type": "polling",
+        "polling_period_in_secs": 3600,
+        "monitor_file": {
+            "src_path": "/sys/class/hwmon/hwmon0/irq_count",
+            "dest_path": "/data/misc/fmonitor/pwr_irq_count",
+            "data_type": "int",
+            "transfer_type": "add",
+            "seek": true
+        }
+    }
+}

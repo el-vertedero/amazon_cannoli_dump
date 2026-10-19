@@ -1,0 +1,3 @@
+on post-fs-data
+    mkdir /data/powerdaemon 0770 PowerDaemon PowerDaemon
+    mkdir /data/powerdaemon/ifm 0770 PowerDaemon PowerDaemon

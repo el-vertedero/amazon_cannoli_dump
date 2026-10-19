@@ -1,0 +1,10 @@
+if [ "$1" == "start" ]; then
+    setprop vendor.halo.metrics start
+    exit 0;
+fi
+
+if [ "$1" == "stop" ]; then
+    setprop vendor.halo.metrics stop
+    find /data/vendor/halo/var/log -type f -name "*.log*" -delete
+    exit 0;
+fi

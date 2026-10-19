@@ -1,0 +1,12 @@
+# Headless demo related changes Begin
+
+on property:persist.amazon.demo.type=Demo:Standard && property:com.amazon.puffin.PUFFIN_START=1
+    mkdir /data/demo 755 d3 d3
+    start demo_d3
+
+service demo_d3 /system/bin/demo_d3
+    user d3
+    group davs dbus inet ace_group aipc ace_kvstore d3 ace_maplite
+    oneshot
+
+# Headless demo related changes End

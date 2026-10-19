@@ -1,0 +1,27 @@
+# Configuration files for AdepDaemon
+
+on post-fs
+    mkdir /data/adepd/ 0740 adepd adepd
+    mkdir /data/adepd/arcus/ 0740 adepd adepd
+    chown adepd adepd /data/adepd/
+    chown adepd adepd /data/adepd/arcus/
+    chown adepd adepd /data/adepd/arcus/defaultArcusConfig.json
+
+
+#on property:sys.boot_completed=1
+#    start adepd
+
+on property:com.amazon.adepd.run=1
+    start adepd
+
+on property:com.amazon.adepd.run=0
+    stop adepd
+
+# start service
+service adepd /system/bin/adepd
+   class main
+   user adepd
+   group aipc system
+#   restart on failure
+   stdout /data/adepd/stdout.log
+   stderr /data/adepd/stderr.log

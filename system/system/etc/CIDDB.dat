@@ -1,0 +1,1582 @@
+{
+    "endpoints": [
+        {
+            "cid": 1326,
+            "defaultManufacturerName": "Ledvance",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 40,
+                    "displayCategory": "SMARTPLUG"
+                },
+                {
+                    "pid": 7,
+                    "displayCategory": "SWITCH"
+                }
+            ]
+        },
+        {
+            "cid": 741,
+            "defaultManufacturerName": "Espressif",
+            "pids": [
+                {
+                    "pid": 34146,
+                    "displayCategory": "SWITCH",
+                    "description": "Aimore Bluetooth Mesh Smart Switch",
+                    "modelName": "KS-602S",
+                    "manufacturerName": "Aimore Co.,Ltd.",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 34147,
+                    "displayCategory": "LIGHT",
+                    "description": "Aimore Bluetooth Mesh Smart Light Bulb",
+                    "modelName": "DH-001B",
+                    "manufacturerName": "Aimore Co.,Ltd."
+                },
+                {
+                    "pid": 257,
+                    "displayCategory": "LIGHT",
+                    "description": "Aimore Bluetooth Mesh Smart Light Bulb",
+                    "modelName": "DH-001B",
+                    "manufacturerName": "Aimore Co.,Ltd."
+                },
+                {
+                    "pid": 513,
+                    "displayCategory": "SWITCH",
+                    "description": "Aimore Bluetooth Mesh Smart Switch",
+                    "modelName": "KS-602S",
+                    "manufacturerName": "Aimore Co.,Ltd.",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 769,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Aimore Bluetooth Mesh Smart Plug",
+                    "modelName": "KS-501",
+                    "manufacturerName": "Aimore Co.,Ltd.",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 2777,
+            "defaultManufacturerName": "Aimore Co.,Ltd.",
+            "pids": [
+                {
+                    "pid": 257,
+                    "displayCategory": "LIGHT",
+                    "description": "Aimore Bluetooth Mesh Smart Light Bulb",
+                    "modelName": "DH-001B"
+                },
+                {
+                    "pid": 513,
+                    "displayCategory": "SWITCH",
+                    "description": "Aimore Bluetooth Mesh Smart Switch",
+                    "modelName": "KS-602S",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 769,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Aimore Bluetooth Mesh Smart Plug",
+                    "modelName": "KS-501",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 2228,
+            "defaultManufacturerName": "Sengled",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 101,
+                    "displayCategory": "SWITCH",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 529,
+            "defaultManufacturerName": "Third Reality, Inc",
+            "pids": [
+                {
+                    "pid": 1283,
+                    "displayCategory": "SWITCH",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 1284,
+                    "displayCategory": "SMARTPLUG",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 1287,
+                    "displayCategory": "TEMPERATURE_SENSOR",
+                    "modelName": "3RTHS24BZ",
+                    "manufacturerName": "Third Reality T&H Sensor",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 1288,
+                    "displayCategory": "MOTION_SENSOR",
+                    "modelName": "3RMS16BZ",
+                    "manufacturerName": "Third Reality Motion Sensor",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 1289,
+                    "displayCategory": "CONTACT_SENSOR",
+                    "modelName": "3RDS17BZ",
+                    "manufacturerName": "Third Reality Contact Sensor",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 1998,
+            "defaultManufacturerName": "Yankon",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 150,
+                    "displayCategory": "SMARTPLUG",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 439,
+            "defaultManufacturerName": "GE"
+        },
+        {
+            "cid": 473,
+            "defaultManufacturerName": "GE Lighting, a Savant company",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 134,
+                    "description": "Soft White Light",
+                    "modelName": "Cync: Direct Connect Soft White Bulb (A19)",
+                    "manufacturerName": "Cync: Direct Connect Soft White Bulb (A19)"
+                },
+                {
+                    "pid": 135,
+                    "description": "Tunable White Light",
+                    "modelName": "Cync: Direct Connect Tunable White Bulb (A19)",
+                    "manufacturerName": "Cync: Direct Connect Tunable White Bulb (A19)"
+                },
+                {
+                    "pid": 136,
+                    "description": "Tunable White Floodlight",
+                    "modelName": "Cync: Direct Connect Tunable White Bulb (BR30 Floodlight)",
+                    "manufacturerName": "Cync: Direct Connect Tunable White Bulb (BR30 Floodlight)"
+                },
+                {
+                    "pid": 137,
+                    "description": "Full Color Light",
+                    "modelName": "Cync: Direct Connect Full Color Bulb (A19)",
+                    "manufacturerName": "Cync: Direct Connect Full Color Bulb (A19)"
+                },
+                {
+                    "pid": 138,
+                    "description": "Full Color Floodlight",
+                    "modelName": "Cync: Direct Connect Full Color Bulb (BR30 Floodlight)",
+                    "manufacturerName": "Cync: Direct Connect Full Color Bulb (BR30 Floodlight)"
+                },
+                {
+                    "pid": 139,
+                    "description": "Full Color Light Strip",
+                    "modelName": "Cync: Direct Connect Full Color Light Strip",
+                    "manufacturerName": "Cync: Direct Connect Full Color Light Strip"
+                },
+                {
+                    "pid": 140,
+                    "description": "Full Color Floodlight",
+                    "modelName": "Cync: Direct Connect Full Color Bulb (PAR38 Floodlight)",
+                    "manufacturerName": "Cync: Direct Connect Full Color Bulb (PAR38 Floodlight)"
+                },
+                {
+                    "pid": 68,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Indoor Plug",
+                    "proactivelyReportable": true,
+                    "modelName": "Cync: Indoor Plug",
+                    "manufacturerName": "Cync: Indoor Plug"
+                }
+            ]
+        },
+        {
+            "cid": 2052,
+            "defaultManufacturerName": "Andon"
+        },
+        {
+            "cid": 369,
+            "defaultManufacturerName": "Amazon",
+            "pids": [
+                {
+                    "pid": 257,
+                    "displayCategory": "SOAP_DISPENSER",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 258,
+                    "displayCategory": "REMOTE",
+                    "description": "Four Buttons Remote",
+                    "modelName": "HCR-Z54C-B-A667-01",
+                    "manufacturerName": "Amazon Basics",
+                    "authenticationRequired": true,
+                    "multipleEndpointsReport": false,
+                    "defaultVendorModelCapabilities": [
+                        [
+                            {
+                                "name": "SimpleEventSourceCapability",
+                                "instanceId": "Button1",
+                                "configuration": {
+                                    "supportedEvents": [
+                                        {
+                                            "id": "Button.SinglePress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.SinglePress" }
+                                            }]
+                                        },
+                                        {
+                                            "id": "Button.LongPress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.LongPress" }
+                                            }]
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Taste1",
+                                                "locale": "de"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button1",
+                                                "locale": "en"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button1",
+                                                "locale": "en-AU"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button1",
+                                                "locale": "en-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button1",
+                                                "locale": "en-IN"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button1",
+                                                "locale": "en-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón1",
+                                                "locale": "es"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón1",
+                                                "locale": "es-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón1",
+                                                "locale": "es-MX"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton1",
+                                                "locale": "fr-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton1",
+                                                "locale": "fr"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Pulsante1",
+                                                "locale": "it"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "ボタン1",
+                                                "locale": "ja"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botão1",
+                                                "locale": "pt-br"
+                                        }}
+                                    ]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": false,
+                                    "nonControllable": true
+                                }
+                            },
+                            {
+                                "name": "InventoryLevelSensorCapability",
+                                "instanceId": "Remote.Battery",
+                                "configuration": {
+                                    "measurement": {
+                                        "@type": "Percentage"
+                                    },
+                                    "replenishment": {
+                                        "@type": "DashReplenishmentId",
+                                        "value": "arn:alexa:smarthome:drs:sensor:55bb97ce-c265-4003-91a5-858e4d2b8d44"
+                                    }
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "text",
+                                        "value": {
+                                            "text": "Battery",
+                                            "locale": "en-US"
+                                        }}]
+                                },
+                                "extraConfiguration": {
+                                    "minTimeBetweenReportsInHours": 20,
+                                    "maxTimeBetweenReportsInHoursLow": 240,
+                                    "maxTimeBetweenReportsInHoursHigh": 336
+                                }
+                            },
+                            {
+                                "name": "LogCapability"
+                            }
+                        ],
+                        [
+                            {
+                                "name": "SimpleEventSourceCapability",
+                                "instanceId": "Button2",
+                                "configuration": {
+                                    "supportedEvents": [
+                                        {
+                                            "id": "Button.SinglePress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.SinglePress" }
+                                            }]
+                                        },
+                                        {
+                                            "id": "Button.LongPress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.LongPress" }
+                                            }]
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Taste2",
+                                                "locale": "de"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button2",
+                                                "locale": "en"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button2",
+                                                "locale": "en-AU"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button2",
+                                                "locale": "en-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button2",
+                                                "locale": "en-IN"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button2",
+                                                "locale": "en-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón2",
+                                                "locale": "es"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón2",
+                                                "locale": "es-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón2",
+                                                "locale": "es-MX"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton2",
+                                                "locale": "fr-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton2",
+                                                "locale": "fr"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Pulsante2",
+                                                "locale": "it"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "ボタン2",
+                                                "locale": "ja"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botão2",
+                                                "locale": "pt-br"
+                                        }}
+                                    ]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": false,
+                                    "nonControllable": true
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "name": "SimpleEventSourceCapability",
+                                "instanceId": "Button3",
+                                "configuration": {
+                                    "supportedEvents": [
+                                        {
+                                            "id": "Button.SinglePress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.SinglePress" }
+                                            }]
+                                        },
+                                        {
+                                            "id": "Button.LongPress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.LongPress" }
+                                            }]
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Taste3",
+                                                "locale": "de"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button3",
+                                                "locale": "en"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button3",
+                                                "locale": "en-AU"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button3",
+                                                "locale": "en-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button3",
+                                                "locale": "en-IN"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button3",
+                                                "locale": "en-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón3",
+                                                "locale": "es"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón3",
+                                                "locale": "es-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón3",
+                                                "locale": "es-MX"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton3",
+                                                "locale": "fr-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton3",
+                                                "locale": "fr"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Pulsante3",
+                                                "locale": "it"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "ボタン3",
+                                                "locale": "ja"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botão3",
+                                                "locale": "pt-br"
+                                        }}
+                                    ]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": false,
+                                    "nonControllable": true
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "name": "SimpleEventSourceCapability",
+                                "instanceId": "Button4",
+                                "configuration": {
+                                    "supportedEvents": [
+                                        {
+                                            "id": "Button.SinglePress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.SinglePress" }
+                                            }]
+                                        },
+                                        {
+                                            "id": "Button.LongPress",
+                                            "friendlyNames": [{
+                                                "@type": "asset",
+                                                "value": { "assetId": "Alexa.Button.LongPress" }
+                                            }]
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Taste4",
+                                                "locale": "de"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button4",
+                                                "locale": "en"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button4",
+                                                "locale": "en-AU"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button4",
+                                                "locale": "en-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button4",
+                                                "locale": "en-IN"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Button4",
+                                                "locale": "en-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón4",
+                                                "locale": "es"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón4",
+                                                "locale": "es-US"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botón4",
+                                                "locale": "es-MX"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton4",
+                                                "locale": "fr-CA"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Bouton4",
+                                                "locale": "fr"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Pulsante4",
+                                                "locale": "it"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "ボタン4",
+                                                "locale": "ja"
+                                        }},
+                                        {
+                                            "@type": "text",
+                                            "value": {
+                                                "text": "Botão4",
+                                                "locale": "pt-br"
+                                        }}
+                                    ]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": false,
+                                    "nonControllable": true
+                                }
+                            }
+                        ]
+                    ],
+                    "productVendorModelCapabilities": {}
+                }
+            ]
+        },
+        {
+            "cid": 2601,
+            "defaultManufacturerName": "Worthcloud Technology Co.,Ltd",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 4129,
+                    "displayCategory": "SMARTPLUG",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 2025,
+            "defaultManufacturerName": "ThingOS",
+            "defaultDisplayCategory": "LIGHT"
+        },
+        {
+            "cid": 1294,
+            "defaultManufacturerName": "Yichip Microelectronics (Hangzhou) Co.,Ltd.",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "displayCategory": "LIGHT",
+                    "description": "Single Color Smart Light",
+                    "modelName": "Y_Mesh_Light_10",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 2,
+                    "displayCategory": "LIGHT",
+                    "description": "Dual Color Smart Bulb",
+                    "modelName": "Y_Mesh_Light_20",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 3,
+                    "displayCategory": "LIGHT",
+                    "description": "RGB Smart Light",
+                    "modelName": "Y_Mesh_Light_31",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 4,
+                    "displayCategory": "LIGHT",
+                    "description": "RGBW Smart Light",
+                    "modelName": "Y_Mesh_Light_41",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 5,
+                    "displayCategory": "LIGHT",
+                    "description": "RGBCW Smart Light",
+                    "modelName": "Y_Mesh_Light_51",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 6,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Smart Plug",
+                    "modelName": "Y_Mesh_Plug",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 7,
+                    "displayCategory": "SWITCH",
+                    "description": "Light Switch",
+                    "modelName": "Y_Mesh_Switch",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 81,
+                    "displayCategory": "OTHER",
+                    "description": "Fan and single color light combination",
+                    "modelName": "FTD Tiny Smart WW",
+                    "manufacturerName": "FTD Tiny Smart",
+                    "multipleEndpointsReport": true,
+                    "defaultVendorModelCapabilities": [
+                        [],
+                        [
+                            {
+                                "name": "ModeControllerCapability",
+                                "instanceId": "Fan.RotationDirection",
+                                "configuration": {
+                                    "ordered": false,
+                                    "supportedModes": [
+                                        {
+                                            "value": "Direction.Forward",
+                                            "modeResources": {
+                                                "friendlyNames": [{
+                                                    "@type": "text",
+                                                    "value": {
+                                                        "text": "Forward",
+                                                        "locale": "en-US"
+                                                    }
+                                                }]
+                                            }
+                                        },
+                                        {
+                                            "value": "Direction.Reversal",
+                                            "modeResources": {
+                                                "friendlyNames": [{
+                                                    "@type": "text",
+                                                    "value": {
+                                                        "text": "Reverse",
+                                                        "locale": "en-US"
+                                                    }
+                                                }]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "asset",
+                                        "value": {
+                                        "assetId": "Alexa.Setting.Direction"
+                                        }
+                                    }, {
+                                        "@type": "text",
+                                        "value": {
+                                        "text": "Fan Rotation Direction",
+                                        "locale": "en-US"
+                                        }
+                                    }]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": true,
+                                    "nonControllable": false
+                                }
+                            },
+                            {
+                                "name": "RangeControllerCapability",
+                                "instanceId": "Fan.Speed",
+                                "configuration": {
+                                    "supportedRange": {
+                                        "minimumValue" : 1,
+                                        "maximumValue" : 6,
+                                        "precision" : 1
+                                    },
+                                    "presets": [
+                                        {
+                                            "rangeValue" : 6,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Maximum" } },
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.High" } },
+                                                    { "@type" : "text", "value" : { "text" : "Highest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Fast", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Alta", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Élevée", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "rangeValue" : 1,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Minimum" } },
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Low" } },
+                                                    { "@type" : "text", "value" : { "text" : "Lowest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Slow", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Baja", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Faible", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "rangeValue" : 3,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Medium" } },
+                                                    { "@type" : "text", "value" : { "text" : "Lowest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Slow", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Baja", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Faible", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "asset",
+                                        "value": {
+                                            "assetId": "Alexa.Setting.FanSpeed"
+                                        }
+                                    }, {
+                                        "@type": "text",
+                                        "value": {
+                                            "text": "Speed",
+                                            "locale": "en-US"
+                                        }
+                                    }]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": true,
+                                    "nonControllable": false
+                                }
+                            }
+                        ]
+                    ],
+                    "productVendorModelCapabilities": {}
+                },
+                {
+                    "pid": 82,
+                    "displayCategory": "OTHER",
+                    "description": "Fan and dual color light combination",
+                    "modelName": "FTD Tiny Smart CW",
+                    "manufacturerName": "FTD Tiny Smart",
+                    "multipleEndpointsReport": true,
+                    "defaultVendorModelCapabilities": [
+                        [],
+                        [
+                            {
+                                "name": "ModeControllerCapability",
+                                "instanceId": "Fan.RotationDirection",
+                                "configuration": {
+                                    "ordered": false,
+                                    "supportedModes": [
+                                        {
+                                            "value": "Direction.Forward",
+                                            "modeResources": {
+                                                "friendlyNames": [{
+                                                    "@type": "text",
+                                                    "value": {
+                                                        "text": "Forward",
+                                                        "locale": "en-US"
+                                                    }
+                                                }]
+                                            }
+                                        },
+                                        {
+                                            "value": "Direction.Reversal",
+                                            "modeResources": {
+                                                "friendlyNames": [{
+                                                    "@type": "text",
+                                                    "value": {
+                                                        "text": "Reverse",
+                                                        "locale": "en-US"
+                                                    }
+                                                }]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "asset",
+                                        "value": {
+                                        "assetId": "Alexa.Setting.Direction"
+                                        }
+                                    }, {
+                                        "@type": "text",
+                                        "value": {
+                                        "text": "Fan Rotation Direction",
+                                        "locale": "en-US"
+                                        }
+                                    }]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": true,
+                                    "nonControllable": false
+                                }
+                            },
+                            {
+                                "name": "RangeControllerCapability",
+                                "instanceId": "Fan.Speed",
+                                "configuration": {
+                                    "supportedRange": {
+                                        "minimumValue" : 1,
+                                        "maximumValue" : 6,
+                                        "precision" : 1
+                                    },
+                                    "presets": [
+                                        {
+                                            "rangeValue" : 6,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Maximum" } },
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.High" } },
+                                                    { "@type" : "text", "value" : { "text" : "Highest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Fast", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Alta", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Élevée", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "rangeValue" : 1,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Minimum" } },
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Low" } },
+                                                    { "@type" : "text", "value" : { "text" : "Lowest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Slow", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Baja", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Faible", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "rangeValue" : 3,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Medium" } },
+                                                    { "@type" : "text", "value" : { "text" : "Lowest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Slow", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Baja", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Faible", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "asset",
+                                        "value": {
+                                            "assetId": "Alexa.Setting.FanSpeed"
+                                        }
+                                    }, {
+                                        "@type": "text",
+                                        "value": {
+                                            "text": "Speed",
+                                            "locale": "en-US"
+                                        }
+                                    }]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": true,
+                                    "nonControllable": false
+                                }
+                            }
+                        ]
+                    ],
+                    "productVendorModelCapabilities": {}
+                },
+                {
+                    "pid": 85,
+                    "displayCategory": "OTHER",
+                    "description": "Fan and five color light combination",
+                    "modelName": "FTD Tiny Smart CWRGB",
+                    "manufacturerName": "FTD Tiny Smart",
+                    "multipleEndpointsReport": true,
+                    "defaultVendorModelCapabilities": [
+                        [],
+                        [
+                            {
+                                "name": "ModeControllerCapability",
+                                "instanceId": "Fan.RotationDirection",
+                                "configuration": {
+                                    "ordered": false,
+                                    "supportedModes": [
+                                        {
+                                            "value": "Direction.Forward",
+                                            "modeResources": {
+                                                "friendlyNames": [{
+                                                    "@type": "text",
+                                                    "value": {
+                                                        "text": "Forward",
+                                                        "locale": "en-US"
+                                                    }
+                                                }]
+                                            }
+                                        },
+                                        {
+                                            "value": "Direction.Reversal",
+                                            "modeResources": {
+                                                "friendlyNames": [{
+                                                    "@type": "text",
+                                                    "value": {
+                                                        "text": "Reverse",
+                                                        "locale": "en-US"
+                                                    }
+                                                }]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "asset",
+                                        "value": {
+                                        "assetId": "Alexa.Setting.Direction"
+                                        }
+                                    }, {
+                                        "@type": "text",
+                                        "value": {
+                                        "text": "Fan Rotation Direction",
+                                        "locale": "en-US"
+                                        }
+                                    }]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": true,
+                                    "nonControllable": false
+                                }
+                            },
+                            {
+                                "name": "RangeControllerCapability",
+                                "instanceId": "Fan.Speed",
+                                "configuration": {
+                                    "supportedRange": {
+                                        "minimumValue" : 1,
+                                        "maximumValue" : 6,
+                                        "precision" : 1
+                                    },
+                                    "presets": [
+                                        {
+                                            "rangeValue" : 6,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Maximum" } },
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.High" } },
+                                                    { "@type" : "text", "value" : { "text" : "Highest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Fast", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Alta", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Élevée", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "rangeValue" : 1,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Minimum" } },
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Low" } },
+                                                    { "@type" : "text", "value" : { "text" : "Lowest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Slow", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Baja", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Faible", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "rangeValue" : 3,
+                                            "presetResources" : {
+                                                "friendlyNames" : [
+                                                    { "@type" : "asset", "value" : { "assetId" : "Alexa.Value.Medium" } },
+                                                    { "@type" : "text", "value" : { "text" : "Lowest", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Slow", "locale" : "en-US" } },
+                                                    { "@type" : "text", "value" : { "text" : "Baja", "locale" : "es-MX" } },
+                                                    { "@type" : "text", "value" : { "text" : "Faible", "locale" : "fr-CA" } }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "capabilityResources": {
+                                    "friendlyNames": [{
+                                        "@type": "asset",
+                                        "value": {
+                                            "assetId": "Alexa.Setting.FanSpeed"
+                                        }
+                                    }, {
+                                        "@type": "text",
+                                        "value": {
+                                            "text": "Speed",
+                                            "locale": "en-US"
+                                        }
+                                    }]
+                                },
+                                "properties": {
+                                    "proactivelyReported": true,
+                                    "retrievable": true,
+                                    "nonControllable": false
+                                }
+                            }
+                        ]
+                    ],
+                    "productVendorModelCapabilities": {}
+                },
+                {
+                    "pid": 513,
+                    "description": "Tiro Smart Light RGBCW",
+                    "manufacturerName": "Tiro Smart Light RGBCW",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 514,
+                    "description": "Elink Smart Light RGBCW",
+                    "manufacturerName": "Elink Smart Light RGBCW",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 515,
+                    "description": "Aithinker Smart Light RGBCW",
+                    "manufacturerName": "Aithinker Smart Light RGBCW",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 516,
+                    "displayCategory": "SWITCH",
+                    "description": "Yichip Smart Switch",
+                    "proactivelyReportable": true,
+                    "manufacturerName": "Yichip Smart Switch"
+                }
+            ]
+        },
+        {
+            "cid": 1284,
+            "defaultManufacturerName": "PHYPLUS Inc",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "displayCategory": "LIGHT",
+                    "description": "Mesh Light RGB",
+                    "modelName": "Mesh_Light_01",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 2,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Mesh Plug",
+                    "modelName": "Mesh Plug_01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 3,
+                    "displayCategory": "SWITCH",
+                    "description": "Mesh Switch",
+                    "modelName": "Mesh Switch_01",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 2409,
+            "defaultManufacturerName": "Woan Technology (Shenzhen) Co., Ltd.",
+            "defaultDisplayCategory": "LIGHT"
+        },
+        {
+            "cid": 1014,
+            "defaultManufacturerName": "Iton Technology Corp.",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "description": "Smart Light RGBCW",
+                    "modelName": "Smart Light RGBCW",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 2,
+                    "description": "Smart Light CW",
+                    "modelName": "Smart Light CW",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 3,
+                    "description": "Smart Light RGB",
+                    "modelName": "Smart Light RGB",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 4,
+                    "description": "Smart Light RGBCCT",
+                    "modelName": "Smart Light RGBCCT",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 5,
+                    "description": "Smart Strip Light",
+                    "modelName": "Smart Strip Light",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 6,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Smart Plug",
+                    "modelName": "Smart Plug 01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 7,
+                    "displayCategory": "SWITCH",
+                    "description": "Light Switch",
+                    "modelName": "Light Switch 01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 8,
+                    "displayCategory": "SWITCH",
+                    "description": "Light Switch",
+                    "modelName": "Light Switch 02",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 2725,
+            "defaultManufacturerName": "Shenzhen Uascent Technology Co., Ltd",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Uascent Mesh Plug",
+                    "modelName": "JX_Mesh_Plug_01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 2,
+                    "displayCategory": "SWITCH",
+                    "description": "Uascent Mesh Switch",
+                    "modelName": "JX_Mesh_Switch_01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 3,
+                    "description": "Uascent Mesh Light",
+                    "modelName": "JX_Mesh_Light_01",
+                    "proactivelyReportable": false
+                }
+            ]
+        },
+        {
+            "cid": 2362,
+            "defaultManufacturerName": "LinkedSemi Microelectronics (Xiamen) Co., Ltd",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "displayCategory": "LIGHT",
+                    "description": "Mesh Light RGB",
+                    "modelName": "Mesh_Light_01",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 2,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Mesh Plug",
+                    "modelName": "Mesh Plug_01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 3,
+                    "displayCategory": "SWITCH",
+                    "description": "Mesh Switch",
+                    "modelName": "Mesh Switch_01",
+                    "proactivelyReportable": true
+                },
+                {
+                    "pid": 12800,
+                    "displayCategory": "LIGHT",
+                    "description": "CW Light",
+                    "modelName": "CXW_L01",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 13056,
+                    "displayCategory": "LIGHT",
+                    "description": "CXW RGBW Light",
+                    "modelName": "CXW_L02",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 13312,
+                    "displayCategory": "LIGHT",
+                    "description": "CXW RGB Light",
+                    "modelName": "CXW_L03",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 13568,
+                    "displayCategory": "LIGHT",
+                    "description": "CXW W Light",
+                    "modelName": "CXW_L04",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 13824,
+                    "displayCategory": "LIGHT",
+                    "description": "CXW RGBCW Light",
+                    "modelName": "CXW_L05",
+                    "proactivelyReportable": false
+                }
+            ]
+        },
+        {
+            "cid": 2713,
+            "defaultManufacturerName": "Shanghai High-flying Electronics Technology Co.,Ltd",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 4096,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "High-flying smart device",
+                    "modelName": "plug",
+                    "proactivelyReportable": true
+                }
+            ]
+        },
+        {
+            "cid": 2553,
+            "defaultManufacturerName": "Hangzhou Yaguan Technology Co., Ltd",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "description": "Smart Light",
+                    "modelName": "Smart Light RGBCW",
+                    "manufacturerName": "Smart Light",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 2,
+                    "description": "Smart Light",
+                    "modelName": "Smart Light RGB",
+                    "manufacturerName": "Smart Light",
+                    "proactivelyReportable": false
+                },
+                {
+                    "pid": 3,
+                    "description": "Smart Light",
+                    "modelName": "Smart Light CW",
+                    "manufacturerName": "Smart Light",
+                    "proactivelyReportable": false
+                }
+            ]
+        },
+        {
+            "cid": 2762,
+            "defaultManufacturerName": "Shenzhen CoolKit Technology Co., Ltd",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 1,
+                    "displayCategory": "LIGHT",
+                    "description": "SMART LIGHT",
+                    "modelName": "SMART LIGHT"
+                },
+                {
+                    "pid": 2,
+                    "displayCategory": "SWITCH",
+                    "description": "SMART SWITCH",
+                    "modelName": "SMART SWITCH"
+                },
+                {
+                    "pid": 3,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "SMART PLUG",
+                    "modelName": "SMART PLUG"
+                }
+            ]
+        },
+        {
+            "cid": 2963,
+            "defaultManufacturerName": "Hangzhou BroadLink Technology Co., Ltd.",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 43049,
+                    "displayCategory": "LIGHT",
+                    "description": "BLE Smart Bulb supports dimming",
+                    "modelName": " LB4E-W"
+                },
+                {
+                    "pid": 43169,
+                    "displayCategory": "LIGHT",
+                    "description": "BLE Smart Bulb supports dimming and RGB color",
+                    "modelName": "LB4E-RGBW"
+                },
+                {
+                    "pid": 43168,
+                    "displayCategory": "LIGHT",
+                    "description": "BLE Smart Bulb supports dimming and RGB color",
+                    "modelName": "LB4E-RGB"
+                },
+                {
+                    "pid": 43050,
+                    "displayCategory": "LIGHT",
+                    "description": "BLE Smart Bulb supports dimming, color temperature and RGB color",
+                    "modelName": "LB4E-26F"
+                }
+            ]
+        },
+        {
+            "cid": 0,
+            "defaultManufacturerName": "Ericsson Technology Licensing",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": []
+        },
+        {
+            "cid": 2000,
+            "defaultManufacturerName": "Tuya",
+            "defaultDisplayCategory": "LIGHT",
+            "pids": [
+                {
+                    "pid": 25106,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Smart Plug",
+                    "modelName": "YX-WS021",
+                    "manufacturerName": "Amysen"
+                },
+                {
+                    "pid": 25107,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Smart Plug",
+                    "modelName": "ET07",
+                    "manufacturerName": "Eightree"
+                },
+                {
+                    "pid": 25112,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Smart Plug",
+                    "modelName": "F1B202-EU",
+                    "manufacturerName": "Hangzhou Mango Network Technology CO, LTD"
+                }
+            ]
+        },
+        {
+            "cid": 3209,
+            "defaultManufacturerName": "Alibaba",
+            "defaultDisplayCategory": "SMARTPLUG",
+            "pids": [
+                {
+                    "pid": 1,
+                    "displayCategory": "LIGHT",
+                    "description": "Smart Light",
+                    "modelName": "Aigosmart light",
+                    "manufacturerName": "AGZZX OPTOELECTRONICS TECHNOLOGY CO., LTD"
+                },
+                {
+                    "pid": 2,
+                    "displayCategory": "SWITCH",
+                    "description": "Smart Switch",
+                    "modelName": "Aigosmart switch",
+                    "manufacturerName": "AGZZX OPTOELECTRONICS TECHNOLOGY CO., LTD"
+                },
+                {
+                    "pid": 3,
+                    "displayCategory": "SMARTPLUG",
+                    "description": "Smart Plug",
+                    "modelName": "Aigosmart plug",
+                    "manufacturerName": "AGZZX OPTOELECTRONICS TECHNOLOGY CO., LTD"
+                }
+            ]
+        }
+    ]
+}

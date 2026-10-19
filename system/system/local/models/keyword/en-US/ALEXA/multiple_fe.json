@@ -1,0 +1,10 @@
+{
+  "models": {
+    "fingerprint-fe": {
+      "config_file_path": "fingerprint-fe.config"
+     }
+  },
+  "object_type_name": "ModelSetManifest",
+  "object_type_version": 1,
+  "default_model_name": "fingerprint-fe"
+}

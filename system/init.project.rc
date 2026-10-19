@@ -1,0 +1,49 @@
+# Import mt851x_amazon rc
+import init.mt851x_amazon.rc
+
+# Device-specific .rc content follows here
+
+# The Puffin service must be declared at the device-specific level,
+# as it requires device-specific config file parameters for some
+# platforms (e.g. Doebrite).
+service puffin /system/bin/PuffinApp /system/etc/AlexaClientSDKConfig.json /system/etc/OverlayAlexaClientSDKConfig.json
+   class main
+   user puffin
+   group aipc davs dbus inet ace_kvstore ace_group drmrpc system audio keystore cache shell ace_maplite
+   disabled
+
+on boot
+# set usb pid for Cannoli (0x066x) - Cheesecake (0x067x)
+   setprop ro.vendor.usb.pid.mtp 0x0661
+   setprop ro.vendor.usb.pid.mtp.adb 0x0662
+   setprop ro.vendor.usb.pid.ptp 0x0663
+   setprop ro.vendor.usb.pid.ptp.adb 0x0664
+   setprop ro.vendor.usb.pid.adb 0x0668
+
+#oobe using mac_sec (temp for Cannoli/Cheesecake)
+   chown system system /proc/idme/mac_sec
+   chmod 440 /proc/idme/mac_sec
+
+on property:sys.boot_completed=1
+   # for enabling zram
+   swapon_all /fstab.zram
+   write /proc/sys/vm/page-cluster 0
+   write /proc/sys/vm/swappiness 100
+
+# perfmonitord
+import init.perfmonitord.rc
+
+# perfhald
+import init.perfhald.rc
+
+# perfrecoveryd
+import init.perfrecoveryd.rc
+
+on fs
+    # This property is required to enable the android power system to
+    # properly shut down all processes on a reboot or shutdown operation.
+    # This delay represents the amount of time the system will wait for
+    # these processes to die after sending them the SIGTERM signal.
+    # We want to shut these processes down before rebooting to allow
+    # proper syncing/closing of open files including log files.
+    setprop ro.build.shutdown_timeout 2

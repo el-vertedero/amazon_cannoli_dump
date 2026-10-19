@@ -1,0 +1,45 @@
+#
+# Copyright (c) 2018 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+# Puffin SmartHome init.rc configuration
+
+on boot
+    mkdir /data/securedStorageLocation/SmartHome 0700 smarthome smarthome
+    mkdir /data/misc/smarthome_shared 0777 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome_shared 0770 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome_shared/images 0770 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome/chip-tool-server/ 0777 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome/chip-tool/ 0777 smarthome smarthome
+    mkdir /data/edcf/ 0770 smarthome smarthome
+    chmod 770 /data/securedStorageLocation/SmartHome_shared
+
+on post-fs-data
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_WIFI
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_WIFI/CapabilityInstanceDatabase.db
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_WIFI/WifiAdapterDatabase.db
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_WIFI/WifiAdapterDatabase.db-journal
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/CapabilityInstanceDatabase.db
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/BLEMeshAdapterDatabase.db
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/BLEMeshAdapterDatabase.db-journal
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/CIDDB.json
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/cdbVersion.txt
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/nextPeriodicSyncTime.txt
+    chown smarthome davs /data/securedStorageLocation/SmartHome/PROT_BLE_MESH/provisionerUuid.txt
+    chown smarthome davs /data/securedStorageLocation/SmartHome/SmartHomeMesh/SmartHomeMeshDatabase.db
+    chown smarthome davs /data/securedStorageLocation/SmartHome/SmartHomeMesh/SmartHomeMeshDatabase.db-journal
+    chown smarthome davs /data/securedStorageLocation/SmartHome/accountinfo/SmartHomeMeshManager.db
+    chown smarthome davs /data/securedStorageLocation/SmartHome/accountinfo/SmartHomeMeshManager.db-journal
+
+on property:com.amazon.puffin.PUFFIN_START=1 && property:audio_mixer.init=true
+    chmod 777 /data/misc/smarthome_shared/mesh_cdb.json
+    start smarthomed
+
+service smarthomed /system/bin/SmartHomed
+    class main
+    user smarthome
+    group davs aipc dbus inet ace_kvstore ace_group ace_maplite puffin zigbee net_raw ace_messaging
+    # Must be explicitly started
+    disabled

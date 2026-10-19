@@ -1,0 +1,80 @@
+{
+    "description": "ActivityDetection GCA config",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "ActivityDetectionGCA",
+            "type": "core.GenericCA",
+            "args": {
+                "capability": {
+                    "discovery": {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.ActivityDetection",
+                        "version": "1.0",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "enablement",
+                                    "type": "string",
+                                    "default": "DISABLED"
+                                }
+                            ],
+                            "proactivelyReported": false,
+                            "retrievable": true
+                        }
+                    },
+                    "directives": [
+                        {
+                            "name": "SetEnablement"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ActivityDetection Enablement Directive Accessor",
+            "type": "core.json.accessor",
+            "args": {
+                "accessKey": "directive.payload.enablement"
+            },
+            "inputs": [
+                "GenericCA|Directives|Alexa.ActivityDetection|SetEnablement|IPCIn"
+            ]
+        },
+        {
+            "name": "Clear enablement IPCOut Cache upon SetEnablement Directive",
+            "type": "core.clearcache",
+            "inputs": [
+                "GenericCA|Directives|Alexa.ActivityDetection|SetEnablement|IPCIn",
+                "GenericCA|Properties|Alexa.ActivityDetection|enablement|IPCOut"
+            ]
+        },
+        {
+            "name": "directive response event builder",
+            "type": "core.avs.event",
+            "inputs": [
+                "GenericCA|Properties|Alexa.ActivityDetection|enablement|IPCOut",
+                "GenericCA|Directives|Alexa.ActivityDetection|SetEnablement|IPCIn"
+            ],
+            "args": {
+                "propertyName": "enablement",
+                "headerNamespace": "Alexa.ActivityDetection",
+                "headerName": "EnablementReport",
+                "payloadVersion": "1.0"
+            }
+        }
+    ],
+    "exec": [
+        {
+            "command": "connect",
+            "input": "ActivityDetection Enablement Directive Accessor",
+            "consumer": "GenericCA|Properties|Alexa.ActivityDetection|enablement|Setting"
+        },
+        {
+            "command": "connect",
+            "input": "directive response event builder",
+            "consumer": "GenericCA|Events|Alexa.ActivityDetection|IPCOut"
+        }
+    ]
+}

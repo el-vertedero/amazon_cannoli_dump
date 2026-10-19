@@ -1,0 +1,96 @@
+{
+    "upload_interval": "P1D",
+    "cache_interval": "PT1H",
+    "cache_dir_path": "/data/powerdaemon/ifm/",
+    "metrics": {
+        "group_id": "89v6txw5",
+        "schema_id": "wq01/2/04330400",
+        "sampling_percentage": 100
+    },
+    "pmmaggregator": {
+        "sample_interval": "PT1S",
+        "data_sources": [
+            {
+                "name": "USE_CASE_INFO",
+                "lib": "/system/lib/libPowerMetricsDataSource_UseCaseInfo.so",
+                "params": {
+                    "metricname": "use_case_info"
+                }
+            },
+            {
+                "name": "AUDIO_VOLUME",
+                "lib": "/system/lib/libPowerMetricsDataSource_Lipc.so",
+                "params": {
+                    "source": "com.doppler.audiod",
+                    "property": "MainVolume",
+                    "metricname": "audio_volume"
+                }
+            },
+            {
+                "name": "CPU_FREQ_RESIDENCY",
+                "lib": "/system/lib/libPowerMetricsDataSource_CpuFreqResidency.so",
+                "params": {
+                    "stats": "/sys/devices/system/cpu/cpufreq/policy0/stats/time_in_state",
+                    "scaling_min_freq": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+                    "scaling_max_freq": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq"
+                }
+            },
+            {
+                "name": "CPU_VIRTUAL_TEMP",
+                "lib": "/system/lib/libPowerMetricsDataSource_File.so",
+                "params": {
+                    "path": "/sys/class/thermal/thermal_zone11/temp",
+                    "metricname": "cpu_virtual_temp"
+                }
+            },
+            {
+                "name": "LED_BRIGHTNESS",
+                "lib": "/system/lib/libPowerMetricsDataSource_Aipc.so",
+                "params": {
+                    "source": "com.amazon.ledd",
+                    "property": "TrueBrightness",
+                    "metricname": "led_brightness"
+                }
+            },
+            {
+                "name": "POWER_USAGE",
+                "lib": "/system/lib/libPowerMetricsDataSource_File.so",
+                "params": {
+                    "path": "/sys/class/hwmon/hwmon0/power1_input",
+                    "metricname": "device_power"
+                }
+            },
+            {
+                "name": "TS_CPU_TEMP",
+                "lib": "/system/lib/libPowerMetricsDataSource_File.so",
+                "params": {
+                    "path": "/sys/class/thermal/thermal_zone0/temp",
+                    "metricname": "cpu_raw_temp"
+                }
+            }
+        ]
+    },
+    "polling_collector": {
+        "sample_interval": "PT15S",
+        "data_sources": [
+            {
+                "name": "POWER_USAGE",
+                "lib": "/system/lib/libPowerMetricsDataSource_File.so",
+                "params": {
+                    "path": "/sys/class/hwmon/hwmon0/power1_input",
+                    "metricname": "device_power"
+                }
+            }
+        ]
+    },
+    "use_case_priority": {
+        "AUDIO_ANY": 3,
+        "MUTE": 2,
+        "ECS_SCRON_DAY": 1,
+        "ECS_SCROFF_DAY": 1,
+        "ECS_SCRON_NIGHT": 1,
+        "ECS_SCROFF_NIGHT": 1,
+        "ECS_SCRSAV_ON": 1,
+        "ECS_SCRSAV_OFF": 1
+    }
+}

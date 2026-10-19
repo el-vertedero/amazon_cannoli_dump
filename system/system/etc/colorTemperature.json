@@ -1,0 +1,34 @@
+{
+  "transformation": {
+    "type": "no-op",
+    "operations": [
+      {
+        "namespace": "Alexa.ColorTemperatureController",
+        "version": "3",
+        "directiveName": "IncreaseColorTemperature",
+        "operationName": "increaseColorTemperature"
+      },
+      {
+        "namespace": "Alexa.ColorTemperatureController",
+        "version": "3",
+        "directiveName": "DecreaseColorTemperature",
+        "operationName": "decreaseColorTemperature"
+      },
+      {
+        "namespace": "Alexa.ColorTemperatureController",
+        "version": "3",
+        "directiveName": "SetColorTemperature",
+        "operationName": "setColorTemperature"
+      }
+    ],
+    "properties": [
+      {
+        "deviceStateName": "colorTemperatureInKelvin",
+        "applicationPropertyName": "colorTemperatureInKelvin",
+        "version": "3",
+        "namespace": "Alexa.ColorTemperatureController"
+      }
+    ],
+    "events": []
+  }
+}

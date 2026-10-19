@@ -1,0 +1,4 @@
+service netmgrd /system/bin/netmgrd
+    class main
+    group dbus
+    socket dnsproxyd stream 0660 wifi inet

@@ -1,0 +1,18 @@
+# MT8519 NAND specific ubi rc
+on init
+    mkdir /dev/storage/
+    mkdir /dev/storage/raw-nand/
+
+on early-fs
+   wait /dev/ubi0_13 5
+   wait /dev/ubi0_14 5
+   wait /dev/ubi0_15 5
+   wait /dev/ubi0_16 5
+
+   symlink /dev/ubi0_13 /dev/storage/by-name/mcupm_a
+   symlink /dev/ubi0_14 /dev/storage/by-name/mcupm_b
+   symlink /dev/ubi0_15 /dev/storage/by-name/scp_a
+   symlink /dev/ubi0_16 /dev/storage/by-name/scp_b
+
+on late-fs
+   symlink /sys/devices/platform/soc/11018000.nfi /dev/storage/raw-nand/nfi

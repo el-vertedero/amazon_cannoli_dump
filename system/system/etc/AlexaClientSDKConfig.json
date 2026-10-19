@@ -1,0 +1,131 @@
+{
+	"acl": {
+		"endpoint": "https://avs-alexa-14-na.amazon.com"
+	},
+	"alertsCapabilityAgent": {
+		"databaseFilePath": "/data/avs/resources/alerts.db"
+	},
+	"bluetooth": {
+		"databaseFilePath": "/data/avs/resources/bluetoothDatabase.db"
+	},
+	"certifiedSender": {
+		"databaseFilePath": "/data/avs/resources/certifiedSender.db"
+	},
+	"capabilitiesDelegate": {
+		"databaseFilePath": "/data/avs/resources/capabilitiesDelegate.db"
+	},
+	"communications": {
+		"inputDevice": {
+			"deviceName": "sysdefault:CARD=I82801BAICH2",
+			"driverName": "82801BA-ICH2"
+		},
+		"outputDevice": {
+			"deviceName": "sysdefault:CARD=I82801BAICH2",
+			"driverName": "82801BA-ICH2"
+		},
+		"sipCertificateFilePath": "",
+		"deviceTypeId": "",
+		"metricStoragePath": ""
+        },
+        "deviceInfo":{
+                "registrationKey": "legacyIdentifier",
+                "productIdKey": "deviceType"
+	},
+	"deviceSettings": {
+		"databaseFilePath": "/data/avs/resources/deviceSettingsDatabase.db",
+		"defaultLocale": "en-US",
+		"defaultTimezone": "NONE"
+	},
+	"equalizer": {
+		"defaultDelta": 3
+	},
+	"externalMediaPlayer": {
+        // Agent identifier provided by AlexaMusic.
+        // Developers creating their own adaptors must use an Agent ID assigned to them by Alexa Music
+		"agentString": "CQCAFYNYDC",
+		"players": {
+			"Spotify:ESDK": {
+				"brandName": "Amazon",
+				"clientId": "27d4dfe427b34d57995b463e5d63198d",
+				"zeroConfPort": 4070,
+				"zeroConfPortRange": 10
+			}
+		}
+	},
+	"focusManager": {
+		"audioVirtualChannels": [
+			{
+				"name": "Earcon",
+				"priority": 250
+			}
+		]
+	},
+	"miscDatabase": {
+		"databaseFilePath": "/data/avs/resources/miscDatabase.db"
+	},
+	"mrm": {
+		"capabilities": {
+			"WholeHomeAudio": {
+				"type": "AlexaInterface",
+				"interface": "WholeHomeAudio",
+				"version": "1.7",
+				"configurations": {
+					"assignableChannels": ["ALL"],
+					"clusterTypes": ["CLASSIC_CLUSTER"],
+					"streamTypes": [],
+					"connectivity": {
+						"softAP": {
+							"roles": []
+						}
+					},
+					"providers": [
+						{
+							"name": "spotify",
+							"eSDKVersion":"3.20"
+						},
+						{
+							"name":"audible"
+						}
+					]
+				}
+			},
+			"WholeHomeAudio.Skew": {
+				"type": "AlexaInterface",
+				"interface": "WholeHomeAudio.Skew",
+				"version": "1.0"
+			}
+		},
+		"audioClockSystemClockDriftPpm": "0.0",
+		"audioPlayerDeviceName": "hw:0,0",
+		"audioPlayerOffsetDurationNs": -23522000,
+		"clockDriftTolerancePpm": "20.0",
+		"clockNominalDriftPpm": "0.14",
+		"spotifyBrandName": "Amazon",
+		"spotifyClientId": "27d4dfe427b34d57995b463e5d63198d",
+		"spotifyModelName": "Echo_Dot",
+		"spotifyProductId": 38,
+		"spotifyZeroConfPort": 4071,
+		"spotifyzeroconfCpath": "/WHASpotifyConnect",
+		"writableSettingsDirectory": "/data/wha/",
+		"drmProductName": "WHA",
+		"drmCompanyName": "Amazon",
+		"drmDeviceName": "Echo",
+		"drmModelName": "Echo_Dot",
+		"drmArchName": "empty",
+		"drmBuildInfo": "1.0",
+		"drmStorageDirectory": "/data/wha/drm",
+		"drmDeviceId": "ABCD1234"
+	},
+	"notifications": {
+		"databaseFilePath": "/data/avs/resources/notifications.db"
+	},
+	"puffinApp": {
+		"displayCardsSupported": false
+	},
+	"softwareUpdate": {
+		"databaseFilePath": "/data/avs/resources/software_update_history.db"
+	},
+	"userPerceivedFatalsCapabilityAgent" : {
+		"databaseFilePath": "/data/avs/resources/user_perceived_fatals.db"
+	}
+}

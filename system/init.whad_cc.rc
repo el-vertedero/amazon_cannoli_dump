@@ -1,0 +1,17 @@
+# Whole Home Audio
+
+service quantum /system/bin/quantum
+    class main
+    user audio
+    group audio inet aipc dbus
+    disabled
+
+on property:amazon.wha.quantum=1
+    start quantum
+
+on property:amazon.wha.quantum=0
+    stop quantum
+
+on post-fs-data
+    mkdir /data/fht 0770 audio audio
+

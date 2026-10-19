@@ -1,0 +1,12 @@
+{
+    "description": "Wifi-Radar basic config. No GCA necessary.",
+    "version": "1.0",
+    "CAMPSchemaVersion": "1.0",
+    "streams": [
+        {
+            "name": "WifiRadar Data Stream",
+            "type": "wifiRadar.WIFIRadarData"
+        }
+    ]
+}
+

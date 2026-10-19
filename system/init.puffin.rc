@@ -1,0 +1,19 @@
+import init.randomseed.rc
+
+# Crumpet PuffinApp migration
+on post-fs-data
+    chown puffin puffin /data/avs/
+    chown puffin puffin /data/avs/btdevice.db.json
+    chown puffin puffin /data/avs/first_ota_check
+    chown puffin puffin /data/avs/resources/
+    chown puffin puffin /data/avs/resources/alerts.db
+    chown puffin puffin /data/avs/resources/bluetoothDatabase.db
+    chown puffin puffin /data/avs/resources/certifiedSender.db
+    chown puffin puffin /data/avs/resources/deviceSettingsDatabase.db
+    chown puffin puffin /data/avs/resources/miscDatabase.db
+    chown puffin puffin /data/avs/resources/notifications.db
+    chown puffin puffin /data/avs/resources/software_update_history.db
+    chown puffin puffin /data/avs/tmp
+on boot
+    # Reset Timezone to default.
+    setprop persist.sys.timezone ""

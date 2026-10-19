@@ -1,0 +1,22 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.adb.secure=1
+ro.oem_unlock_supported=1
+persist.service.acm.enable=0
+debug.sf.nobootanimation=1
+ro.secure=1
+security.perf_harden=1
+ro.allow.mock.location=0
+ro.debuggable=0
+debug.atrace.tags.enableflags=0
+persist.sys.usb.config=adb
+ro.mount.fs=UBIFS
+camera.disable_zsl_mode=1
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Wed Oct 14 06:13:53 UTC 2026
+ro.bootimage.build.date.utc=1791958433
+ro.bootimage.build.fingerprint=Amazon/cannoli/cannoli:6.0/NS6575/8338N:user/amz-p,release-keys
+

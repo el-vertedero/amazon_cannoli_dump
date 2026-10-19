@@ -1,0 +1,13 @@
+
+on post-fs-data
+   mkdir /data/misc/fmonitor 0700 fmonitor fmonitor
+   chmod 0700 /data/misc/fmonitor
+   chown fmonitor fmonitor /data/misc/fmonitor
+   start fmonitor
+
+service fmonitor /system/bin/fmonitor
+    class main
+    user fmonitor
+    group fmonitor aipc
+    disabled
+    oneshot
